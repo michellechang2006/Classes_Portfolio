@@ -1,0 +1,6 @@
+   <div class="footer-line text-center">
+      </div>
+      <div class="footer-bottom text-center copyright-content p-md-2 p-lg-2 p-xl-3">
+      &#x00A9; 2023 Michelle Chang   All rights reserved. Privacy Policy 
+      </div>
+      </div>
