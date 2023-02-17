@@ -4,3 +4,4 @@
       &#x00A9; 2023 Michelle Chang   All rights reserved. Privacy Policy 
       </div>
       </div>
+      <i class="fa-brands fa-artstation"></i>

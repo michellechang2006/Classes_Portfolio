@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+body{
+font-family: 'Noto Sans TC', sans-serif;
+}
+.footer-content{
+background-color:#FFD7C0;
+}
+.footer-bottom,.footer-top {
+background-color: #FFD7C0;
+}
+.logo{
+height: 60px;
+}
+
+.logo-sm{
+height: 50px;
+}
+.fa-md {
+  font-size: 25px;
+  color: #231815;
+  transition: font-size .1s ease-in;
+}
+.fa-md:hover{
+  color:#f69586;
+  font-size: 30px;
+  }
+.fa-sm{
+  font-size: 1px;
+  color: #231815;
+  transition: font-size .1s ease-in;
+}
+.fa-sm:hover{
+  color:#f69586;
+  font-size: 25px;
+  }
+.bi-md{
+font-size: 25px;
+color: #231815;
+transition: font-size .1s ease-in;
+}
+.bi-md:hover{
+color:#f69586;
+font-size: 30px;
+}
+.bi-sm{
+font-size: 18px;
+color: #231815;
+transition: font-size .1s ease-in;
+}
+.bi-sm:hover{
+color:#f69586;
+font-size: 25px;
+}
+.info-title{
+font-size: 10px;
+text-decoration: underline;
+color: #231815;
+transition:  .1s ease-in;
+}
+.info-title:hover{
+  color:#f69586;
+}
+.info-content{
+font-size: 8px;
+color: #231815;
+transition:  .1s ease-in;
+}
+.contact-info-title{
+font-size: 15px;
+font-family: 'EB Garamond', serif;
+color: #231815;
+}
+.contact-info-title:hover{
+  color:#f69586;
+}
+.contact-info-email{
+text-decoration: none;
+font-size: 13px;
+font-family: 'Raleway', sans-serif;
+color: #231815;
+font-weight: bold;
+transition:  .1s ease-in;
+}
+.contact-info-email:hover{
+  text-decoration: underline;
+  color:#f69586;
+  }
+.footer-line {
+height: 1px;
+background-color:#231815;
+}
+.about-title{
+font-size: 15px;
+font-family: 'EB Garamond', serif;
+color: #231815;
+transition:  .1s ease-in;
+}
+.about-title:hover{
+  color:#f69586; 
+
+}
+.about-content{
+font-size: 10px;
+color: #231815;
+}
+.copyright-content{
+font-size: 8px;
+width: 100vw;
+font-family: 'EB Garamond', serif;
+font-family: 'Noto Sans TC', sans-serif;
+color: #231815;
+}
+.copyright-content-sm {
+font-size: 8px;
+width: 100vw;
+font-family: 'EB Garamond', serif;
+font-family: 'Noto Sans TC', sans-serif;
+color: #231815;
+}
+
+
+@media screen and (min-width: 1200px)  {
+.bi{
+  font-size: 25px;
+}
+.logo{
+height: 70px;
+}
+.info-title{
+font-size: 15px;
+}
+.info-content{
+font-size: 10px;
+}
+.contact-info-title{
+font-size: 20px;
+}
+.contact-info-email{
+font-size: 15px;
+}
+.footer-line {
+height: 1.5px;
+}
+.copyright-content{
+font-size: 10px;
+}
+.about-title{
+font-size: 20px;
+}
+.about-content{
+font-size: 15px;
+}
+}
+
+
+
+
+
+@media screen and  (max-width: 768px){
+.main-footer-md{
+  display: none;
+}
+
+}
+@media screen and  (min-width: 768px){
+.main-footer-sm{
+  display: none;
+}
