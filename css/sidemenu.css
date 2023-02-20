@@ -9,7 +9,7 @@ strong {
   font-weight: 600;
 }
 /*page 為內頁的部份*/
-.page {
+.sidemenu {
   width: 100%;
   height: 50px;
   background: #4F05D3;
@@ -44,7 +44,7 @@ main > div {
 }
 
 main h2 span {
-  color: #BF7497;
+  color: #f69586;
 }
 
 main p {
@@ -110,16 +110,17 @@ main small {
   height: 3px;
   background: #231815;
   transition: .3s;
+  border-radius: 10%;
 }
 .icon-bar + .icon-bar {
   margin-top: 5px;
 }
 /*下拉式選單按鈕設定*/
- .dropdown-btn {
+ .dropdown-btn-1 {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 20px;
-  color: #F11160;
+  color: #231815;
   display: block;
   border: none;
   background: none;
@@ -128,7 +129,7 @@ main small {
   cursor: pointer;
   outline: none;
 }
-.dropdown-container {
+.dropdown-container-1 {
   display: none;
   background-color: #FFD7C0;
   padding-left: 8px;
@@ -180,26 +181,10 @@ main small {
 }
 
 #nav-content li a:hover {
-  color: #BF7497;
+  color: #f69586;
 }
 
-#nav-content li:not(.small) + .small {
-  margin-top: auto;
-}
 
-.small {
-  display: flex;
-  align-self: center;
-}
-
-.small a {
-  font-size: 12px;
-  font-weight: 400;
-  color: #231815;;;
-}
-.small a + a {
-  margin-left: 15px;
-}
 
 #nav-container:focus-within #nav-content {
   transform: none;
@@ -220,16 +205,16 @@ html, body {
   height: 100%;
 }
 
-a,
-a:visited,
-a:focus,
-a:active,
-a:link {
+.nav-text,
+.nav-text:visited,
+.nav-text:focus,
+.nav-text:active,
+.nav-text:link {
   text-decoration: none;
   outline: 0;
 }
 
-a {
+.nav-text {
   color: currentColor;
   transition: .2s ease-in-out;
 }
@@ -238,7 +223,7 @@ h1, h2, h3, h4 {
   margin: 0;
 }
 
-ul {
+.nav-ul {
   padding: 0;
   list-style: none;
 }

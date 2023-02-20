@@ -10,9 +10,7 @@
 
     <link rel="stylesheet" href="css/css reset.css">
     <link rel="stylesheet" href="bootstrap-icons-1.10.3/bootstrap-icons.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="css/sidemenu.css">
-    <link rel="stylesheet" href="css/topmenu.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <style>
@@ -49,23 +47,43 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </div>
-          <div id="nav-content" tabindex="0"> 
-            <ul class="nav-ul">
-              <li class="nav-li"><a href="#0" class="nav-text" >Home</a></li>
-              <li class="nav-li"><a href="#0" class="nav-text" >Services</a></li>
-              <li class="nav-li"><a href="#0" class="nav-text" >Blog</a></li>
-            <button class="dropdown-btn-1">Dropdown<i class="bi bi-caret-down-fill"></i>
-        </button>
-        <div class="dropdown-container-1">
-            <ul>
-                <li class="nav-li"><a href="#0" class="nav-text" >Home</a></li>
-                <li class="nav-li"><a href="#0" class="nav-text" >Services</a></li>
-                <li class="nav-li"><a href="#0" class="nav-text" >Blog</a></li>
-        </div>
-              <li class="nav-li"><a href="#0" class="nav-text" >About</a></li>
-              <li class="nav-li"><a href="#0" class="nav-text" >Contact</a></li>
-              
-            </ul>
+          <ul class="nav-ul">
+            <li class="nav-li">
+              <a href="#0" class="nav-text" > <i class="bi bi-house-fill"></i> 首頁</a></li>
+          <button class="dropdown-btn-years 111"> <i class="bi bi-mortarboard-fill"></i> 111學年度<i class="bi bi-caret-down-fill"></i>
+      </button>
+      <div class="dropdown-container-years 111-content">
+          <ul class="dropdown-ul">
+              <li class="nav-li"><a href="#0" class="nav-dropdown-text" > <i class="bi bi-book-fill"></i> 課程成果</a></li>
+              <li class="nav-li"><a href="#0" class="nav-dropdown-text" > <i class="bi bi-clipboard-fill"></i> 留言版</a></li>
+              <li class="nav-li"><a href="#0" class="nav-dropdown-text" > <i class="bi bi-emoji-smile-fill"></i>心得&回顧</a></li>      
+      </div>
+      <button class="dropdown-btn-years 112"> <i class="bi bi-mortarboard-fill"></i> 112學年度<i class="bi bi-caret-down-fill"></i>
+      </button>
+      <div class="dropdown-container-years 112-content">
+          <ul class="dropdown-ul">
+              <li class="nav-li"><a href="#0" class="nav-dropdown-text" > <i class="bi bi-heart-fill"></i>敬請期待</a></li>
+          
+          </ul>   
+      </div>
+      <button class="dropdown-btn-years 113"> <i class="bi bi-mortarboard-fill"></i> 113學年度<i class="bi bi-caret-down-fill"></i>
+      </button>
+      <div class="dropdown-container-years 113-content">
+          <ul class="dropdown-ul">
+              <li class="nav-li"><a href="#0" class="nav-dropdown-text" > <i class="bi bi-heart-fill"></i>敬請期待</a></li>
+          </ul>   
+      </div>
+      <button class="dropdown-btn-years blog"> <i class="bi bi-pencil-fill"></i> Blog<i class="bi bi-caret-down-fill"></i>
+      </button>
+      <div class="dropdown-container-years blog-content">
+          <ul class="dropdown-ul">
+              <li class="nav-li"><a href="#0" class="nav-dropdown-text" > <i class="bi bi-blog"></i>敬請期待</a></li>
+          </ul>   
+      </div>
+      <li class="nav-li">
+          <a href="#0" class="nav-text" ><i class="bi bi-flag-fill"></i> 問題 回報</a>
+        </li>
+    </ul>
           </div>
           
         </div>
@@ -289,7 +307,7 @@
         })
         $(document).ready(function() {
           $(".content").click(function() {
-            $(".dropdown-menu").slideToggle(300);
+            $(".dropdown-menu").slideUp(300);
           })
         })
         </script>
