@@ -4,6 +4,33 @@
 * {
   outline: none;
 }
+.logo-sm-topmenu{
+  height: 35px;
+  padding: 0 15px;
+  margin: 20px 0px;
+}
+.logo-text-sm{
+  font-family: 'Lobster Two', cursive;
+  font-size: 25px;
+  color:#231815 ;
+  text-decoration: none;
+}
+
+.bi{
+  margin-right: 5px;
+  color: #231815;
+}
+.bi:hover{
+  color: #f69586;
+}
+.bi-caret-down-fill{
+  margin-left: 5px;
+  color: #231815;
+}
+.bi-caret-down-fill:hover{
+  color: #f69586;
+}
+
 
 strong {
   font-weight: 600;
@@ -13,7 +40,7 @@ strong {
   width: 100%;
   height: 50px;
   background: #4F05D3;
-  font-family: 'Encode Sans Condensed', sans-serif;
+  /* font-family: 'Encode Sans Condensed', sans-serif; */
   font-weight: 600;
   letter-spacing: .03em;
   color: #231815;;
@@ -31,32 +58,7 @@ header {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
-main {
-  padding: 50px 20px 0;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
 
-main > div {
-  margin: auto;
-  max-width: 600px;
-}
-
-main h2 span {
-  color: #f69586;
-}
-
-main p {
-  line-height: 1.5;
-  font-weight: 200;
-  margin: 20px 0;
-}
-
-main small {
-  font-weight: 300;
-  color: #231815;
-}
 /*選單佔底框的大小設定*/
 #nav-container {
   position: absolute;
@@ -116,8 +118,8 @@ main small {
   margin-top: 5px;
 }
 /*下拉式選單按鈕設定*/
- .dropdown-btn-1 {
-  padding: 6px 8px 6px 16px;
+ .dropdown-btn-years {
+  padding: 6px 0px 6px 6px;
   text-decoration: none;
   font-size: 20px;
   color: #231815;
@@ -128,8 +130,15 @@ main small {
   text-align: left;
   cursor: pointer;
   outline: none;
+  font-family: 'Noto Sans TC', sans-serif;
 }
-.dropdown-container-1 {
+.dropdown-btn-years:hover{
+  color: #f69586 ;
+}
+.bi-caret-down-fill{
+font-size: 18px;
+}
+.dropdown-container-years{
   display: none;
   background-color: #FFD7C0;
   padding-left: 8px;
@@ -170,7 +179,7 @@ main small {
   height: 100%;
   display: flex;
   flex-direction: column;
-  margin: 10px 20px;
+  margin: 15px ;
 }
 
 #nav-content li a {
@@ -178,6 +187,7 @@ main small {
   display: block;
   text-transform: uppercase;
   transition: color .1s;
+  
 }
 
 #nav-content li a:hover {
@@ -192,15 +202,6 @@ main small {
 
 
 
-
-
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 html, body {
   height: 100%;
 }
@@ -212,27 +213,33 @@ html, body {
 .nav-text:link {
   text-decoration: none;
   outline: 0;
+  
 }
 
 .nav-text {
   color: currentColor;
   transition: .2s ease-in-out;
+  font-size: 20px;
+  font-family: 'Noto Sans TC', sans-serif,'Raleway', sans-serif;
+
+}
+.nav-dropdown-text {
+  color: currentColor;
+  transition: .2s ease-in-out;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: 'Noto Sans TC', sans-serif,'Raleway', sans-serif;
+  
 }
 
-h1, h2, h3, h4 {
-  margin: 0;
-}
+
 
 .nav-ul {
-  padding: 0;
+  padding: 0px;
   list-style: none;
 }
 
-img {
-  vertical-align: middle;
-  height: auto;
-  width: 100%;
+.dropdown-ul{
+  padding: 0px;
 }
 
-
-Resources1× 0.5× 0.25×Rerun

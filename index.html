@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="css/topmenu(2.20).css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-
     <style>
           @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
           @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
@@ -23,20 +22,34 @@
         font-family: 'Noto Sans TC', sans-serif;
         font-family: 'Raleway', sans-serif;
         }
-
+        /* Menu RDW */
         @media screen and (min-width: 768px) {
         div.sidemenu{
         display:none;
+        
         }
+       .topmenu{
+        height: 55px;
+        background-color: red;
+        font-family: 'Noto Sans TC', sans-serif;
+        font-family: 'Raleway', sans-serif;
+        }
+
+        .navbar{
+            height: calc(100%-50px);
+            width: 100%;
+            position:fixed;
+            top: 0;
+            left: 0;
+          
         }
         @media screen and (max-width: 768px) {
-        nav.topmenu {
+        div.topmenu {
         display: none;
         }
         }
 
-
-       
+      }
 </style>
      
 </head>
@@ -53,76 +66,84 @@
           </div>
           <div id="nav-content" tabindex="0"> 
             <ul class="nav-ul">
-              <li class="nav-li">
-                <a href="#0" class="nav-text" > <i class="bi bi-house-fill"></i> 首頁</a></li>
-            <button class="dropdown-btn-years 111"> <i class="bi bi-mortarboard-fill"></i> 111學年度<i class="bi bi-caret-down-fill"></i>
-        </button>
-        <div class="dropdown-container-years 111-content">
-            <ul class="dropdown-ul">
-                <li class="nav-li"><a href="#0" class="nav-dropdown-text" > <i class="bi bi-book-fill"></i> 課程成果</a></li>
-                <li class="nav-li"><a href="#0" class="nav-dropdown-text" > <i class="bi bi-clipboard-fill"></i> 留言版</a></li>
-                <li class="nav-li"><a href="#0" class="nav-dropdown-text" > <i class="bi bi-emoji-smile-fill"></i>心得&回顧</a></li>      
-        </div>
-        <button class="dropdown-btn-years 112"> <i class="bi bi-mortarboard-fill"></i> 112學年度<i class="bi bi-caret-down-fill"></i>
-        </button>
-        <div class="dropdown-container-years 112-content">
-            <ul class="dropdown-ul">
-                <li class="nav-li"><a href="#0" class="nav-dropdown-text" > <i class="bi bi-heart-fill"></i>敬請期待</a></li>
-            
-            </ul>   
-        </div>
-        <button class="dropdown-btn-years 113"> <i class="bi bi-mortarboard-fill"></i> 113學年度<i class="bi bi-caret-down-fill"></i>
-        </button>
-        <div class="dropdown-container-years 113-content">
-            <ul class="dropdown-ul">
-                <li class="nav-li"><a href="#0" class="nav-dropdown-text" > <i class="bi bi-heart-fill"></i>敬請期待</a></li>
-            </ul>   
-        </div>
-        <button class="dropdown-btn-years blog"> <i class="bi bi-pencil-fill"></i> Blog<i class="bi bi-caret-down-fill"></i>
-        </button>
-        <div class="dropdown-container-years blog-content">
-            <ul class="dropdown-ul">
-                <li class="nav-li"><a href="#0" class="nav-dropdown-text" > <i class="bi bi-blog"></i>敬請期待</a></li>
-            </ul>   
-        </div>
-        <li class="nav-li">
-            <a href="#0" class="nav-text" ><i class="bi bi-flag-fill"></i> 問題 回報</a>
-          </li>
-      </ul>
+                <li class="nav-li">
+                  <a href="#0" class="nav-text" > <i class="bi bi-house-fill"></i> 首頁</a></li>
+              <button class="dropdown-btn-years 111"> <i class="bi bi-mortarboard-fill"></i> 111學年度<i class="bi bi-caret-down-fill"></i>
+          </button>
+          <div class="dropdown-container-years 111-content">
+              <ul class="dropdown-ul">
+                  <li class="nav-li"><a href="#0" class="nav-dropdown-text" > <i class="bi bi-book-fill"></i> 課程成果</a></li>
+                  <li class="nav-li"><a href="#0" class="nav-dropdown-text" > <i class="bi bi-clipboard-fill"></i> 留言版</a></li>
+                  <li class="nav-li"><a href="#0" class="nav-dropdown-text" > <i class="bi bi-emoji-smile-fill"></i>心得&回顧</a></li>      
+          </div>
+          <button class="dropdown-btn-years 112"> <i class="bi bi-mortarboard-fill"></i> 112學年度<i class="bi bi-caret-down-fill"></i>
+          </button>
+          <div class="dropdown-container-years 112-content">
+              <ul class="dropdown-ul">
+                  <li class="nav-li"><a href="#0" class="nav-dropdown-text" > <i class="bi bi-heart-fill"></i>敬請期待</a></li>
+              
+              </ul>   
+          </div>
+          <button class="dropdown-btn-years 113"> <i class="bi bi-mortarboard-fill"></i> 113學年度<i class="bi bi-caret-down-fill"></i>
+          </button>
+          <div class="dropdown-container-years 113-content">
+              <ul class="dropdown-ul">
+                  <li class="nav-li"><a href="#0" class="nav-dropdown-text" > <i class="bi bi-heart-fill"></i>敬請期待</a></li>
+              </ul>   
+          </div>
+          <button class="dropdown-btn-years blog"> <i class="bi bi-pencil-fill"></i> Blog<i class="bi bi-caret-down-fill"></i>
+          </button>
+          <div class="dropdown-container-years blog-content">
+              <ul class="dropdown-ul">
+                  <li class="nav-li"><a href="#0" class="nav-dropdown-text" > <i class="bi bi-heart-fill"></i>敬請期待</a></li>
+              </ul>   
+          </div>
+          <li class="nav-li">
+              <a href="#0" class="nav-text" ><i class="bi bi-flag-fill"></i> 問題 回報</a>
+            </li>
+        </ul>
+          </div>
+          
         </div>
       
-    <!-- top menu -->
-    <nav class=" topmenu navbar navbar-expand-md bg-primary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link  active" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link  active" href="#">Pricing</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown link
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+        
       </div>
-    </nav>
+    <!-- top menu -->
+   <div class="topmenu"> 
+    <nav class="navbar navbar-expand-md bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="logo/Mimi Rabbit AE. .svg" width="30" height="24">
+      </a>
+      <a class="navbar-brand navbar-brand-text" href="#">M-Learing</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><span class="nav-text-md">首頁</span></a>
+          </li>
+          <li class="nav-item dropdown 111">
+            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="nav-text-md">111學年度</span>
+            </a>
+            <ul class="dropdown-menu 111-content-md bg-primary">
+              <li><a class="dropdown-item bg-primary " href="#"><span class="dropdown-content-md">課程成果</span></a></li>
+              <li><a class="dropdown-item bg-primary" href="#"><span class="dropdown-content-md">課程成果</span></a></li>
+              <li><a class="dropdown-item bg-primary " href="#"><span class="dropdown-content-md">課程成果</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  active" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  active" href="#">Pricing</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav></div>
     <div class="content">
       <h2>Off-screen navigation using <span>:focus-within</span></h2>
       <p>Adding yet another pure CSS technique to the list of off-screen navigation by "hacking" the :focus-within pseudo-class. Have a look at the code to see how it works.</p>
@@ -204,130 +225,131 @@
   <p>大陸好友都會動畫秘密戰略，未來淡淡醫院和我根據，聊天危機有關強調廣播紛紛容易一把交給，一點前面，練習轉貼自我賓館回來抱著，推出減少各地我很見面，難道女人沉默遠遠多次麻煩每頁特徵本公司共享權威，多年連結百萬外資，體系糖尿病觀念學院回覆權利本文教師，國家鑒定。</p>
 
 </div>
-
 <div class="main-footer-md">
-  <footer>
-    <div class="container-fluid">
-      <div class="row ">
-
-        <div class="col footer-content row align-items-center p-2">
-          <h3 class="logo-title_social-icons text-center">
-        <a href="#"><img src="logo/Logo-content.svg" class="logo" alt="logo"></a>
-       <div class="social-icons text-center">
-       <a href="#"> <i class="bi-md bi-facebook mx-1"></i></a>
-       <a href="#"> <i class="bi-md bi-github mx-1"></i></a>
-       <a href="#"> <i class="bi-md bi-behance mx-1"></i></a>
-       <a href="#"> <i class="bi-md bi-globe mx-1"></i></a>
-       <a href="#"> <i class="bi-md bi-envelope-fill mx-1"></i></a>
-       <a href="#"> <i class="fa-md fa-brands fa-artstation mx-1"></i></a>
-       <a href="#"> <i class="bi-md bi-youtube mx-1"></i></a>
-      </div>
-        </h3>
-   
-      </div>
-      <div class="col footer-content row align-items-center p-2">
-        <p class="info_contact">
-          <h6 class="info-title">聲明</h6>
-          <p class="info-content">
-            本作品為「我的 學習歷程 網站」，
-            在前端設計前，整體網站顏色、字型、字體大小、配置安排、規劃，
-            並非正式網站 
-            因此內容上會較簡易，
-            主要是呈現整體網站風格、顏色、字型、字體大小、版面配置。
-          </p>
-          <div class="contact-info">
-            <h6 class="contact-info-title">
-              Contact Info
-            </h6>
-           <a href="mailto:mimischooler@gmail.com" class="contact-info-email">mimischooler@gmail.com</a>
-          </div>
-        </p>
-   
-      </div>
-      <div class="col footer-content row align-items-center p-2">
-        <div class="about">
-          <h4 class="about-title" >About Me</h4>
-         <p class="about-content">查找章節思維機票身材保險迅速病人歡迎您證券選手不斷寂寞，付出會員而在更為完全賺錢學者精美衛生，連載。</p>
-        </div>
-    </div>
-     <div class="footer-line text-center">
-      </div>
-      <div class="footer-bottom text-center copyright-content p-md-2 p-lg-2 p-xl-2">
-      &#x00A9; 2023 Michelle Chang  版權所有 All rights reserved. Privacy Policy 
-      </div>
-      </div>
-    </div>
-  </footer>
-  </div>
-  
-  <div class="main-footer-sm">
     <footer>
       <div class="container-fluid">
         <div class="row ">
-          <div class="footer-content align-items-center p-2">
+  
+          <div class="col footer-content row align-items-center p-2">
             <h3 class="logo-title_social-icons text-center">
-       <a href="#"><img src="logo/Logo-content.svg" class="logo-sm" alt="logo"></a>
+          <a href="#"><img src="logo/Logo-content.svg" class="logo" alt="logo"></a>
          <div class="social-icons text-center">
-        <a href="#" class="icon">  <i class="bi bi-sm bi-facebook mx-1"></i></a>
-        <a href="#" class="icon">  <i class="bi bi-sm bi-github mx-1"></i></a>
-        <a href="#" class="icon">  <i class="bi bi-sm bi-behance mx-1"></i></a>
-        <a href="#" class="icon">  <i class="bi bi-sm bi-globe mx-1"></i></a>
-        <a href="#" class="icon">  <i class="bi bi-sm bi-envelope-fill mx-1"></i></a>
-        <a href="#" class="icon">  <i class="fa-s fa-brands fa-artstation fa-lg mx-1"></i></a>
-        <a href="#" class="icon">  <i class="bi bi-sm bi-youtube mx-1"></i></a>
+         <a href="#"> <i class="bi-md bi-facebook mx-1"></i></a>
+         <a href="#"> <i class="bi-md bi-github mx-1"></i></a>
+         <a href="#"> <i class="bi-md bi-behance mx-1"></i></a>
+         <a href="#"> <i class="bi-md bi-globe mx-1"></i></a>
+         <a href="#"> <i class="bi-md bi-envelope-fill mx-1"></i></a>
+         <a href="#"> <i class="fa-md fa-brands fa-artstation fa-sm mx-1"></i></a>
+         <a href="#"> <i class="bi-md bi-youtube mx-1"></i></a>
         </div>
+          </h3>
+     
+        </div>
+        <div class="col footer-content row align-items-center p-2">
+          <p class="info_contact">
+            <h6 class="info-title">聲明</h6>
+            <p class="info-content">
+              本作品為「我的 學習歷程 網站」，
+              在前端設計前，整體網站顏色、字型、字體大小、配置安排、規劃，
+              並非正式網站 
+              因此內容上會較簡易，
+              主要是呈現整體網站風格、顏色、字型、字體大小、版面配置。
+            </p>
+            <div class="contact-info">
+              <h6 class="contact-info-title">
+                Contact Info
+              </h6>
+             <a href="mailto:mimischooler@gmail.com" class="contact-info-email">mimischooler@gmail.com</a>
+            </div>
+          </p>
+     
+        </div>
+        <div class="col footer-content row align-items-center p-2">
+          <div class="about">
+            <h4 class="about-title" >About Me</h4>
+           <p class="about-content">查找章節思維機票身材保險迅速病人歡迎您證券選手不斷寂寞，付出會員而在更為完全賺錢學者精美衛生，連載。</p>
+          </div>
       </div>
-      <div class="footer-line text-center">
-      </div>
-      <div class="footer-bottom text-center copyright-content-sm p-2">
-      &#x00A9; 2023 Michelle Chang 版權所有 All rights reserved. Privacy Policy 
-      </div>
+       <div class="footer-line text-center">
+        </div>
+        <div class="footer-bottom text-center copyright-content p-md-2 p-lg-2 p-xl-2">
+        &#x00A9; 2023 Michelle Chang  版權所有 All rights reserved. Privacy Policy 
+        </div>
+        </div>
       </div>
     </footer>
     </div>
-  
+    
+    <div class="main-footer-sm">
+      <footer>
+        <div class="container-fluid">
+          <div class="row ">
+            <div class="footer-content align-items-center p-2">
+              <h3 class="logo-title_social-icons text-center">
+         <a href="#"><img src="logo/Logo-content.svg" class="logo-sm" alt="logo"></a>
+           <div class="social-icons text-center">
+          <a href="#" class="icon">  <i class="bi bi-sm bi-facebook mx-1"></i></a>
+          <a href="#" class="icon">  <i class="bi bi-sm bi-github mx-1"></i></a>
+          <a href="#" class="icon">  <i class="bi bi-sm bi-behance mx-1"></i></a>
+          <a href="#" class="icon">  <i class="bi bi-sm bi-globe mx-1"></i></a>
+          <a href="#" class="icon">  <i class="bi bi-sm bi-envelope-fill mx-1"></i></a>
+          <a href="#" class="icon">  <i class="fa-s fa-brands fa-artstation fa-sm mx-1"></i></a>
+          <a href="#" class="icon">  <i class="bi bi-sm bi-youtube mx-1"></i></a>
+          </div>
+        </div>
+        <div class="footer-line text-center">
+        </div>
+        <div class="footer-bottom text-center copyright-content-sm p-2">
+        &#x00A9; 2023 Michelle Chang 版權所有 All rights reserved. Privacy Policy 
+        </div>
+        </div>
+      </footer>
+      </div>
+    
 
-        <!-- JQuery Library  -->
+
+       <!-- JQuery Library  -->
          <!-- sidememu -->
-        <script src="js/jquery.min.js"></script>
-        <script>
-        $(document).ready(function() {
-          $(".111").click(function() {
-            $(".111-content").slideToggle(300);
-          })
-        })
-
-        $(document).ready(function() {
-          $(".112").click(function() {
-            $(".112-content").slideToggle(300);
-          })
-        })
-        $(document).ready(function() {
-          $(".113").click(function() {
-            $(".113-content").slideToggle(300);
-          })
-        })
-        $(document).ready(function() {
-          $(".blog").click(function() {
-            $(".blog-content").slideToggle(300);
-          })
-        })
-        </script>
-        <!-- topmenu -->
-        <script>
-          $(document).ready(function() {
-          $(".dropdown-toggle").click(function() {
-            $(".dropdown-menu").slideToggle(300);
-          })
-        })
-        $(document).ready(function() {
-          $(".content").click(function() {
-            $(".dropdown-menu").slideUp(300);
-          })
-        })
-        </script>
-          <script src="js/fontawsome.js" crossorigin="anonymous"></script>
-          <script src="js/bootstrap.bundle.min.js"></script>
-          <script src="js/bootstrap.bundle.min.js"></script>
-          <script src="js/popper.min.js"></script>
+         <script src="js/jquery.min.js"></script>
+         <script>
+         $(document).ready(function() {
+           $(".111").click(function() {
+             $(".111-content").slideToggle(300);
+           })
+         })
+ 
+         $(document).ready(function() {
+           $(".112").click(function() {
+             $(".112-content").slideToggle(300);
+           })
+         })
+         $(document).ready(function() {
+           $(".113").click(function() {
+             $(".113-content").slideToggle(300);
+           })
+         })
+         $(document).ready(function() {
+           $(".blog").click(function() {
+             $(".blog-content").slideToggle(300);
+           })
+         })
+         </script>
+         <!-- topmenu -->
+         <script>
+           $(document).ready(function() {
+           $(".111").click(function() {
+             $(".111-content-md").slideToggle(300);
+           })
+         })
+         $(document).ready(function() {
+           $(".content").click(function() {
+             $(".111-content-md").slideUp(300);
+           })
+         })
+         </script>
+           <script src="js/fontawsome.js" crossorigin="anonymous"></script>
+           <script src="js/bootstrap.bundle.min.js"></script>
+           <script src="js/bootstrap.bundle.min.js"></script>
+           <script src="js/popper.min.js"></script>
+</body>
 </html>

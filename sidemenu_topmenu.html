@@ -10,16 +10,17 @@
 
     <link rel="stylesheet" href="css/css reset.css">
     <link rel="stylesheet" href="bootstrap-icons-1.10.3/bootstrap-icons.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="css/sidemenu.css">
     <link rel="stylesheet" href="css/topmenu.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <style>
           @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
-
-        p{
+          @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+        body{
         font-family: 'Noto Sans TC', sans-serif;
+        font-family: 'Raleway', sans-serif;
         }
 
         @media screen and (min-width: 768px) {
@@ -54,9 +55,9 @@
               <li class="nav-li"><a href="#0" class="nav-text" >Home</a></li>
               <li class="nav-li"><a href="#0" class="nav-text" >Services</a></li>
               <li class="nav-li"><a href="#0" class="nav-text" >Blog</a></li>
-            <button class="dropdown-btn-1">Dropdown<i class="bi bi-caret-down-fill"></i>
+            <button class="dropdown-btn-years">Dropdown<i class="bi bi-caret-down-fill"></i>
         </button>
-        <div class="dropdown-container-1">
+        <div class="dropdown-container-years">
             <ul>
                 <li class="nav-li"><a href="#0" class="nav-text" >Home</a></li>
                 <li class="nav-li"><a href="#0" class="nav-text" >Services</a></li>
@@ -185,7 +186,7 @@
   <p>大陸好友都會動畫秘密戰略，未來淡淡醫院和我根據，聊天危機有關強調廣播紛紛容易一把交給，一點前面，練習轉貼自我賓館回來抱著，推出減少各地我很見面，難道女人沉默遠遠多次麻煩每頁特徵本公司共享權威，多年連結百萬外資，體系糖尿病觀念學院回覆權利本文教師，國家鑒定。</p>
 
 </div>
-<div class="main-footer-md" style="@import url:(css/foote);">
+<div class="main-footer-md">
 <footer>
   <div class="container-fluid">
     <div class="row ">
@@ -202,7 +203,7 @@
      <a href="#"> <i class="bi-md bi-behance mx-1"></i></a>
      <a href="#"> <i class="bi-md bi-globe mx-1"></i></a>
      <a href="#"> <i class="bi-md bi-envelope-fill mx-1"></i></a>
-     <a href="#"> <i class="fa-md fa-brands fa-artstation mx-1"></i></a>
+     <a href="#"> <i class="fa-brands fa-artstation fa-2xs mx-1"></i></a>
      <a href="#"> <i class="bi-md bi-youtube mx-1"></i></a>
     </div>
       </h3>
@@ -275,8 +276,8 @@
         <script src="js/jquery.min.js"></script>
         <script>
         $(document).ready(function() {
-          $(".dropdown-btn-1").click(function() {
-            $(".dropdown-container-1").slideToggle(300);
+          $(".dropdown-btn-years").click(function() {
+            $(".dropdown-container-years").slideToggle(300);
           })
         })
         </script>
@@ -289,7 +290,7 @@
         })
         $(document).ready(function() {
           $(".content").click(function() {
-            $(".dropdown-menu").slideToggle(300);
+            $(".dropdown-menu").slideUp(300);
           })
         })
         </script>

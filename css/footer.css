@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url(https://kit.fontawesome.com/f56de4afa1.css);
 /* @import url(bootstrap.css); */
 body{
 font-family: 'Noto Sans TC', sans-serif;
@@ -18,26 +19,26 @@ height: 60px;
 .logo-sm{
 height: 50px;
 }
-.fa-md {
-  font-size: 25px;
-  color: #231815;
-  transition: font-size .1s ease-in;
-}
-.fa-md:hover{
-  color:#f69586;
-  font-size: 30px;
-  }
-.fa-sm{
-  font-size: 1px;
+.fa-sm {
+  font-size: 20px;
   color: #231815;
   transition: font-size .1s ease-in;
 }
 .fa-sm:hover{
   color:#f69586;
+  font-size: 30px;
+  }
+.fa-s{
+  font-size: 1px;
+  color: #231815;
+  transition: font-size .1s ease-in;
+}
+.fa-s:hover{
+  color:#f69586;
   font-size: 25px;
   }
 .bi-md{
-font-size: 25px;
+font-size: 20px;
 color: #231815;
 transition: font-size .1s ease-in;
 }
@@ -46,13 +47,13 @@ color:#f69586;
 font-size: 30px;
 }
 .bi-sm{
-font-size: 18px;
+font-size: 25px;
 color: #231815;
 transition: font-size .1s ease-in;
 }
 .bi-sm:hover{
 color:#f69586;
-font-size: 25px;
+font-size: 30px;
 }
 .info-title{
 font-size: 10px;
@@ -126,6 +127,9 @@ color: #231815;
 .bi{
   font-size: 25px;
 }
+.fa-md{
+  font-size: 25px;
+}
 .logo{
 height: 70px;
 }
@@ -168,4 +172,5 @@ font-size: 15px;
 @media screen and  (min-width: 768px){
 .main-footer-sm{
   display: none;
+}
 }

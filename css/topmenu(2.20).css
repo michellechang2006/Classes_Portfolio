@@ -1,0 +1,24 @@
+
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,600');
+
+
+
+
+
+   .navbar-brand-text{
+    font-family: 'Lobster Two', cursive;
+   }
+
+   .nav-text-md {
+    font-family: 'Noto Sans TC', sans-serif;
+   }
+
+   .nav-text-md:hover{
+    color: #f69586;
+   }
+   .dropdown-content-md{
+    font-family: 'Noto Sans TC', sans-serif;
+   }
+   .dropdown-content-md:hover{
+    color: #f69586;
+   }
