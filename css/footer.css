@@ -6,6 +6,9 @@
 body{
 font-family: 'Noto Sans TC', sans-serif;
 }
+.main-footer-md{
+
+}
 .footer-content{
 background-color:#FFD7C0;
 }
@@ -126,6 +129,7 @@ color: #231815;
 @media screen and (min-width: 1200px)  {
 .bi{
   font-size: 25px;
+  
 }
 .fa-md{
   font-size: 25px;

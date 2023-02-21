@@ -4,6 +4,7 @@
 * {
   outline: none;
 }
+
 .logo-sm-topmenu{
   height: 35px;
   padding: 0 15px;
@@ -44,6 +45,7 @@ strong {
   font-weight: 600;
   letter-spacing: .03em;
   color: #231815;;
+  z
 }
 /*header 為上方橫向的部份*/
 header {

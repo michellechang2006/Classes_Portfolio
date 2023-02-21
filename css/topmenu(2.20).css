@@ -2,9 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,600');
 
 
-
-
-
    .navbar-brand-text{
     font-family: 'Lobster Two', cursive;
    }
@@ -22,3 +19,7 @@
    .dropdown-content-md:hover{
     color: #f69586;
    }
+   @keyframes topmenu {
+      0% {opacity: 0%;}
+      100% {opacity: 100%;}
+    }
