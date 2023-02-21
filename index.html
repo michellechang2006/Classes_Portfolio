@@ -43,13 +43,14 @@
             left: 0;
           
         }
+      }
         @media screen and (max-width: 768px) {
         div.topmenu {
         display: none;
         }
         }
 
-      }
+      
 </style>
      
 </head>
@@ -72,15 +73,15 @@
           </button>
           <div class="dropdown-container-years 111-content">
               <ul class="dropdown-ul">
-                  <li class="nav-li"><a href="#0" class="nav-dropdown-text" > <i class="bi bi-book-fill"></i> 課程成果</a></li>
-                  <li class="nav-li"><a href="#0" class="nav-dropdown-text" > <i class="bi bi-clipboard-fill"></i> 留言版</a></li>
-                  <li class="nav-li"><a href="#0" class="nav-dropdown-text" > <i class="bi bi-emoji-smile-fill"></i>心得&回顧</a></li>      
+                  <li class="nav-li"><a href="#0" class="nav-dropdown-text" > <i class="bi bi-book"></i> 課程成果</a></li>
+                  <li class="nav-li"><a href="#0" class="nav-dropdown-text" > <i class="bi bi-clipboard"></i> 留言版</a></li>
+                  <li class="nav-li"><a href="#0" class="nav-dropdown-text" > <i class="bi bi-emoji-smile"></i>心得&回顧</a></li>      
           </div>
           <button class="dropdown-btn-years 112"> <i class="bi bi-mortarboard-fill"></i> 112學年度<i class="bi bi-caret-down-fill"></i>
           </button>
           <div class="dropdown-container-years 112-content">
               <ul class="dropdown-ul">
-                  <li class="nav-li"><a href="#0" class="nav-dropdown-text" > <i class="bi bi-heart-fill"></i>敬請期待</a></li>
+                  <li class="nav-li"><a href="#0" class="nav-dropdown-text" > <i class="bi bi-heart"></i>敬請期待</a></li>
               
               </ul>   
           </div>
@@ -88,14 +89,21 @@
           </button>
           <div class="dropdown-container-years 113-content">
               <ul class="dropdown-ul">
-                  <li class="nav-li"><a href="#0" class="nav-dropdown-text" > <i class="bi bi-heart-fill"></i>敬請期待</a></li>
+                  <li class="nav-li"><a href="#0" class="nav-dropdown-text" > <i class="bi bi-heart"></i>敬請期待</a></li>
               </ul>   
           </div>
           <button class="dropdown-btn-years blog"> <i class="bi bi-pencil-fill"></i> Blog<i class="bi bi-caret-down-fill"></i>
           </button>
           <div class="dropdown-container-years blog-content">
               <ul class="dropdown-ul">
-                  <li class="nav-li"><a href="#0" class="nav-dropdown-text" > <i class="bi bi-heart-fill"></i>敬請期待</a></li>
+                  <li class="nav-li"><a href="#0" class="nav-dropdown-text" > <i class="bi bi-heart"></i>敬請期待</a></li>
+              </ul>   
+          </div>
+          <button class="dropdown-btn-years projects"> <i class="bi bi-kanban-fill"></i> Projects<i class="bi bi-caret-down-fill"></i>
+          </button>
+          <div class="dropdown-container-years projects-content">
+              <ul class="dropdown-ul">
+                  <li class="nav-li"><a href="#0" class="nav-dropdown-text projects-text" > <img src="logo/math-Logo (circle).png" class="math-logo-icon" alt=""> 圖像式 學數學</a></li>
               </ul>   
           </div>
           <li class="nav-li">
@@ -331,6 +339,11 @@
          $(document).ready(function() {
            $(".blog").click(function() {
              $(".blog-content").slideToggle(300);
+           })
+         })
+         $(document).ready(function() {
+           $(".projects").click(function() {
+             $(".projects-content").slideToggle(300);
            })
          })
          </script>

@@ -76,7 +76,7 @@ header {
   visibility: hidden;
   opacity: 0;
   transition: .5s;
-  background:rgba(0,0,0,0.56);
+  background:rgba(35,24,21,0.3);
 }
 #nav-container:focus-within .bg {
   visibility: visible;
@@ -119,7 +119,7 @@ header {
 }
 /*下拉式選單按鈕設定*/
  .dropdown-btn-years {
-  padding: 6px 0px 6px 6px;
+  padding: 10px;
   text-decoration: none;
   font-size: 20px;
   color: #231815;
@@ -179,11 +179,11 @@ font-size: 18px;
   height: 100%;
   display: flex;
   flex-direction: column;
-  margin: 15px ;
+  margin: 10px ;
 }
 
 #nav-content li a {
-  padding: 10px 5px;
+  padding: 10px 10px;
   display: block;
   text-transform: uppercase;
   transition: color .1s;
@@ -243,3 +243,10 @@ html, body {
   padding: 0px;
 }
 
+.projects-text{
+  font-size: 18px;
+}
+.math-logo-icon{
+  height: 22px;
+ 
+}
