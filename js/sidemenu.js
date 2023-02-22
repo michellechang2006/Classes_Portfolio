@@ -1,0 +1,51 @@
+
+         $(document).ready(function() {
+           $(".111").click(function() {
+             $(".111-content").slideToggle(300);
+           })
+         })
+         $(document).ready(function() {
+           $(".111").click(function() {
+             $(".112-content").slideUp(300);
+             $(".113-content").slideUp(300);
+             $(".blogs-content").slideUp(300);
+             $(".projects-content").slideUp(300);
+           })
+         })
+ 
+         $(document).ready(function() {
+           $(".112").click(function() {
+             $(".112-content").slideToggle(300);
+             $(".111-content").slideUp(300);
+             $(".113-content").slideUp(300);
+             $(".blogs-content").slideUp(300);
+             $(".projects-content").slideUp(300);
+           })
+         })
+         $(document).ready(function() {
+           $(".113").click(function() {
+             $(".113-content").slideToggle(300);
+             $(".112-content").slideUp(300);
+             $(".111-content").slideUp(300);
+             $(".blogs-content").slideUp(300);
+             $(".projects-content").slideUp(300);
+           })
+         })
+         $(document).ready(function() {
+           $(".blog").click(function() {
+             $(".blog-content").slideToggle(300);
+             $(".112-content").slideUp(300);
+             $(".113-content").slideUp(300);
+             $(".111-content").slideUp(300);
+             $(".projects-content").slideUp(300);
+           })
+         })
+         $(document).ready(function() {
+           $(".projects").click(function() {
+             $(".projects-content").slideToggle(300);
+             $(".112-content").slideUp(300);
+             $(".113-content").slideUp(300);
+             $(".blogs-content").slideUp(300);
+             $(".111-content").slideUp(300);
+           })
+         })

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/sidemenu.css">
     <link rel="stylesheet" href="css/topmenu(2.20).css">
     <link rel="stylesheet" href="css/home_hero.css">
+    <link rel="stylesheet" href="css/home_hero_lg.css">
     <link rel="stylesheet" href="css/footer.css">
 
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -53,6 +54,9 @@
         }
         .fixedbug{
           height: 55px;
+        }
+        .home-hero-lg{
+          display: none;
         }
       }
         @media screen and (max-width: 992px) {
@@ -204,7 +208,7 @@
     <main>
       <!-- topmenu bug -->
       <div class="fixedbug"></div>
-        <!-- Hero-md -->
+        <!-- Hero-xlg -->
 <div class="home-hero">  
     <div class="container-fluid p-0 container-home-hero">
     <img src="pics/web_cover_bg.webp" class="home-hero-cover" alt="">
@@ -218,11 +222,34 @@
         </h3>
         <h6 class="home-hero-text-slogan mt-xxl-3" mt-xl-3>活到老，學到老。</h6>
         <h6 class="home-hero-text-slogan mt-xxl-3 mt-xl-1">自學，是一趟充滿未知、驚喜的旅程。</h6>
-        <button class="home-hero-button-go mt-xxl-5 mt-xl-1"><i class="home-hero-button-go-i bi-caret-down-fill mx-0"></i></button>
+        <a class="home-hero-button-go mt-xxl-5 mt-xl-1"><i class="home-hero-button-go-i bi-caret-down-fill mx-0"></i></a>
       </div>
     </div>
   </div>
   </div>
+    <!-- Hero-lg -->
+    <div class="home-hero-lg">
+      <div class="contianer-fluid p-0  container-home-hero-lg">
+        <img src="pics/web_cover_bg_mobile.webp" class="home-hero-cover" alt="">
+        <div class="contianer-fluid home-hero-content-lg p-0  mx-3 row align-items-start">
+         <div class="home-hero-text-lg">
+          <h1 class="home-hero-text-title-en-lg mt-5" >
+            M-Leaning
+          </h1>
+          <h3 class="home-hero-text-title-cn-lg mt-3 ">
+              我的 學習歷程
+          </h3>
+          <h6 class="home-hero-text-slogan-lg mt-5 " mt-xl-3>活到老，學到老。</h6>
+          <h6 class="home-hero-text-slogan-lg mt-3 ">自學，是一趟充滿未知、驚喜的旅程。</h6>
+          <p class="home-hero-text-p-lg mt-5 col-6">歡迎造訪本網站，
+            本網站包含了我高中三年自學課程的成果及過程、
+            其他學習記錄...
+            </p>
+          <a class="home-hero-button-go mt-5 row text-start "><i class="home-hero-button-go-i-lg bi-caret-down-fill mx-auto"></i></a>
+         </div>
+        </div>
+      </div>
+    </div>
 <div class="fake m-5"><p>多年小組總結但在忘記活動停止本科需求，身份承擔最好，中間好多技術祝福不喜歡名稱出來留在主板給你逐步警察把你，整理我們女兒降低，最為對她要求破解所謂紛紛股票鈴聲下載快捷基層綠色，整理上述包裝某些確保，格式點此公開一條認證相關圖片危機一笑各地記者妹妹，上去性。</p>
     <p>多年小組總結但在忘記活動停止本科需求，身份承擔最好，中間好多技術祝福不喜歡名稱出來留在主板給你逐步警察把你，整理我們女兒降低，最為對她要求破解所謂紛紛股票鈴聲下載快捷基層綠色，整理上述包裝某些確保，格式點此公開一條認證相關圖片危機一笑各地記者妹妹，上去性。</p>
     <p>多年小組總結但在忘記活動停止本科需求，身份承擔最好，中間好多技術祝福不喜歡名稱出來留在主板給你逐步警察把你，整理我們女兒降低，最為對她要求破解所謂紛紛股票鈴聲下載快捷基層綠色，整理上述包裝某些確保，格式點此公開一條認證相關圖片危機一笑各地記者妹妹，上去性。</p>
@@ -319,119 +346,12 @@
 
 
        <!-- JQuery Library  -->
-         <!-- sidememu -->
-         <script src="js/jquery.min.js"></script>
-         <script>
-         $(document).ready(function() {
-           $(".111").click(function() {
-             $(".111-content").slideToggle(300);
-           })
-         })
-         $(document).ready(function() {
-           $(".111").click(function() {
-             $(".112-content").slideUp(300);
-             $(".113-content").slideUp(300);
-           })
-         })
- 
-         $(document).ready(function() {
-           $(".112").click(function() {
-             $(".112-content").slideToggle(300);
-           })
-         })
-         $(document).ready(function() {
-           $(".113").click(function() {
-             $(".113-content").slideToggle(300);
-           })
-         })
-         $(document).ready(function() {
-           $(".blog").click(function() {
-             $(".blog-content").slideToggle(300);
-           })
-         })
-         $(document).ready(function() {
-           $(".projects").click(function() {
-             $(".projects-content").slideToggle(300);
-           })
-         })
-         </script>
-         <!-- topmenu -->
-         <script>
-           $(document).ready(function() {
-           $(".111").click(function() {
-             $(".111-content-md").slideToggle(300);
-             $(".112-content-md").slideUp(300);
-             $(".113-content-md").slideUp(300);
-             $(".projects-content-md").slideUp(300);
-             $(".blogs-content-md").slideUp(300);
-           })
-         })
-         $(document).ready(function() {
-           $("main").click(function() {
-             $(".111-content-md").slideUp(300);
-           })
-         })
-
-         $(document).ready(function() {
-           $(".112").click(function() {
-             $(".112-content-md").slideToggle(300);
-             $(".111-content-md").slideUp(300);
-             $(".113-content-md").slideUp(300);
-             $(".projects-content-md").slideUp(300);
-             $(".blogs-content-md").slideUp(300);
-           })
-         })
-         $(document).ready(function() {
-           $("main").click(function() {
-             $(".112-content-md").slideUp(300);
-           })
-         })
-
-         $(document).ready(function() {
-           $(".113").click(function() {
-             $(".113-content-md").slideToggle(300);
-             $(".111-content-md").slideUp(300);
-             $(".112-content-md").slideUp(300);
-             $(".projects-content-md").slideUp(300);
-             $(".blogs-content-md").slideUp(300);
-           })
-         })
-         $(document).ready(function() {
-           $("main").click(function() {
-             $(".113-content-md").slideUp(300);
-           })
-         })
-
-         $(document).ready(function() {
-           $(".blogs").click(function() {
-             $(".blogs-content-md").slideToggle(300);
-             $(".111-content-md").slideUp(300);
-             $(".112-content-md").slideUp(300);
-             $(".113-content-md").slideUp(300);
-             $(".projects-content-md").slideUp(300);
-           })
-         })
-         $(document).ready(function() {
-           $("main").click(function() {
-             $(".blogs-content-md").slideUp(300);
-           })
-         })
-
-         $(document).ready(function() {
-           $(".projects").click(function() {
-             $(".projects-content-md").slideToggle(300);
-             $(".111-content-md").slideUp(300);
-             $(".112-content-md").slideUp(300);
-             $(".113-content-md").slideUp(300);
-             $(".blogs-content-md").slideUp(300);
-           })
-         })
-         $(document).ready(function() {
-           $("main").click(function() {
-             $(".projects-content-md").slideUp(300);
-           })
-         })
-         </script>
+             <!-- sidememu -->
+             <script src="js/jquery.min.js"></script>
+             <script src="js/sidemenu.js"></script>
+                 <!-- topmenu -->
+             <script src="js/topmenu.js"></script>
+             
            <script src="js/fontawsome.js" crossorigin="anonymous"></script>
            <script src="js/bootstrap.bundle.min.js"></script>
            <script src="js/bootstrap.bundle.min.js"></script>

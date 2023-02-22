@@ -45,7 +45,7 @@ transition: opacity 1s;
     font-family: 'Noto Serif TC', serif;
     color:#F6B388;
     animation-name: title-text-cn;
-    animation-duration: 2s;
+    animation-duration: 3s;
 }
 .home-hero-button-go{
     background-color: transparent;
@@ -74,7 +74,7 @@ transition: opacity 1s;
     font-size: 25px;
     color:#f69586;
     animation-name: title-text-cn;
-    animation-duration: 2s;
+    animation-duration: 3s;
 }
 .home-hero{
     animation-name: home-hero;
@@ -117,7 +117,7 @@ transition: opacity 1s;
 
 
   }
-  /* Xll */
+  /* Xl */
   @media screen and (max-width:1200px) {
     .home-hero-text-title-en{
         font-size: 70px;
