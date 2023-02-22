@@ -117,7 +117,7 @@ transition: opacity 1s;
 
 
   }
-  /* Xl */
+  /* Xll */
   @media screen and (max-width:1200px) {
     .home-hero-text-title-en{
         font-size: 70px;
