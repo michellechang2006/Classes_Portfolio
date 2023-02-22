@@ -30,7 +30,7 @@
     font-size: 100px;
     font-family: 'Lobster Two', cursive;
     animation-name: title-text;
-
+    animation-duration: 1s;
  
 }
 
@@ -58,7 +58,7 @@
     animation-duration: 3s;
 }
 /* sm */
-@media screen and (max-width:600px) { 
+@media screen and (max-width:576px) { 
     .home-hero-text-title-en-lg{
         font-size: 80px;
         font-family: 'Lobster Two', cursive;
