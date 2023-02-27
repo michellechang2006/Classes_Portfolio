@@ -255,18 +255,3 @@ html, body {
  
 }
 
-
-.logo-sidemenu-md-hover{
-  position: absolute;
-  left: 377.3px;
-  opacity: 0;
-  z-index: 99;
-
-}
-.logo-sidemenu-md{
-  position: relative;
- 
-}
-.logo-sidemenu-md-hover:hover{
-  opacity: 1;
-}

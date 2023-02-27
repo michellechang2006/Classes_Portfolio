@@ -17,6 +17,7 @@ background-color: #FFD7C0;
 }
 .logo{
 height: 60px;
+opacity: 1;
 }
 
 .logo-sm{
@@ -58,24 +59,35 @@ transition: font-size .1s ease-in;
 color:#f69586;
 font-size: 30px;
 }
+
 .info-title{
 font-size: 10px;
 text-decoration: underline;
 color: #231815;
 transition:  .1s ease-in;
+display: inline;
 }
 .info-title:hover{
   color:#f69586;
+
+
 }
 .info-content{
 font-size: 8px;
 color: #231815;
 transition:  .1s ease-in;
+display: inline;
+}
+.info-content{
+  
 }
 .contact-info-title{
 font-size: 15px;
 font-family: 'EB Garamond', serif;
 color: #231815;
+display:inline;
+
+
 }
 .contact-info-title:hover{
   color:#f69586;
@@ -101,15 +113,19 @@ font-size: 15px;
 font-family: 'EB Garamond', serif;
 color: #231815;
 transition:  .1s ease-in;
+display: inline;
 }
 .about-title:hover{
   color:#f69586; 
 
 }
 .about-content{
-font-size: 10px;
+font-size: 8px;
 color: #231815;
 }
+/* .about-content-title{
+font-weight: bolder;
+} */
 .copyright-content{
 font-size: 8px;
 width: 100vw;
@@ -159,7 +175,7 @@ font-size: 10px;
 font-size: 20px;
 }
 .about-content{
-font-size: 15px;
+font-size: 10px;
 }
 }
 
@@ -177,4 +193,21 @@ font-size: 15px;
 .main-footer-sm{
   display: none;
 }
+}
+
+
+.logo-top{
+  position: absolute;
+ left: 0;
+ opacity: 0;
+}
+.logo-group{
+  position: relative;
+
+}
+.logo-group:hover .logo-top{
+  opacity: 1;
+}
+.logo-group:hover .logo {
+  opacity: 0;
 }

@@ -1,0 +1,46 @@
+.aboutme-cover-xlg{
+    height: 500px;
+    border-radius: 50px;
+    box-shadow: 8px 5px  20px rgba(35,24,21,.15);
+  }
+
+.aboutme-xlg {
+  background: linear-gradient(-45deg,#E7725C, #F6B388,  #F6B388, #E7725C);
+  border-radius: 50px;
+  animation-name:gradient;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  background-size: 400% 400%;
+}
+.aboutme-bg-xlg {
+  background-color: white;
+  border-radius: 50px;
+
+}
+
+@keyframes gradient {
+0% {
+    background-position: 0% 50%;
+}
+50% {
+    background-position: 100% 50%;
+}
+100% {
+    background-position: 0% 50%;
+}
+}
+
+.aboutme-subtitle-xlg{
+font-size: 18px;
+line-height: 40px;
+}
+.aboutme-title-en-xlg {
+font-size: 80px;
+font-family: 'Lobster Two', cursive;
+}
+.aboutme-title-cn-xlg {
+font-family: 'Noto Serif TC', serif;
+}
+.aboutme-text-xlg{
+font-size: 15px;
+}
