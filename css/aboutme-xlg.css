@@ -56,7 +56,7 @@ font-size: 15px;
     height: 400px;
   }
   .aboutme-subtitle-xlg{
-    font-size: 18px;
+    font-size: 15.5px;
     line-height: 35px;
     }
     .aboutme-title-en-xlg {
@@ -65,7 +65,7 @@ font-size: 15px;
     }
   
     .aboutme-text-xlg{
-    font-size: 15px;
+    font-size: 13.5px;
     }
 }
 
@@ -91,24 +91,5 @@ font-size: 15px;
     }
 }
 
-@media screen and (max-width:768px) {
-  .aboutme-cover-xlg{
-    border-radius: 30px;
-  }
-  .aboutme-cover-xlg{
-    height: 300px;
-  }
-  .aboutme-subtitle-xlg{
-    font-size: 15px;
-    line-height: 35px;
-    }
-    .aboutme-title-en-xlg {
-    font-size: 50px;
-    font-family: 'Lobster Two', cursive;
-    }
-  
-    .aboutme-text-xlg{
-    font-size: 10px;
-    }
-}
+
 
