@@ -5,7 +5,7 @@
     width: 100%;
 }
 .container-home-hero-lg{
-    width: 100%;
+    width: 100vw;
     position: relative;
 }
 .home-hero-content-lg{
@@ -14,6 +14,9 @@
     right: 0;
     bottom: 0;
     left: 0;
+    width: 100vw;
+}
+.home-hero-cover-lg{
     width: 100%;
 }
 .home-hero-button-go-i-lg {

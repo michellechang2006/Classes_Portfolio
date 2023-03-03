@@ -51,7 +51,7 @@ strong {
 header {
   display: flex;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   height: 50px;
   background:#FFD7C0;
   color: #231815;

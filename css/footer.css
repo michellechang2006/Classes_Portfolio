@@ -76,11 +76,10 @@ display: inline;
 font-size: 8px;
 color: #231815;
 transition:  .1s ease-in;
-display: inline;
+line-height: 20px;
 }
-.info-content{
-  
-}
+
+
 .contact-info-title{
 font-size: 15px;
 font-family: 'EB Garamond', serif;
