@@ -23,26 +23,20 @@ opacity: 1;
 .logo-sm{
 height: 50px;
 }
-.fa-sm {
-  font-size: 20px;
+.fa-my-2xs {
+  font-size: 25px;
   color: #231815;
   transition: font-size .1s ease-in;
 }
-.fa-sm:hover{
+
+
+.fa-my-2xs:hover{
   color:#f69586;
   font-size: 30px;
   }
-.fa-s{
-  font-size: 1px;
-  color: #231815;
-  transition: font-size .1s ease-in;
-}
-.fa-s:hover{
-  color:#f69586;
-  font-size: 25px;
-  }
+
 .bi-md{
-font-size: 20px;
+font-size: 25px;
 color: #231815;
 transition: font-size .1s ease-in;
 }
@@ -51,15 +45,23 @@ color:#f69586;
 font-size: 30px;
 }
 .bi-sm{
-font-size: 25px;
+font-size: 30px;
 color: #231815;
 transition: font-size .1s ease-in;
 }
 .bi-sm:hover{
 color:#f69586;
-font-size: 30px;
+font-size: 35px;
 }
-
+.fa-my-sm{
+font-size: 30px;
+color: #231815;
+transition: font-size .1s ease-in;
+}
+.fa-my-sm:hover{
+  color:#f69586;
+  font-size: 35px;
+  }
 .info-title{
 font-size: 10px;
 text-decoration: underline;
@@ -146,9 +148,9 @@ color: #231815;
   font-size: 25px;
   
 }
-.fa-md{
+/* .fa-md{
   font-size: 25px;
-}
+} */
 .logo{
 height: 70px;
 }
