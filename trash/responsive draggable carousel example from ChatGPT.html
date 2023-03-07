@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 100%;
+  margin-right: 20px;
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #f1f1f1;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="carousel-wrapper">
+        <div class="carousel">
+          <div class="slide">Slide 1 <img src="https://picsum.photos/800/300?random=1" alt=""> </div>
+          <div class="slide">Slide 2 <img src="https://picsum.photos/800/300?random=2" alt=""></div>
+          <div class="slide">Slide 3 <img src="https://picsum.photos/800/300?random=3" alt=""></div>
+          <div class="slide">Slide 4 <img src="https://picsum.photos/800/300?random=4" alt=""></div>
+          <div class="slide">Slide 5 <img src="https://picsum.photos/800/300?random=5" alt=""></div>
+          <div class="slide">Slide 6 <img src="https://picsum.photos/800/300?random=6" alt=""></div>
+        </div>
+        <button class="prev">Prev</button>
+        <button class="next">Next</button>
+      </div>
+      
+      <script>
+   $(document).ready(function(){
+  var carousel = $(".carousel");
+  var slideWidth = $(".slide").outerWidth();
+  var maxSlides = Math.floor(carousel.outerWidth() / slideWidth);
+  var currentSlide = 0;
+  var dragging = false;
+  var dragStart = 0;
+  var dragEnd = 0;
+  
+  function moveSlides() {
+    carousel.css("transform", "translateX(" + (currentSlide * -slideWidth) + "px)");
+  }
+  
+  function updateButtons() {
+    $(".prev").prop("disabled", currentSlide === 0);
+    $(".next").prop("disabled", currentSlide >= $(".slide").length - maxSlides);
+  }
+  
+  function handleDragStart(event) {
+    dragging = true;
+    dragStart = event.pageX;
+    carousel.css("transition", "none");
+  }
+  
+  function handleDrag(event) {
+    if (dragging) {
+      var dragDistance = event.pageX - dragStart;
+      carousel.css("transform", "translateX(" + ((currentSlide * -slideWidth) + dragDistance) + "px)");
+    }
+  }
+  
+  function handleDragEnd(event) {
+    dragging = false;
+    dragEnd = event.pageX;
+    var dragDistance = dragEnd - dragStart;
+    var threshold = slideWidth / 3;
+    if (dragDistance < -threshold && currentSlide < $(".slide").length - maxSlides) {
+      currentSlide++;
+    } else if (dragDistance > threshold && currentSlide > 0) {
+      currentSlide--;
+    }
+    carousel.css("transform", "translateX(" + (currentSlide * -slideWidth) + "px)");
+    carousel.css("transition", "transform 0.3s ease-in-out");
+    updateButtons();
+  }
+  
+  updateButtons();
+  
+  $(".prev").on("click", function(){
+    if (currentSlide > 0) {
+      currentSlide--;
+      moveSlides();
+      updateButtons();
+    }
+  });
+  
+  $(".next").on("click", function(){
+    if   });
+
+carousel.on("mousedown", handleDragStart);
+carousel.on("mousemove", handleDrag);
+carousel.on("mouseup", handleDragEnd);
+carousel.on("mouseleave", handleDragEnd);
+});
+
+ 
+</script>
+<script src="js/jquery.min.js"></script>
+</body>
+</html>

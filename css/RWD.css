@@ -4,6 +4,7 @@
         display:none;
         
         }
+    
        .topmenu{
         width: 100%;
         height: 55px;
@@ -28,20 +29,24 @@
           height: 55px;
         }
 
+        
+      
         /* RWD Home Hero */
         .home-hero-lg{
           display: none;
         }
+
+          /* RWD Home Cards Carousel  */
+        .cards-home-md{
+          display: none;
+        }
       }
+ 
         @media screen and (max-width: 992px) {
         div.topmenu {
         display: none;
         }
-        }
-        @media screen and (max-width: 992px) {
-        div.topmenu {
-        display: none;
-        }
+        
         .home-hero{
           display: none;;
         }
@@ -63,3 +68,27 @@
             display: none;
           }
         }
+        
+        /* Main Footer */
+        @media screen and  (max-width: 768px){
+          .main-footer-md{
+            display: none;
+          }
+          
+        }
+
+          @media screen and  (width: 768px){
+            .main-footer-md{
+              display: block;
+            }
+            .cards-home-md{
+              display: none;
+          }
+          }
+          
+          @media screen and  (min-width: 768px){
+            .main-footer-sm{
+              display: none;
+            }
+        
+          }
