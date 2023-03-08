@@ -32,8 +32,8 @@
            })
          })
          $(document).ready(function() {
-           $(".blog").click(function() {
-             $(".blog-content").slideToggle(300);
+           $(".blogs").click(function() {
+             $(".blogs-content").slideToggle(300);
              $(".112-content").slideUp(300);
              $(".113-content").slideUp(300);
              $(".111-content").slideUp(300);
