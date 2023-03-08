@@ -2,8 +2,11 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />     
+   <meta name="apple-mobile-web-app-capable" content="yes" />    
+   <meta name="format-detection" content="telephone=no" /> 
   <title>cards carousel(only)</title>
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.css">
 </link>
 <link rel="stylesheet" href="css/owl.theme.default.css">
 </link>
@@ -33,6 +36,9 @@ font-size: 40px;
     color:#8e8e8e;
 }
 
+/* .item-md{
+    width:300px;
+} */
 </style>
 </head>
 <body>
@@ -42,9 +48,9 @@ font-size: 40px;
 <script src="js/jquery.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 
-<div class="cards-home-md container-fluid mt-5">
-    <div class="owl-carousel owl-theme ">
-        <div class="item-md mx-1 mb-5 ">
+<div class="cards-home-md container-fluid w-100 mt-5">
+    <div class="owl-carousel owl-theme " style="overflow-x:hidden;">
+        <div class="item-md mx-1 mb-5 " >
             <div class="card bg-primary border-0 p-2 shadow">
                 <div class="card-body ">
                 <img src="https://picsum.photos/400/400/?random=10" class="card-img-top shadow" alt="...">

@@ -40,6 +40,8 @@ line-height: 40px;
 .aboutme-title-en-xlg {
 font-size: 80px;
 font-family: 'Lobster Two', cursive;
+font-weight: normal;
+font-style: italic;
 }
 .aboutme-title-cn-xlg {
 font-family: 'Noto Serif TC', serif;

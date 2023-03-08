@@ -32,6 +32,8 @@ transition: opacity 1s;
 }
 .home-hero-text-title-en{
     font-family: 'Lobster Two', cursive;
+    font-weight: normal;
+    font-style: italic;
     font-size: 150px;
     color:#FFD7C0;
     animation-name: title-text;
@@ -66,8 +68,8 @@ transition: opacity 1s;
     position: absolute;
 
 }
-.home-hero-button-go-i:hover{
-    color:white;
+.home-hero-button-go-i:hover .home-hero-button-go-i{
+    color:#f69586;
 }
 
 .home-hero-text-slogan{
