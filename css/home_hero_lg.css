@@ -31,8 +31,10 @@
     color: #505050;
 }
 .home-hero-text-title-en-lg{
-    font-size: 100px;
+    font-size: 80px;
     font-family: 'Lobster Two', cursive;
+    font-weight: normal;
+    font-style: italic;
     animation-name: title-text;
     animation-duration: 1s;
 
@@ -65,8 +67,10 @@
 /* sm */
 @media screen and (max-width:600px) { 
     .home-hero-text-title-en-lg{
-        font-size: 80px;
+        font-size: 70px;
         font-family: 'Lobster Two', cursive;
+        font-weight: normal;
+        font-style: italic;
     }
     .home-hero-text-title-cn-lg{
         font-size: 40px;

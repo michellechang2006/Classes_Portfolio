@@ -11,8 +11,10 @@
   margin: 20px 0px;
 }
 .logo-text-sm{
-  font-family: 'Lobster Two', cursive;
   font-size: 25px;
+  font-family: 'Lobster Two', cursive;
+  font-weight: normal;
+  font-style: italic;
   color:#231815 ;
   text-decoration: none;
 }

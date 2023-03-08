@@ -36,22 +36,22 @@ height: 50px;
   }
 
 .bi-md{
-font-size: 20px;
+font-size: 25px;
 color: #231815;
 transition: font-size .1s ease-in;
 }
 .bi-md:hover{
 color:#f69586;
-font-size: 25px;
+font-size: 30px;
 }
 .bi-sm{
-font-size: 30px;
+font-size: 25px;
 color: #231815;
 transition: font-size .1s ease-in;
 }
 .bi-sm:hover{
 color:#f69586;
-font-size: 35px;
+font-size: 30px;
 }
 .fa-my-sm{
 font-size: 30px;
@@ -85,6 +85,8 @@ line-height: 20px;
 .contact-info-title{
 font-size: 15px;
 font-family: 'EB Garamond', serif;
+font-weight:400;
+font-style: normal;
 color: #231815;
 display:inline;
 
@@ -97,8 +99,8 @@ display:inline;
 text-decoration: none;
 font-size: 13px;
 font-family: 'Raleway', sans-serif;
+font-weight:00;
 color: #231815;
-font-weight: bold;
 transition:  .1s ease-in;
 }
 .contact-info-email:hover{
@@ -191,6 +193,7 @@ font-size: 10px;
   position: absolute;
  left: 0;
  opacity: 0;
+ height: 70px;
 }
 .logo-group{
   position: relative;

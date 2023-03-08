@@ -4,6 +4,8 @@
 
    .navbar-brand-text{
     font-family: 'Lobster Two', cursive;
+    font-weight: normal;
+    font-style: italic;
    }
 
    .nav-text-md {
