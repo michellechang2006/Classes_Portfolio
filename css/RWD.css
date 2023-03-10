@@ -36,11 +36,7 @@
           display: none;
         }
 
-          /* RWD Home Cards Carousel  */
-        /* .cards-home-md{
-          display: none;
-        }
-      } */
+      }
  
         @media screen and (max-width: 992px) {
         div.topmenu {
@@ -81,15 +77,11 @@
             .main-footer-md{
               display: block;
             }
-            /* .cards-home-md{
-              display: none;
           }
-          }
-           */
           @media screen and  (min-width: 768px){
             .main-footer-sm{
               display: none;
             }
         
           }
-        }
+        
