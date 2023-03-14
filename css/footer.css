@@ -144,8 +144,25 @@ font-family: 'Noto Sans TC', sans-serif;
 color: #231815;
 }
 
+.logo-top{
+  position: absolute;
+   left: 0;
+   opacity: 0;
+  }
+  .logo-group{
+    position: relative;
+  
+  }
+  .logo-group:hover .logo-top{
+    opacity: 1;
+  }
+  .logo-group:hover .logo {
+    opacity: 0;
+  }
+  
 
 @media screen and (min-width: 1200px)  {
+
 .bi{
   font-size: 25px;
   
@@ -153,8 +170,8 @@ color: #231815;
 /* .fa-md{
   font-size: 25px;
 } */
-.logo{
-height: 70px;
+.logo,.logo-top{
+height: 80px;
 }
 .info-title{
 font-size: 15px;
@@ -180,28 +197,15 @@ font-size: 20px;
 .about-content{
 font-size: 10px;
 }
+
+}
+
+@media screen and (max-width: 1200px) {
+  .logo,.logo-top{
+    height: 70px;
+    }
 }
 
 
 
 
-
-
-
-
-.logo-top{
-  position: absolute;
- left: 0;
- opacity: 0;
- height: 70px;
-}
-.logo-group{
-  position: relative;
-
-}
-.logo-group:hover .logo-top{
-  opacity: 1;
-}
-.logo-group:hover .logo {
-  opacity: 0;
-}

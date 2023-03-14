@@ -12,22 +12,22 @@ $('.owl-carousel').owlCarousel({
   autoplayHoverPause:true,
   responsive:{
     576:{
-        items:2,
+        items:1,
         nav:true
     },
     768:{
-        items:3,
+        items:2,
         nav:false
     },
     1200:{
-        items:4,
+        items:3,
         nav:true,
         loop:false
     },
-  //   1400:{
-  //     items:6,
-  //     nav:true,
-  //     loop:false
-  // }
+    1400:{
+      items:4,
+      nav:true,
+      loop:false
+  }
 }
 });

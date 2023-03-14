@@ -1,0 +1,31 @@
+.card,.card-img-top{
+    border-radius: 50px;
+}
+
+
+.card-text {
+    font-size: 1.3rem;
+}
+.cards-links{
+    font-size: 1.5rem;
+}
+.card-title{
+font-size: 40px;
+}
+.text-gray {
+    color:#8e8e8e;
+}
+
+/* .item-md{
+    width:300px;
+} */
+
+.title-text-cards-home{
+    font-size: 80px;
+    font-family: 'Noto Serif TC', serif;
+}
+
+.card-title{
+    font-family: 'Noto Serif TC', serif;
+    font-weight:550;
+}
