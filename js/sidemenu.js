@@ -8,6 +8,7 @@
            $(".111").click(function() {
              $(".112-content").slideUp(300);
              $(".113-content").slideUp(300);
+             $(".library-content").slideUp(300);
              $(".blogs-content").slideUp(300);
              $(".projects-content").slideUp(300);
            })
@@ -18,6 +19,7 @@
              $(".112-content").slideToggle(300);
              $(".111-content").slideUp(300);
              $(".113-content").slideUp(300);
+             $(".library-content").slideUp(300);
              $(".blogs-content").slideUp(300);
              $(".projects-content").slideUp(300);
            })
@@ -27,6 +29,7 @@
              $(".113-content").slideToggle(300);
              $(".112-content").slideUp(300);
              $(".111-content").slideUp(300);
+             $(".library-content").slideUp(300);
              $(".blogs-content").slideUp(300);
              $(".projects-content").slideUp(300);
            })
@@ -37,6 +40,7 @@
              $(".112-content").slideUp(300);
              $(".113-content").slideUp(300);
              $(".111-content").slideUp(300);
+             $(".library-content").slideUp(300);
              $(".projects-content").slideUp(300);
            })
          })
@@ -45,7 +49,19 @@
              $(".projects-content").slideToggle(300);
              $(".112-content").slideUp(300);
              $(".113-content").slideUp(300);
+             $(".library-content").slideUp(300);
              $(".blogs-content").slideUp(300);
              $(".111-content").slideUp(300);
            })
          })
+         $(document).ready(function() {
+          $(".library").click(function() {
+            $(".library-content").slideToggle(300);
+            $(".111-content").slideUp(300);
+            $(".112-content").slideUp(300);
+            $(".113-content").slideUp(300);
+            $(".blogs-content").slideUp(300);
+            $(".projects-content").slideUp(300);
+       
+          })
+        })
