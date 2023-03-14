@@ -189,3 +189,15 @@
   z-index: 1;
   height: 100%;
   width: 100%; }
+
+/* custom */
+  .card-text-costom{
+    font-size: 15.5px;
+   }
+   .cards-links,.card-text{
+    font-family: 'Noto Sans TC', sans-serif;
+   }
+  .cards-links:hover{
+  text-decoration: underline;
+  
+  }
