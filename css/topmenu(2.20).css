@@ -1,9 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,600');
-/* 
-.topmenu{
-  z-index: 2;
-} */
+
    .navbar-brand-text{
     font-family: 'Lobster Two', cursive;
     font-weight: normal;
@@ -31,14 +28,12 @@
       position: absolute;
       left: 12px;
     }
+    /* Logo */
     .top-logo-topmenu-lg{
       position: relative;
       z-index: 99;
-      opacity: 100%;
+      opacity: 1;
     }
     .top-logo-topmenu-lg:hover {
-    opacity: 0%;
-    }
-    .top-logo-topmenu-lg-hover:hover{
-    transform: rotate(15deg);
+    opacity: 0;
     }
