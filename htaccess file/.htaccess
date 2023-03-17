@@ -10,5 +10,6 @@ RewriteRule ^(.*)$ https://%{SERVER_NAME}%{REQUEST_URI} [L,R]
 
 ###Redirect To Https Config End###
 
+# 404 Page
 RewriteEngine On
 ErrorDocument 404 /404_page.html
