@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="M-Learning | | 我的 學習歷程 活到老，學到老。自學，是一趟充滿未知、驚喜的旅程。開始造訪網站，和我一起踏上這趟充滿未知、驚喜的旅程吧！">
+    <meta name="description" content="M-Learning | | 我的 學習歷程 很抱歉，找不到您要的頁面，或是此頁面已不存在、連結失效。">
     <meta name="author" content="Michelle Chang">
     <!-- social media thumbnail -->
-    <meta property="og:image" content="https://mlearning.url.tw/pics/social_media_thumbnail.png">
+    <meta property="og:image" content="https://mlearning.url.tw/pics/404_error_img_social_media.webp">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="627">
     <meta property="og:title" content="M-Learning | | 我的 學習歷程">
-    <meta property="og:description" content="M-Learning | | 我的 學習歷程 活到老，學到老。自學，是一趟充滿未知、驚喜的旅程。開始造訪網站，和我一起踏上這趟充滿未知、驚喜的旅程吧！">
+    <meta property="og:description" content="M-Learning | | 我的 學習歷程 很抱歉，找不到您要的頁面，或是此頁面已不存在、連結失效。">
     <meta property="og:type" content='website'/>
     <meta property="og:url"content='https://mlearning.url.tw'/>
     <meta name=”twitter:title” content=”M-Learning||我的學習歷程”>
@@ -56,13 +56,58 @@
         .text-orange{
         color:#DA7E3C ;
          }
+
         .text-404{
           font-size: 30px;
         }
-        .title-404 {
-          font-size: 80px;
+     
+        @media screen and (max-width:576px) {
+          .img-404-sm{
+            width: 80%;
+          }
+          .img-404-md{
+           display: none;
+          }
+          .text-404-bottom-md{
+            display: none;
+          }
+          .text-404-bottom-sm{
+          font-size: 20px;
+          }
         }
-      
+        
+     
+
+        @media screen and (min-width:576px) {
+          .img-404-sm{
+            display: none;
+          }
+        
+          .img-404-md{
+            width: 100%;
+          }
+          .text-404-bottom-sm{
+            display: none;
+          }
+          .text-404-bottom-md{
+          font-size: 20px;
+          }
+          .title-404{
+            font-size: 50px;
+          }
+        }
+
+        @media screen and (min-width:992px) {
+          .img-404-md{
+            width: 80%;
+          }
+          .text-404-bottom-md{
+          font-size: 25px;
+          }
+          .title-404{
+            font-size: 80px;
+          }
+        }
      </style>
 </head>
 <body>
@@ -227,20 +272,30 @@
       <!-- topmenu bug -->
     <div class="fixedbug"></div>
 
-<div class="404-content container-fluid mt-5">
-  <div class="404-text-content">
-    <h1 class="title-404 text-center">喔喔！找不到您要的頁面！</h1>
-    <div class="404-gohome mt-5">
-    <i class="text-center text-404 text-black-50"> <a class="nav-link active" href="#"><span class="nav-text-md "> <i class="bi-topmenu  bi-house-fill"></i> 回首頁</span></a></i>
-    </div>
-  </div>
+<div class="404-page-contnet">
+  <div class="404-content container-fluid mt-5">
+        <div class="404-text-content">
+          <h1 class="title-404 text-center">喔喔！找不到您要的頁面！</h1>
+          <div class="404-gohome mt-5">
+          <i class="text-center text-404 text-black-50 my-5" > <a class="nav-link active" href="index.html"><span class="nav-text-md "> <i class="bi-topmenu  bi-house-fill"></i> 回首頁</span></a></i>
+          <i class="text-center text-404 text-black-50 my-5" onclick="history.back()" ><a class="nav-link active" href="#"><span class="nav-text-md "><i class="bi-topmenu bi-arrow-left"></i> 回到上一頁</span></a></i>
+          </div>
+        </div>
+      </div>
+      <div class="404-img-content container-fluid my-5 mx-md-1 ">
+        <div class="row align-items-center">
+          <img src="pics/404_error_img.webp" alt="" class="img-404-sm  shadow rounded-5 p-0 m-auto">
+          <img src="pics/404_error_img_rectangle.webp" alt="" class="img-404-md  shadow rounded-5 p-0 m-auto">
+        </div>
+      </div>
+      <div class="404-p container-fluid my-5">
+        <i class="mx-auto my-5">
+          <p class="text-404-bottom-sm mx-5 my-5">很抱歉，找不到您要的頁面，或是此頁面已不存在、連結失效。請點選左上方的菜單按鈕來您要造訪的頁面。</p>
+          <p class="text-404-bottom-md text-center mx-3 my-5">很抱歉，找不到您要的頁面，或是此頁面已不存在、連結失效。請點選上方的選單列來您要造訪的頁面。</p>
+          <i class="text-center text-404 text-black-50 my-5"> <a class="nav-link active" href="mailto:mimischooler@gmail.com"><span class="nav-text-md "> <i class="bi-topmenu bi-envelope-fill"></i> 聯絡我</span></a></i>
+        </i>
+      </div>
 </div>
-<div class="404-img-content container-fluid my-5 ">
-<div class="row align-items-center">
-  <img src="https://picsum.photos/2000/2000/?random=10" alt="" class="img-404 shadow rounded-5 w-50 p-0 m-auto">
-</div>
-</div>
-
   
 <!-- footer -->
 <div class="main-footer-md">
@@ -286,7 +341,7 @@
           </p>
           </div>
       </div>
-       <div class="footer-line text-center">
+       <div class="footer-line text-center container-fluid ">
         </div>
         <div class="footer-bottom text-center copyright-content p-md-2 p-lg-2 p-xl-2">
         &#x00A9; 2023 Michelle Chang  版權所有 All rights reserved. Privacy Policy 
