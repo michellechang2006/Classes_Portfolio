@@ -48,7 +48,7 @@
     font-family: 'Noto Serif TC', serif;
     color: #505050;
     overflow: hidden; /* Ensures the text is not visible */
-    border-right: .15em solid #E7725C; /* Creates the blinking cursor */
+    border-right: .1em solid #E7725C; /* Creates the blinking cursor */
     white-space: nowrap; /* Prevents the text from wrapping */
     margin: 0 auto; /* Centers the text */
     letter-spacing: .15em; /* Adds spacing between letters */
