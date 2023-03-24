@@ -1,0 +1,15 @@
+.breadcrumb-item{
+    font-size: 30px;
+  }
+  .breadcrumb-link{
+    text-decoration: none;
+  }
+  .breadcrumb-link:hover{
+    text-decoration: underline;
+    color:#E7725C;
+  }
+  @media screen and (max-width:567px) {
+    .breadcrumb-item{
+    font-size: 20px;
+  }
+  }
