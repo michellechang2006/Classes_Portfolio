@@ -1,0 +1,48 @@
+
+.class-content-p {
+    font-family: 'Noto Sans TC', sans-serif;
+    line-height: 45px;
+    font-size: 25px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    
+  .class-content-p {
+    font-family: 'Noto Sans TC', sans-serif;
+    line-height: 40px;
+    font-size: 20px;
+  }
+
+  }
+
+
+  .blender_web_md {
+    width: 10px;
+  }
+
+  .img_scr_text {
+    font-size: 15px;
+  }
+  .img-sm{
+    width: 98%;
+  }
+  .img-md{
+    width: 99%;
+  }
+
+  @media screen and (max-width:768px) {
+    .img-md {
+    display: none;
+    }
+    .img-sm {
+    display: block;
+    }
+  }
+  @media screen and (min-width:768px) {
+    .img-sm {
+    display: none;
+    }
+    .img-md {
+    display: block;;
+    }
+  }

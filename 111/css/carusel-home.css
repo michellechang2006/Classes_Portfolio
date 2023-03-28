@@ -1,0 +1,49 @@
+.card,.card-img-top{
+    border-radius: 50px;
+}
+
+
+.card-text {
+    font-size: 1.3rem;
+}
+.cards-links{
+    font-size: 1.5rem;
+}
+.card-title{
+font-size: 40px;
+}
+.text-gray {
+    color:#8e8e8e;
+}
+
+/* .item-md{
+    width:300px;
+} */
+
+@media screen and (min-width:1200px) {
+    .title-text-cards-home{
+    font-size: 70px;
+    font-family: 'Noto Serif TC', serif;
+}
+.sub-title-text-cards-home {
+    font-size: 50px;
+    font-family: 'Noto Serif TC', serif;
+}
+}
+
+
+@media screen and (max-width:1200px) {
+    .title-text-cards-home{
+    font-size: 50px;
+    font-family: 'Noto Serif TC', serif;
+
+}
+.sub-title-text-cards-home {
+    font-size: 35px;
+    font-family: 'Noto Serif TC', serif;
+}
+}
+.card-title{
+    font-family: 'Noto Serif TC', serif;
+    font-weight:550;
+}

@@ -1,0 +1,51 @@
+
+@media screen and (max-width: 992px) {
+
+    .class-menu-lg {
+display: none;
+      }
+
+      .class-menu-md{
+display: block;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    .class-menu-lg {
+        display: block;
+    }
+    .class-menu-md{
+        display: none;
+    }
+  }
+  @media screen and (width: 992px) {
+    .class-menu-lg {
+        display: none;
+    }
+    .class-menu-md{
+        display:block;
+    }
+  }
+  .breadcrumb-item {
+    font-family: 'Noto Sans TC', sans-serif;
+  }
+
+  .list-group-item {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: normal;
+  }
+    .class-menu-lg {
+    position:sticky; 
+    top: 50px;
+    height: 100px;
+    }
+
+    @media screen and (max-width: 992px) {
+        .list-group-item {
+        font-size: 20px;
+        line-height: 35px;
+        }
+    }
+    .class-menu-lg {
+      height: 100vh;
+      top: 80px;
+  }

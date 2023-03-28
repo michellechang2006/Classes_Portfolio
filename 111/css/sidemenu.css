@@ -1,0 +1,259 @@
+
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,600');
+
+* {
+  outline: none;
+}
+
+.logo-sm-topmenu{
+  height: 35px;
+  padding: 0 15px;
+  margin: 20px 0px;
+}
+.logo-text-sm{
+  font-size: 25px;
+  font-family: 'Lobster Two', cursive;
+  font-weight: normal;
+  font-style: italic;
+  color:#231815 ;
+  text-decoration: none;
+}
+
+.bi{
+  margin-right: 5px;
+  color: #231815;
+}
+.bi:hover{
+  color: #f69586;
+}
+.bi-caret-down-fill{
+  margin-left: 5px;
+  color: #231815;
+}
+.bi-caret-down-fill:hover{
+  color: #f69586;
+}
+
+
+strong {
+  font-weight: 600;
+}
+/*page 為內頁的部份*/
+.sidemenu {
+  width: 100%;
+  height: 50px;
+  background:  #FFD7C0;
+  /* font-family: 'Encode Sans Condensed', sans-serif; */
+  font-weight: 600;
+  letter-spacing: .03em;
+  color: #231815;;
+
+}
+/*header 為上方橫向的部份*/
+header {
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  height: 50px;
+  background:#FFD7C0;
+  color: #231815;
+  justify-content: center;
+  align-items: center;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  z-index: 2;
+}
+
+
+/*選單佔底框的大小設定*/
+#nav-container {
+  position: absolute;
+  height: 100vh;
+  width: 300px;
+  pointer-events: none;
+  z-index: 2;
+}
+/*選單底框的大小設定*/
+#nav-container .bg {
+  position: fixed;
+
+  top: 50px;
+  left: 0;
+  width: 200px;
+  height: calc(100% - 50px);
+  visibility: hidden;
+  opacity: 0;
+  transition: .5s;
+  background:rgba(35,24,21,0.3);
+}
+#nav-container:focus-within .bg {
+  visibility: visible;
+  opacity: .6;
+}
+#nav-container * {
+  visibility: visible;
+
+}
+/*按鈕的大小設定*/
+.button {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+  -webkit-appearance: none;
+  border: 0;
+  background: transparent;
+  border-radius: 0;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  pointer-events: auto;
+  margin-left: 15px;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+/*三條線的大小設定*/
+.icon-bar {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: #231815;
+  transition: .3s;
+  border-radius: 10%;
+}
+.icon-bar + .icon-bar {
+  margin-top: 5px;
+}
+/*下拉式選單按鈕設定*/
+ .dropdown-btn-years {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #231815;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+.dropdown-btn-years:hover{
+  color: #f69586 ;
+}
+.bi-caret-down-fill{
+font-size: 18px;
+}
+.dropdown-container-years{
+  display: none;
+  background-color: #FFD7C0;
+  padding-left: 8px;
+}
+
+#nav-container:focus-within .button {
+  pointer-events: none;
+}
+#nav-container:focus-within .icon-bar:nth-of-type(1) {
+  transform: translate3d(0,8px,0) rotate(45deg);
+}
+#nav-container:focus-within .icon-bar:nth-of-type(2) {
+  opacity: 0;
+}
+#nav-container:focus-within .icon-bar:nth-of-type(3) {
+  transform: translate3d(0,-8px,0) rotate(-45deg);
+}
+/*選單佔底框的大小設定*/
+#nav-content {
+  margin-top: 50px;
+  padding: 20 20 0 20;
+  width: 90%;
+  max-width: 200px;
+  position: fixed;
+  top: 50;
+  left: 0;
+  height: calc(100% - 50px);
+  background: #FFD7C0;
+  pointer-events: auto;
+  transform: translateX(-100%);
+  transition: transform .5s;
+  will-change: transform;
+  contain: paint;
+}
+
+#nav-content ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px ;
+}
+
+#nav-content li a {
+  padding: 10px 10px;
+  display: block;
+  text-transform: uppercase;
+  transition: color .1s;
+  
+}
+
+#nav-content li a:hover {
+  color: #f69586;
+}
+
+
+
+#nav-container:focus-within #nav-content {
+  transform: none;
+}
+
+
+
+html, body {
+  height: 100%;
+}
+
+.nav-text,
+.nav-text:visited,
+.nav-text:focus,
+.nav-text:active,
+.nav-text:link {
+  text-decoration: none;
+  outline: 0;
+  
+}
+
+.nav-text {
+  color: currentColor;
+  transition: .2s ease-in-out;
+  font-size: 20px;
+  font-family: 'Noto Sans TC', sans-serif,'Raleway', sans-serif;
+
+}
+.nav-dropdown-text {
+  color: currentColor;
+  transition: .2s ease-in-out;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: 'Noto Sans TC', sans-serif,'Raleway', sans-serif;
+  
+}
+
+
+
+.nav-ul {
+  padding: 0px;
+  list-style: none;
+}
+
+.dropdown-ul{
+  padding: 0px;
+}
+
+.projects-text{
+  font-size: 16px;
+}
+.math-logo-icon{
+  height: 22px;
+ 
+}
+

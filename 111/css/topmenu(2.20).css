@@ -1,0 +1,39 @@
+
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,600');
+
+   .navbar-brand-text{
+    font-family: 'Lobster Two', cursive;
+    font-weight: normal;
+    font-style: italic;
+   }
+
+   .nav-text-md {
+    font-family: 'Noto Sans TC', sans-serif;
+   }
+
+   .nav-text-md:hover{
+    color: #f69586;
+   }
+   .dropdown-content-md{
+    font-family: 'Noto Sans TC', sans-serif;
+   }
+   .dropdown-content-md:hover{
+    color: #f69586;
+   }
+   @keyframes topmenu {
+      0% {opacity: 0%;}
+      100% {opacity: 100%;}
+    }
+    .top-logo-topmenu-lg-hover{
+      position: absolute;
+      left: 12px;
+    }
+    /* Logo */
+    .top-logo-topmenu-lg{
+      position: relative;
+      z-index: 99;
+      opacity: 1;
+    }
+    .top-logo-topmenu-lg:hover {
+    opacity: 0;
+    }

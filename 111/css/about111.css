@@ -1,0 +1,20 @@
+.about111-title-en-md {
+    font-size: 35px;
+    font-family: 'Lobster Two', cursive;
+    font-weight: normal;
+    font-style: italic;
+  }
+  .about111-title-cn-md{
+    font-family: 'Noto Serif TC', serif;
+    font-size: 50px;
+  }
+  .about111-title-en-xlg{
+    font-size: 40px;
+    font-family: 'Lobster Two', cursive;
+    font-weight: normal;
+    font-style: italic;
+  }
+  .about111-title-cn-xlg{
+    font-family: 'Noto Serif TC', serif;
+    font-size: 80px;
+  }
