@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="btn border-0" id="nav-report" >
+        <h4 style="font-weight: normal;"><i class="bi-flag my-5 " style="font-size:2rem;"></i> 回報系統</h4>
+      </button>
+         <div class="report-content">
+          <ul class="my-3 nav-item">
+            <li><i class="bi-bar-chart-line my-5 " style="font-size:1.5rem;"></i> 資料分析</li>
+            <li><i class="bi-search my-5 " style="font-size:1.5rem;"></i> 資料搜尋</li>
+            <li><i class="bi-database-gear my-5 " style="font-size:1.5rem;"></i> 資料庫編輯</li>
+          </ul>
+         </div> 
+
+           <!-- JQuery Library  -->
+  <script src="js/jquery.min.js"></script>
+  <script>
+     $(document).ready(function () {
+      $("#nav-report").click(function () {
+        $(".report-content").hide();
+      })
+    })
+  </script>
+</body>
+</html>

@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="資料搜尋｜｜網站 問題回報 ｜｜ M-Learning | | 我的 學習歷程 活到老，學到老。自學，是一趟充滿未知、驚喜的旅程。開始造訪網站，和我一起踏上這趟充滿未知、驚喜的旅程吧！">
+  <meta name="author" content="Michelle Chang">
+  <!-- social media thumbnail -->
+  <meta property="og:image" content="https://mlearning.url.tw/pics/social_media_thumbnail.webp">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="627">
+  <meta property="og:title" content="資料搜尋｜｜網站 問題回報 ｜｜ M-Learning | | 我的 學習歷程">
+  <meta property="og:description"
+    content="資料搜尋｜｜網站 問題回報 ｜｜ M-Learning | | 我的 學習歷程 活到老，學到老。自學，是一趟充滿未知、驚喜的旅程。開始造訪網站，和我一起踏上這趟充滿未知、驚喜的旅程吧！">
+  <meta property="og:type" content='website' />
+  <meta property="og:url" content='https://mlearning.url.tw' />
+  <meta name=”twitter:title” content=”資料搜尋｜｜網站問題回報｜｜M-Learning||我的學習歷程”>
+  <link rel=”canonical” href="https://mlearning.url.tw">
+
+  <!-- apple touch icon -->
+  <link rel="apple-touch-icon" href="pics/web_cover_bg_square.webp">
+  <link rel="stylesheet" href="">
+
+  <!-- favicon -->
+  <link href="img/favicon_smile.ico" rel="shortcut icon" />
+
+  <title>資料搜尋｜｜回報 表單 ｜｜ 網站 後台 ｜｜ M-Learning | | 我的 學習歷程</title>
+
+
+
+  <link rel="stylesheet" href="css/css reset.css">
+  <link rel="stylesheet" href="css/RWD.css">
+
+  <link rel="stylesheet" href="bootstrap-icons-1.10.3/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/sidemenu.css">
+  <link rel="stylesheet" href="css/charts.min.css">
+
+
+  <link rel="stylesheet" href="css/animate.min.css" />
+  <link rel="stylesheet" href="css/aos.css" />
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+    body {
+      font-family: 'Noto Sans TC', sans-serif;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    .text-orange {
+      color: #DA7E3C;
+    }
+
+    /* body {
+      overflow: hidden;
+    } */
+
+    .text-reported {
+      font-size: 1.5rem;
+    }
+
+    @media screen and (min-width: 768px) {
+      .menu-sm {
+        display: none;
+      }
+
+      .menu-md {
+        display: block;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .menu-sm {
+        display: block;
+      }
+
+      .menu-md {
+        display: none;
+      }
+    }
+
+    .profile-md {
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    .custom-tooltip {
+      --bs-tooltip-bg: var(--bs-danger);
+    }
+
+    .forms-amount h1 {
+      font-size: 3rem;
+    }
+
+    @media screen and (max-width:820px) {
+      .ratio {
+        margin-bottom: 40%;
+      }
+    }
+
+    .forms-amount {
+      background: linear-gradient(-45deg, #E7725C, #F6B388, #F6B388, #E7725C);
+      animation-name: gradient;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      background-size: 800% 800%;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    #line-example-6 {
+      height: 20vh;
+      margin: 0 auto;
+    }
+
+
+
+    #column-example-6 {
+      height: calc(100vh - 80px);
+      margin: 0 auto;
+    }
+
+    #column-example-6 td .data {
+      transition-duration: 0.6s;
+      transform: scale(0);
+    }
+
+    #column-example-6 td:hover .data {
+      transform: scale(1);
+    }
+
+
+
+    #column-example-6 td {
+      animation: jumping-bars 3s linear infinite;
+      animation-delay: 0;
+    }
+
+    #column-example-6 tr:nth-of-type(even) td {
+      animation-delay: 300ms;
+    }
+
+    @keyframes jumping-bars {
+      0% {
+        transform: translateY(0px);
+      }
+
+      2% {
+        transform: translateY(-10px);
+      }
+
+      4% {
+        transform: translateY(0px);
+      }
+    }
+
+
+    .left {
+      left: 15.5vw;
+    }
+
+    @media screen and (min-width: 1200px) {
+      .img-card-bs {
+        height:16em ;
+        width: 16em;
+        object-fit: cover; /*将图像尺寸调整为完全填充容器*/
+      }
+    }
+
+    @media screen and (max-width: 1200px) {
+      .img-card-bs {
+        width: 14em;
+        width: 14em;
+        object-fit: cover; /*将图像尺寸调整为完全填充容器*/
+      }
+    }
+
+    .key-bs {
+      width: 7%;
+      position: absolute;
+      display: flex;
+      align-self: center;
+      z-index: 99;
+      right: 3rem;
+    }
+
+    @media screen and (max-width:1200px) {
+      .key-bs {
+        width: 10%;
+      }
+    }
+
+    #search-bar {
+      position: relative;
+      ;
+    }
+
+
+    #search-btn:hover {
+      transform: scale(1.3);
+      transition: 50ms;
+    }
+    #search-btn-pages:hover {
+      transform: scale(1.3);
+      transition: 50ms;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!--menu-sm -->
+  <div class="sidemenu menu-sm ">
+    <header tabindex="0" class="logo-content-sm shadow">
+      <a href="https://mlearning.url.tw">
+        <img class="logo-sm-topmenu logo-sidemenu-md" src="logo/Mimi_Rabbit_AE. .svg" alt="logo">
+      </a>
+      <a href="https://mlearning.url.tw" class="logo-text-sm">M-Learning</a>
+    </header>
+    <div id="nav-container">
+      <div class="bg"></div>
+      <div class="button" tabindex="0">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </div>
+      <div class="shadow" id="nav-content" tabindex="0">
+        <ul class="nav-ul">
+          <li class="nav-li">
+            <a href="https://mlearning.url.tw" class="nav-text"> <i class="bi bi-house-fill"></i> 首頁</a>
+          </li>
+          <li class="nav-li">
+            <a href="111.html" class="nav-text"> <i class="bi bi-mortarboard-fill"></i> 111學年度</a>
+          </li>
+
+          <li>
+            <button class="dropdown-btn-years 112"> <i class="bi bi-mortarboard-fill"></i> 112學年度<i
+                class="bi bi-caret-down-fill"></i>
+            </button>
+          </li>
+          <div class="dropdown-container-years 112-content">
+            <ul class="dropdown-ul">
+              <li class="nav-li"><a href="#0" class="nav-dropdown-text"> <i class="bi bi-heart"></i> 敬請期待</a></li>
+
+            </ul>
+          </div>
+          <li> <button class="dropdown-btn-years 113"> <i class="bi bi-mortarboard-fill"></i> 113學年度<i
+                class="bi bi-caret-down-fill"></i>
+            </button>
+          </li>
+          <div class="dropdown-container-years 113-content">
+            <ul class="dropdown-ul">
+              <li class="nav-li"><a href="#0" class="nav-dropdown-text"> <i class="bi bi-heart"></i> 敬請期待</a></li>
+            </ul>
+          </div>
+          <li><button class="dropdown-btn-years blogs"> <i class="bi bi-pencil-fill"></i> Blog<i
+                class="bi bi-caret-down-fill"></i>
+            </button>
+          </li>
+          <div class="dropdown-container-years blogs-content">
+            <ul class="dropdown-ul">
+              <li class="nav-li"><a href="#0" class="nav-dropdown-text"> <i class="bi bi-heart"></i> 敬請期待</a></li>
+            </ul>
+          </div>
+          <li> <button class="dropdown-btn-years library"> <i class="bi  bi-book-fill"></i> 圖書館<i
+                class="bi bi-caret-down-fill"></i>
+            </button>
+          </li>
+          <div class="dropdown-container-years library-content">
+            <ul class="dropdown-ul">
+              <li class="nav-li"><a href="#0" class="nav-dropdown-text"> <i class="bi bi-heart"></i> 敬請期待</a></li>
+            </ul>
+          </div>
+          <li>
+            <button class="dropdown-btn-years projects"> <i class="bi bi-kanban-fill"></i> Projects<i
+                class="bi bi-caret-down-fill"></i>
+            </button>
+          </li>
+          <div class="dropdown-container-years projects-content">
+            <ul class="dropdown-ul">
+              <li class="nav-li"><a href="#0" class="nav-dropdown-text projects-text"> <img
+                    src="logo/math-Logo (circle.webp" class="math-logo-icon" alt=""> 圖像式 學數學</a></li>
+            </ul>
+          </div>
+          <li class="nav-li">
+            <a href="report.html" class="nav-text"><i class="bi bi-flag-fill"></i> 問題 回報</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Menu-sm 內容 -->
+  <main>
+
+  </main>
+
+
+
+
+  <!-- Menu-md -->
+  <div class="menu-md">
+    <div class="container-fliud">
+      <div class="menu">
+        <div class="row" style="">
+          <div class=" col-1 bg-secondary   shadow text-center " id="bs-menu-bar"
+            style=" height: 100vh; position: fixed;     ">
+            <button class="btn border-0" id="bs-menu-icon-md" style="font-size:1.7rem;"><i class="bi-list"></i></button>
+            <div class="col-12">
+              <img src="pics/Mimi_Rabbit_smile.png" class="profile-md my-3 shadow ">
+            </div>
+            <a type="button" href="" class="btn" href="">
+              <i class="bi-house-door my-5 " style="font-size:2.5rem;" data-bs-toggle="tooltip"
+                data-bs-placement="right" data-bs-title="首頁"></i>
+            </a>
+            <a type="button" href="" class="btn" href="">
+              <i class="bi-flag my-5 " style="font-size:2.5rem;" data-bs-toggle="tooltip" data-bs-placement="right"
+                data-bs-title="回報 系統"></i>
+            </a>
+            <a type="button" href="" class="btn" href="">
+              <i class="bi-clipboard my-5 " style="font-size:2.5rem;" data-bs-toggle="tooltip" data-bs-placement="right"
+                data-bs-title="問卷 回饋"></i>
+            </a>
+            <a type="button"
+              href="https://drive.google.com/drive/folders/1NCjrYE38LO6vsHAfsZU4LBsNQX4lzefZ?usp=share_link" class="btn"
+              data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="資料庫"><i class="bi-database my-5 "
+                style="font-size:2.5rem;"></i>
+            </a>
+          </div>
+
+          <div class="col-2 bg-primary  text-center" id="bs-menu-content-md"
+            style="display: none; height: 100vh; position: fixed; ">
+            <img src="logo/Logo-content(v.2).svg" class="logo-top my-3 mx-3" alt="logo">
+            <a href="#" class="btn border-0">
+              <h4 style="font-weight: normal;"><i class="bi-house-door my-5 " style="font-size:2rem;"></i> 首頁</h4>
+            </a>
+            <br>
+            <a href="#" class="btn border-0" id="nav-report">
+              <h4 style="font-weight: normal;"><i class="bi-flag my-5 " style="font-size:2rem;"></i> 回報 系統</h4>
+            </a>
+            <div class="report-content" style="display: none;">
+              <ul class="my-3 nav-item">
+                <a href="backstage_report.html" class="btn">
+                  <li><i class="bi-bar-chart-line-fill my-5 " style="font-size:1.5rem;"></i> 資料分析</li>
+                </a>
+                <br>
+                <a href="backstage_report_search.html" class="btn">
+                  <li><i class="bi-search my-5 " style="font-size:1.5rem;"></i> 資料搜尋</li>
+                </a>
+                <br>
+                <a href="" class="btn">
+                  <li><i class="bi-database-gear my-5 " style="font-size:1.5rem;"></i> 資料庫編輯</li>
+                </a>
+              </ul>
+            </div>
+            <br>
+            <a href="#" class="btn border-0" id="nav-feedback">
+              <h4 style="font-weight: normal;"><i class="bi-clipboard my-5 " style="font-size:2rem;"></i> 問卷 回饋</h4>
+            </a>
+            <div class="feedback-content" style="display: none;">
+              <a href="#" class="btn border-0" id="nav-111">
+                <h4 style="font-weight: normal;"><i class="bi-mortarboard my-5 "
+                    style="font-size:2rem; font-family: 'Noto Sans TC', sans-serif;"></i> 111學年度</h4>
+              </a>
+              <ul class="my-3 nav-item" id="years-forms-111" style="display: none;">
+                <a href="" class="btn">
+                  <li><i class="bi-bar-chart-line-fill my-5 " style="font-size:1.5rem;"></i> 資料分析</li>
+                </a>
+                <br>
+                <a href="" class="btn">
+                  <li><i class="bi-search my-5 " style="font-size:1.5rem;"></i> 資料搜尋</li>
+                </a>
+                <br>
+                <a href="" class="btn">
+                  <li><i class="bi-database-gear my-5 " style="font-size:1.5rem;"></i> 資料庫編輯</li>
+                </a>
+              </ul>
+              <a href="#" class="btn border-0" id="nav-112">
+                <h4 style="font-weight: normal;"><i class="bi-mortarboard my-5 "
+                    style="font-size:2rem; font-family: 'Noto Sans TC', sans-serif;"></i> 112學年度</h4>
+              </a>
+              <ul class="my-3 nav-item" id="years-forms-112" style="display: none;">
+                <li><i class="bi-heart-fill my-5 " style="font-size:1.5rem;"></i> 敬期期待</li>
+              </ul>
+              <a href="#" class="btn border-0" id="nav-113">
+                <h4 style="font-weight: normal;"><i class="bi-mortarboard my-5 "
+                    style="font-size:2rem; font-family: 'Noto Sans TC', sans-serif;"></i> 113學年度</h4>
+              </a>
+              <ul class="my-3 nav-item" id="years-forms-113" style="display: none;">
+                <li><i class="bi-heart-fill my-5 " style="font-size:1.5rem;"></i> 敬期期待</li>
+              </ul>
+            </div>
+            <br>
+            <a href="https://drive.google.com/drive/folders/1NCjrYE38LO6vsHAfsZU4LBsNQX4lzefZ?usp=share_link"
+              class="btn border-0">
+              <h4 style="font-weight: normal;"><i class="bi-database my-5 " style="font-size:2rem;"></i> 資料庫</h4>
+            </a>
+          </div>
+          <div class="col-2 text-light" id="bs-empty-content-md" style="display: none;">
+            <p>
+              推薦使用危機屏幕解釋有一添加研究生，思考似乎一生之後原料是一種，拍攝狀況恐怖放棄輔助地區收集抓住市場價貼圖民間出發長時間，軍隊提升團結這麼帳號有的基地功能成功差距加入，吃螺絲調整代理英文運行未經，年輕人晚上管理紅色新浪僅供，近期親愛的，下面表現程式，算是。
+            </p>
+          </div>
+          <div class="col-1 text-light" id="bs-empty-content-md">
+            <p>
+              推薦使用危機屏幕解釋有一添加研究生，思考似乎一生之後原料是一種，拍攝狀況恐怖放棄輔助地區收集抓住市場價貼圖民間出發長時間，軍隊提升團結這麼帳號有的基地功能成功差距加入，吃螺絲調整代理英文運行未經，年輕人晚上管理紅色新浪僅供，近期親愛的，下面表現程式，算是。
+            </p>
+          </div>
+
+
+          <div class="col-11  order-2  " id="bs-menu-navbar-md" style=" height:50px;">
+            <main class="my-3 ">
+              <div class="container search-bs my-4 z-3">
+                <div class="search-form-bs  row  d-flex justify-content-center align-items-center rounded-2 p-0">
+                  <div class="col-7">
+                    <div class="input-group rounded shadow-sm">
+                      <img src="pics/shortcut_key.svg" alt="" class="key-bs shadow-sm rounded-3">
+                      <input type="text" class="form-control rounded" style="font-family: 'Noto Sans TC', sans-serif;" id="search-bar" placeholder="搜尋 🔍 問題描述："
+                        aria-label="Search" aria-describedby="search-addon" />
+                      <span class="input-group-text border-0 p-0" id="search-addon">
+                        <button type="button" class="btn border-0" id="search-btn"> <i
+                            class="fas fa-search"></i></button>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <div class="dropdown-center">
+                      <button class="btn btn-secondary container-fluid shadow-sm" id="filters" type="button">
+                        <i class="bi-filter"></i> Filters
+                      </button>
+                      <ul class="dropdown-menu  my-2 text-start shadow-sm overflow-y-scroll" style="height: 70vh;"
+                        id="filters-content">
+                        <li class="mb-4 mt-2 mx-3">
+                          <h3 style="font-weight: 450;">Filters</h3>
+                        </li>
+                        <li class="my-3 mx-3">
+                          <h6 class="text-success" style="font-weight: 400; text-decoration: underline;"> <i
+                              class="bi-person-circle"></i> 填卷者身分</h6>
+                        </li>
+                        <li class="my-2 mx-3"><label><input type="checkbox" name="identity" value="審查委員/老師"> <i
+                              class="fa-solid fa-chalkboard-user"></i> 審查委員/老師</label></li>
+                        <li class="my-2 mx-3"><label><input type="checkbox" name="identity" value="學生"> <i
+                              class="bi-mortarboard-fill"></i> 學生</label></li>
+                        <li class="my-2 mx-3"><label><input type="checkbox" name="identity" value="訪客"> <i
+                              class=" bi-person-fill"></i> 訪客</label></li>
+                        <li>
+                        <li class="my-3 mx-3">
+                          <h6 class="text-danger" style="font-weight: 400; text-decoration: underline;"> <i
+                              class="bi-question-circle-fill"></i> 哪一種問題？</h6>
+                        </li>
+                        <li class="my-2 mx-3"><label><input type="checkbox" name="what_problems" value="圖片不見"> <i
+                              class=" bi-image-fill"></i> 圖片不見</label></li>
+                        <li class="my-2 mx-3"><label><input type="checkbox" name="what_problems" value="文字消失"> <i
+                              class=" bi-fonts"></i> 文字消失</label></li>
+                        <li class="my-2 mx-3"><label><input type="checkbox" name="what_problems" value="連結失效"> <i
+                              class=" bi-link"></i> 連結失效</label></li>
+                        <li class="my-2 mx-3"><label><input type="checkbox" name="what_problems" value="按鈕失效"> <i
+                              class="bi-record-circle-fill"></i> 按鈕失效</label></li>
+                        <li class="my-2 mx-3"><label><input type="checkbox" name="what_problems" value="其他"> <i
+                              class=" bi-question-circle-fill"></i> 其他</label></li>
+
+                        <div class="filters-items">
+                          <li class="my-3 mx-3">
+                            <h6 class="text-warning" style="font-weight: 400; text-decoration: underline;"><i
+                                class="bi-file-earmark-fill"></i> 哪一個頁面？</h6>
+                          </li>
+                          <li class="my-2 mx-3">                    
+                            <div class="input-group rounded shadow-sm ">
+                            <input type="text" class="form-control rounded" id="search-bar-pages" style="font-family: 'Noto Sans TC', sans-serif;" placeholder="搜尋 🔍 "
+                              aria-label="Search" aria-describedby="search-addon" />
+                            <span class="input-group-text border-0 p-0" id="search-addon">
+                              <button type="button" class="btn border-0" id="search-btn-page"> <i
+                                  class="fas fa-search"></i></button>
+                            </span>
+                          </div></li>
+                         <div class="pages-items">
+                          <li class="my-2 mx-3 page-item"><label><input type="checkbox" name="which_pages" value="首頁"> <i
+                            class=" bi-house-fill"></i> 首頁</label></li>
+                      <li class="my-2 mx-3 page-item"><label style="font-family: 'Noto Sans TC', sans-serif;"><input
+                            type="checkbox" name="which_pages" value="111"> <i class=" bi-mortarboard-fill"></i> 111
+                          學年度</label></li>
+                      <li class="my-2 mx-3 page-item"><label><input type="checkbox" name="which_pages" value="心得&回顧"> <i
+                            class=" bi-emoji-smile-fill"></i> 心得&回顧</label></li>
+                      <li class="my-2 mx-3 page-item"><label><input type="checkbox" name="which_pages" value="圖像式"> <i
+                            class=""></i> 圖像式 學數學</label></li>
+                      <li class="my-2 mx-3 page-item"><label><input type="checkbox" name="which_pages" value="問卷"> <i
+                            class=" bi-chat-left-heart-fill"></i> 問卷 回饋</label></li>
+                      <li class="my-2 mx-3 page-item"><label><input type="checkbox" name="which_pages" value="回報"> <i
+                            class=" bi-flag-fill"></i> 回報 問卷</label></li>
+                      </li>
+                      <li class="my-2 mx-3 page-item"><label style=" font-family: 'Noto Sans TC', sans-serif;"><input
+                            type="checkbox" name="which_pages" value="3D"> <i class=" bi-mortarboard-fill"></i> 3D
+                          軟體 基礎課 (111 學年度)</label></li>
+                      </li>
+                      <li class="my-2 mx-3 page-item"><label style=" font-family: 'Noto Sans TC', sans-serif;"><input
+                            type="checkbox" name="which_pages" value="情境式"> <i class=" bi-mortarboard-fill"></i>
+                          情境式英語課(111 學年度)</label></li>
+                      </li>
+                      <li class="my-2 mx-3 page-item"><label style=" font-family: 'Noto Sans TC', sans-serif;"><input
+                            type="checkbox" name="which_pages" value="基礎數學課"> <i class=" bi-mortarboard-fill"></i>
+                          基礎數學課</label></li>
+                      </li>
+                      <li class="my-2 mx-3 page-item"><label style=" font-family: 'Noto Sans TC', sans-serif;"><input
+                            type="checkbox" name="which_pages" value="閱讀理解素養課"> <i class=" bi-mortarboard-fill"></i>
+                          閱讀理解 素養課 (111 學年度)</label></li>
+                      </li>
+                      <li class="my-2 mx-3 page-item"><label style=" font-family: 'Noto Sans TC', sans-serif;"><input
+                            type="checkbox" name="which_pages" value="電腦動畫"> <i class=" bi-mortarboard-fill"></i>
+                          電腦動畫 設計基礎課 (111 學年度)</label></li>
+                      </li>
+                      <li class="my-2 mx-3 page-item"><label style=" font-family: 'Noto Sans TC', sans-serif;"><input
+                            type="checkbox" name="which_pages" value="網站設計"> <i class=" bi-mortarboard-fill"></i>
+                          網站設計 基礎課 (111 學年度)</label></li>
+                      </li>
+                      <li class="my-2 mx-3 page-item"><label style=" font-family: 'Noto Sans TC', sans-serif;"><input
+                            type="checkbox" name="which_pages" value="電腦繪圖設計"> <i class=" bi-mortarboard-fill"></i>
+                          電腦繪圖設計 基礎課 (111 學年度)</label></li>
+                      </li>
+                      <li class="my-2 mx-3 page-item"><label style=" font-family: 'Noto Sans TC', sans-serif;"><input
+                            type="checkbox" name="which_pages" value="影像處理"> <i class=" bi-mortarboard-fill"></i>
+                          影像處理 編輯基礎課 (111 學年度)</label></li>
+                      </li>
+                      <li class="my-2 mx-3 page-item"><label style=" font-family: 'Noto Sans TC', sans-serif;"><input
+                            type="checkbox" name="which_pages" value="文字造型"> <i class=" bi-mortarboard-fill"></i>
+                          文字造型 設計基礎課</label></li>
+                      </li>
+                      <li class="my-2 mx-3 page-item"><label style=" font-family: 'Noto Sans TC', sans-serif;"><input
+                            type="checkbox" name="which_pages" value="體驗學習課"> <i class=" bi-mortarboard-fill"></i>
+                          體驗學習課 (111 學年度)</label></li>
+                      </li>
+                         </div>
+                        </div>
+                        <li class="my-3 mx-3"><button class="btn btn-outline-primary my-1" id="clear-filters">Clear
+                            All</button></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <div class="dropdown-center">
+                      <button class="btn btn-secondary container-fluid shadow-sm" id="sort" type="button">
+                        Sort <i class="bi-sort-down"></i>
+                      </button>
+                      <ul class="dropdown-menu  my-2 text-center shadow-sm" id="sort-content">
+                        <li class="my-2"><label><input type="radio" name="product" value="product-1" id="newest"> <i
+                              class=" bi-sort-down"></i> 最新</label></li>
+
+                        <li class="my-2"><label><input type="radio" name="product" value="product-1" id="orderst"
+                              checked> <i class=" bi-sort-up"></i> 最舊</label></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="cards-bs container-fluid my-5 ">
+                  <div class="cards-content-bs container-fluid my-5" id="cards-content-bs">
+                    <!-- database -->
+                  </div>
+                </div>
+              </div>
+          </div>
+          </main>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+  <!-- JQuery Library  -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/sidemenu.js"></script>
+
+  <script src="js/fontawoesomeicons.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- aos -->
+  <script src="js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- 複製網頁文字時，加上網站的作者與網址 -->
+  <!-- <script src="js/copy.js"></script> -->
+
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  </script>
+  <script>
+    $(document).ready(function () {
+      $("#filters").click(function () {
+        $("#filters-content").slideToggle(250);
+        $("#sort-content").slideUp(250);
+      })
+      $("#sort").click(function () {
+        $("#sort-content").slideToggle(250);
+        $("#filters-content").slideUp(250);
+      })
+      $("#search-bar").focus(function () {
+        $("#sort-content").slideUp(250);
+        $("#filters-content").slideUp(250);
+      })
+      $(".cards-bs").click(function () {
+        $("#sort-content").slideUp(250);
+        $("#filters-content").slideUp(250);
+      })
+    })
+
+  </script>
+
+
+  <script>
+    $(document).ready(function () {
+      // 當任何一個複選框被勾選時
+      $('input[type="checkbox"]').on('change', function () {
+        // 取得所有被勾選的產品名稱、價格和顏色
+        var selectedProducts = getSelectedCheckboxes('identity');
+        var selectedPrices = getSelectedCheckboxes('which_pages');
+        var selectedProblems = getSelectedCheckboxes('what_problems');
+
+        // 隱藏所有產品項目
+        $('.card-bs').hide();
+
+        // 如果沒有任何產品名稱、價格或顏色被勾選，則顯示所有產品項目
+        if (selectedProducts.length == 0 && selectedPrices.length == 0 && selectedProblems.length == 0) {
+          $('.card-bs').show();
+        } else {
+          // 顯示符合篩選條件的產品項目
+          $('.card-bs').each(function () {
+            var classes = $(this).attr('class').split(' ');
+            var show = true;
+
+            // 檢查產品名稱是否符合篩選條件
+            if (selectedProducts.length > 0) {
+              show = show && classes.some(className => selectedProducts.includes(className));
+            }
+
+            // 檢查價格是否符合篩選條件
+            if (selectedPrices.length > 0) {
+              show = show && classes.some(className => selectedPrices.includes(className));
+            }
+            // 檢查價格是否符合篩選條件
+            if (selectedProblems.length > 0) {
+              show = show && classes.some(className => selectedProblems.includes(className));
+            }
+
+            if (show) {
+              $(this).show();
+            }
+          });
+        }
+      });
+
+      // 當清除篩選條件的按鈕被點擊時
+      $('#clear-filters').click(function () {
+        // 將所有複選框取消勾選
+        $('input[type="checkbox"]').prop('checked', false);
+        // 重新執行篩選條件的函式
+        $('input[type="checkbox"]').trigger('change');
+      });
+
+      function getSelectedCheckboxes(name) {
+        var selectedCheckboxes = [];
+        $('input[name="' + name + '"]:checked').each(function () {
+          selectedCheckboxes.push($(this).val());
+        });
+        return selectedCheckboxes;
+      }
+    });
+  </script>
+
+  <!-- JQuery Library  -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/report_data_backstage.js"></script>
+  <script src="js/report_menu_search_backstage.js"></script>
+  <script src="js/report_search_bar_bs.js"></script>
+  <script src="js/report_search_bar_pages_bs.js"></script>
+</body>
+
+</html>

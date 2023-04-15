@@ -1,0 +1,74 @@
+.reported-cover{
+    height: 500px;
+    border-radius: 50px;
+    box-shadow: 8px 5px  20px rgba(35,24,21,.15);
+    
+  }
+
+.reported {
+  background: linear-gradient(-45deg,#E7725C, #F6B388,  #F6B388, #E7725C);
+  border-radius: 50px;
+  animation-name:gradient;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  background-size: 400% 400%;
+}
+.reported-bg {
+  background-color: white;
+  border-radius: 50px;
+ 
+}
+
+
+.text-reported {
+  font-size: 1.5rem;
+}
+
+
+
+@keyframes gradient {
+0% {
+    background-position: 0% 50%;
+}
+50% {
+    background-position: 100% 50%;
+}
+100% {
+    background-position: 0% 50%;
+}
+}
+
+@media screen and (min-width: 768px) {
+  .reported-container{
+    margin-left: 25%;
+}
+}
+@media screen and (max-width: 768px) {
+  .reported-container{
+    padding: 5%;
+}
+}
+
+
+
+.reported-info{
+  right: 0;
+  bottom: 2%;
+  border-radius: 50%;
+  line-height: 15px;
+  background-color:#FFF;
+  
+}
+
+.custom-tooltip {
+  --bs-tooltip-bg: var(--bs-danger);
+}
+
+.reported-info-link{
+  color: #231815;
+}
+
+.reported img{
+  width: 40%;
+  margin: 30%;
+}

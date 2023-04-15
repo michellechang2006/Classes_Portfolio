@@ -9,7 +9,7 @@
   background: linear-gradient(-45deg,#E7725C, #F6B388,  #F6B388, #E7725C);
   border-radius: 50px;
   animation-name:gradient;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
   background-size: 400% 400%;
 }

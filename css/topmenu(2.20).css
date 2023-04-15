@@ -1,5 +1,15 @@
 
 @import url('https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,600');
+.topmenu{
+  width: 100%;
+  height: 55px;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  }
 
    .navbar-brand-text{
     font-family: 'Lobster Two', cursive;
@@ -20,10 +30,6 @@
    .dropdown-content-md:hover{
     color: #f69586;
    }
-   @keyframes topmenu {
-      0% {opacity: 0%;}
-      100% {opacity: 100%;}
-    }
     .top-logo-topmenu-lg-hover{
       position: absolute;
       left: 12px;

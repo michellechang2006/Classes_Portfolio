@@ -1,27 +1,26 @@
-.aboutme-cover-md{
+.form-cover{
+    height: 500px;
     border-radius: 50px;
     box-shadow: 8px 5px  20px rgba(35,24,21,.15);
-    width: 100%;
- 
+    
   }
 
-.aboutme-md {
+.form {
   background: linear-gradient(-45deg,#E7725C, #F6B388,  #F6B388, #E7725C);
   border-radius: 50px;
   animation-name:gradient;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   background-size: 400% 400%;
- 
 }
-.aboutme-bg-md {
+.form-bg {
   background-color: white;
   border-radius: 50px;
-
+ 
 }
-/* .aboutme-content-top-md{
-    background-color: #ff0;
-} */
+
+
+
 
 @keyframes gradient {
 0% {
@@ -35,19 +34,37 @@
 }
 }
 
-.aboutme-subtitle-md{
-font-size: 18px;
-line-height: 40px;
+@media screen and (min-width: 768px) {
+  .form-container{
+    margin-left: 25%;
 }
-.aboutme-title-en-md {
-font-size: 50px;
-font-family: 'Lobster Two', cursive;
-font-weight: normal;
-font-style: italic;
 }
-.aboutme-title-cn-md {
-font-family: 'Noto Serif TC', serif;
+@media screen and (max-width: 768px) {
+  .form-container{
+    padding: 5%;
 }
-.aboutme-text-md{
-font-size: 15px;
+}
+
+
+
+.form-info{
+  right: 0;
+  bottom: 2%;
+  border-radius: 50%;
+  line-height: 15px;
+  background-color:#FFF;
+  
+}
+
+.custom-tooltip {
+  --bs-tooltip-bg: var(--bs-danger);
+}
+
+.form-info-link{
+  color: #231815;
+}
+
+.form img{
+  width: 40%;
+  margin: 30%;
 }

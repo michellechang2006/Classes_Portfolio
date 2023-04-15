@@ -5,7 +5,6 @@
     width: 100%;
 }
 .container-home-hero-lg{
-    width: 100vw;
     position: relative;
 }
 .home-hero-content-lg{
@@ -14,10 +13,14 @@
     right: 0;
     bottom: 0;
     left: 0;
-    width: 100vw;
+   
+    background:rgba(255, 255, 255,0.3);
+    
 }
+
 .home-hero-cover-lg{
     width: 100%;
+    
 }
 .home-hero-button-go-i-lg {
     font-size: 25px;
@@ -39,24 +42,23 @@
     animation-name: title-text;
     animation-duration: 1s;
 
- 
 }
 
 
 .home-hero-text-title-cn-lg{
     font-size:50px;
     font-family: 'Noto Serif TC', serif;
-    color: #505050;
+    color: #fff;
 }
 .home-hero-text-slogan-lg{
     font-size: 20px;
-    color: #E7725C;
+    color: #9B210F;
     animation-name: title-text-cn;
     animation-duration: 3s;
 
 }
 .home-hero-text-p-lg {
-    color: #DA7E3C;
+    color: #4A4849;
     font-size: 15px;
     animation-name: title-text-cn;
     animation-duration: 3s;

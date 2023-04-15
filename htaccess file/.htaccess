@@ -13,3 +13,38 @@ RewriteRule ^(.*)$ https://%{SERVER_NAME}%{REQUEST_URI} [L,R]
 # 404 Page
 RewriteEngine On
 ErrorDocument 404 /404_page.html
+
+# 403 Page
+RewriteEngine On
+ErrorDocument 403 /403_page.html
+
+
+#限制網頁存取
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^https://mlearning.url.tw/.*$ [NC]
+RewriteRule \.(jpg|jpeg|gif|png|css|js|webp)$ - [F]
+
+
+
+Options -Indexes
+
+
+
+
+<files ~ "^.*\.([Hh][Tt][Aa])">
+order allow,deny
+deny from all
+satisfy all
+</files>
+
+## URL重寫規則
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,QSA,L]
+
+
+
+
+
+
+

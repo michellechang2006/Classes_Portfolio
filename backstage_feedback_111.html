@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="資料分析｜｜ 回報 表單 ｜｜｜｜網站 問題回報 ｜｜ M-Learning | | 我的 學習歷程 活到老，學到老。自學，是一趟充滿未知、驚喜的旅程。開始造訪網站，和我一起踏上這趟充滿未知、驚喜的旅程吧！">
+  <meta name="author" content="Michelle Chang">
+  <!-- social media thumbnail -->
+  <meta property="og:image" content="https://mlearning.url.tw/pics/social_media_thumbnail.webp">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="627">
+  <meta property="og:title" content="資料分析｜｜回報 表單 ｜｜網站 問題回報 ｜｜ M-Learning | | 我的 學習歷程">
+  <meta property="og:description"
+    content="資料分析｜｜回報 表單｜｜網站 問題回報 ｜｜ M-Learning | | 我的 學習歷程 活到老，學到老。自學，是一趟充滿未知、驚喜的旅程。開始造訪網站，和我一起踏上這趟充滿未知、驚喜的旅程吧！">
+  <meta property="og:type" content='website' />
+  <meta property="og:url" content='https://mlearning.url.tw' />
+  <meta name=”twitter:title” content=”感謝有你🙏｜｜網站問題回報｜｜M-Learning||我的學習歷程”>
+  <link rel=”canonical” href="https://mlearning.url.tw">
+
+  <!-- apple touch icon -->
+  <link rel="apple-touch-icon" href="pics/web_cover_bg_square.webp">
+  <link rel="stylesheet" href="">
+
+  <!-- favicon -->
+  <link href="img/favicon_smile.ico" rel="shortcut icon" />
+
+  <title>資料分析｜｜回報 表單 ｜｜ 網站 後台 ｜｜ M-Learning | | 我的 學習歷程</title>
+
+
+
+  <link rel="stylesheet" href="css/css reset.css">
+  <link rel="stylesheet" href="css/RWD.css">
+
+  <link rel="stylesheet" href="bootstrap-icons-1.10.3/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/sidemenu.css">
+  <link rel="stylesheet" href="css/charts.min.css">
+
+
+  <link rel="stylesheet" href="css/animate.min.css" />
+  <link rel="stylesheet" href="css/aos.css" />
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+    body {
+      font-family: 'Noto Sans TC', sans-serif;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    .text-orange {
+      color: #DA7E3C;
+    }
+
+    .text-reported {
+      font-size: 1.5rem;
+    }
+
+    @media screen and (min-width: 768px) {
+      .menu-sm {
+        display: none;
+      }
+
+      .menu-md {
+        display: block;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .menu-sm {
+        display: block;
+      }
+
+      .menu-md {
+        display: none;
+      }
+    }
+
+    .profile-md {
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    .custom-tooltip {
+      --bs-tooltip-bg: var(--bs-danger);
+    }
+
+    .forms-amount h1 {
+      font-size: 3rem;
+    }
+
+    @media screen and (max-width:820px) {
+      .ratio {
+        margin-bottom: 40%;
+      }
+    }
+
+    .forms-amount {
+      background: linear-gradient(-45deg, #E7725C, #F6B388, #F6B388, #E7725C);
+      animation-name: gradient;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      background-size: 800% 800%;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    #line-example-6 {
+      height: 20vh;
+      margin: 0 auto;
+    }
+
+    
+
+    #column-example-6 {
+      height: calc(100vh - 80px);
+      margin: 0 auto;
+    }
+    #column-example-6 td .data {
+  transition-duration: 0.6s;
+  transform: scale(0);
+}
+#column-example-6 td:hover .data {
+  transform: scale(1);
+}
+
+
+
+    #column-example-6 td {
+  animation: jumping-bars 3s linear infinite;
+  animation-delay: 0;
+}
+#column-example-6 tr:nth-of-type(even) td {
+  animation-delay: 300ms;
+}
+@keyframes jumping-bars {
+  0% { transform: translateY(   0px ); }
+  2% { transform: translateY( -10px ); }
+  4% { transform: translateY(   0px ); }
+}
+  </style>
+</head>
+
+<body>
+  <!--menu-sm -->
+  <div class="sidemenu menu-sm ">
+    <header tabindex="0" class="logo-content-sm shadow">
+      <a href="https://mlearning.url.tw">
+        <img class="logo-sm-topmenu logo-sidemenu-md" src="logo/Mimi_Rabbit_AE. .svg" alt="logo">
+      </a>
+      <a href="https://mlearning.url.tw" class="logo-text-sm">M-Learning</a>
+    </header>
+    <div id="nav-container">
+      <div class="bg"></div>
+      <div class="button" tabindex="0">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </div>
+      <div class="shadow" id="nav-content" tabindex="0">
+        <ul class="nav-ul">
+          <li class="nav-li">
+            <a href="https://mlearning.url.tw" class="nav-text"> <i class="bi bi-house-fill"></i> 首頁</a>
+          </li>
+          <li class="nav-li">
+            <a href="111.html" class="nav-text"> <i class="bi bi-mortarboard-fill"></i> 111學年度</a>
+          </li>
+
+          <li>
+            <button class="dropdown-btn-years 112"> <i class="bi bi-mortarboard-fill"></i> 112學年度<i
+                class="bi bi-caret-down-fill"></i>
+            </button>
+          </li>
+          <div class="dropdown-container-years 112-content">
+            <ul class="dropdown-ul">
+              <li class="nav-li"><a href="#0" class="nav-dropdown-text"> <i class="bi bi-heart"></i> 敬請期待</a></li>
+
+            </ul>
+          </div>
+          <li> <button class="dropdown-btn-years 113"> <i class="bi bi-mortarboard-fill"></i> 113學年度<i
+                class="bi bi-caret-down-fill"></i>
+            </button>
+          </li>
+          <div class="dropdown-container-years 113-content">
+            <ul class="dropdown-ul">
+              <li class="nav-li"><a href="#0" class="nav-dropdown-text"> <i class="bi bi-heart"></i> 敬請期待</a></li>
+            </ul>
+          </div>
+          <li><button class="dropdown-btn-years blogs"> <i class="bi bi-pencil-fill"></i> Blog<i
+                class="bi bi-caret-down-fill"></i>
+            </button>
+          </li>
+          <div class="dropdown-container-years blogs-content">
+            <ul class="dropdown-ul">
+              <li class="nav-li"><a href="#0" class="nav-dropdown-text"> <i class="bi bi-heart"></i> 敬請期待</a></li>
+            </ul>
+          </div>
+          <li> <button class="dropdown-btn-years library"> <i class="bi  bi-book-fill"></i> 圖書館<i
+                class="bi bi-caret-down-fill"></i>
+            </button>
+          </li>
+          <div class="dropdown-container-years library-content">
+            <ul class="dropdown-ul">
+              <li class="nav-li"><a href="#0" class="nav-dropdown-text"> <i class="bi bi-heart"></i> 敬請期待</a></li>
+            </ul>
+          </div>
+          <li>
+            <button class="dropdown-btn-years projects"> <i class="bi bi-kanban-fill"></i> Projects<i
+                class="bi bi-caret-down-fill"></i>
+            </button>
+          </li>
+          <div class="dropdown-container-years projects-content">
+            <ul class="dropdown-ul">
+              <li class="nav-li"><a href="#0" class="nav-dropdown-text projects-text"> <img
+                    src="logo/math-Logo (circle.webp" class="math-logo-icon" alt=""> 圖像式 學數學</a></li>
+            </ul>
+          </div>
+          <li class="nav-li">
+            <a href="report.html" class="nav-text"><i class="bi bi-flag-fill"></i> 問題 回報</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Menu-sm 內容 -->
+  <main>
+
+  </main>
+
+
+
+
+  <!-- Menu-md -->
+  <div class="menu-md">
+    <div class="container-fliud">
+      <div class="menu">
+        <div class="row" style="  position: fixed; top: 0; left: 0; z-index: 2;">
+          <div class=" col-1 bg-secondary order-2 shadow text-center" style="display: inline; height: 100vh ;">
+            <div>
+              <img src="pics/Mimi_Rabbit_smile.png" class="profile-md my-3 shadow  ">
+            </div>
+          <div>
+            <a type="button" href="" class="btn" href="">
+              <i class="bi-house-door my-5 " style="font-size:2.5rem;" data-bs-toggle="tooltip"
+                data-bs-placement="right" data-bs-title="首頁"></i>
+            </a>
+          </div>
+           <div>
+            <a type="button" href="" class="btn" href="">
+              <i class="bi-flag my-5 " style="font-size:2.5rem;" data-bs-toggle="tooltip" data-bs-placement="right"
+                data-bs-title="回報 系統"></i>
+            </a>
+           </div>
+           <div>
+            <a type="button" href="" class="btn" href="">
+              <i class="bi-clipboard my-5 " style="font-size:2.5rem;" data-bs-toggle="tooltip" data-bs-placement="right"
+                data-bs-title="問卷 回饋"></i>
+            </a>
+           </div>
+           <div>
+            <a type="button"
+            href="https://drive.google.com/drive/folders/1NCjrYE38LO6vsHAfsZU4LBsNQX4lzefZ?usp=share_link" class="btn"
+            data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="資料庫"><i class="bi-database my-5 "
+              style="font-size:2.5rem;"></i>
+          </a>
+           </div>
+          </div>
+          <div class="col-2 bg-primary text-center" id="bs-menu-content-md"
+            style="display: none; height: 100vh;">
+            <img src="logo/Logo-content(v.2).svg" class="logo-top my-3 mx-3" alt="logo">
+            <a href="#" class="btn border-0">
+              <h4 style="font-weight: normal;"><i class="bi-house-door my-5 " style="font-size:2rem;"></i> 首頁</h4>
+            </a>
+            <br>
+            <a href="#" class="btn border-0" id="nav-report">
+              <h4 style="font-weight: normal;"><i class="bi-flag my-5 " style="font-size:2rem;"></i> 回報 系統</h4>
+            </a>
+            <div class="report-content" style="display: none;">
+              <ul class="my-3 nav-item">
+                <a href="backstage_report.html" class="btn">
+                  <li><i class="bi-bar-chart-line-fill my-5 " style="font-size:1.5rem;"></i> 資料分析</li>
+                </a>
+                <a href="backstage_report_search.html" class="btn">
+                  <li><i class="bi-search my-5 " style="font-size:1.5rem;"></i> 資料搜尋</li>
+                </a>
+                <a href="" class="btn">
+                  <li><i class="bi-database-gear my-5 " style="font-size:1.5rem;"></i> 資料庫編輯</li>
+                </a>
+              </ul>
+            </div>
+            <br>
+            <a href="#" class="btn border-0" id="nav-feedback">
+              <h4 style="font-weight: normal;"><i class="bi-clipboard my-5 " style="font-size:2rem;"></i> 問卷 回饋</h4>
+            </a>
+            <div class="feedback-content" style="display: none;">
+              <a href="#" class="btn border-0" id="nav-111">
+                <h4 style="font-weight: normal;"><i class="bi-mortarboard my-5 "
+                    style="font-size:2rem; font-family: 'Noto Sans TC', sans-serif;"></i> 111學年度</h4>
+              </a>
+              <ul class="my-3 nav-item" id="years-forms-111" style="display: none;">
+                <a href="" class="btn">
+                  <li><i class="bi-bar-chart-line-fill my-5 " style="font-size:1.5rem;"></i> 資料分析</li>
+                </a>
+                <a href="" class="btn">
+                  <li><i class="bi-search my-5 " style="font-size:1.5rem;"></i> 資料搜尋</li>
+                </a>
+                <a href="" class="btn">
+                  <li><i class="bi-database-gear my-5 " style="font-size:1.5rem;"></i> 資料庫編輯</li>
+                </a>
+              </ul>
+              <a href="#" class="btn border-0" id="nav-112">
+                <h4 style="font-weight: normal;"><i class="bi-mortarboard my-5 "
+                    style="font-size:2rem; font-family: 'Noto Sans TC', sans-serif;"></i> 112學年度</h4>
+              </a>
+              <ul class="my-3 nav-item" id="years-forms-112" style="display: none;">
+                <li><i class="bi-heart-fill my-5 " style="font-size:1.5rem;"></i> 敬期期待</li>
+              </ul>
+              <a href="#" class="btn border-0" id="nav-113">
+                <h4 style="font-weight: normal;"><i class="bi-mortarboard my-5 "
+                    style="font-size:2rem; font-family: 'Noto Sans TC', sans-serif;"></i> 113學年度</h4>
+              </a>
+              <ul class="my-3 nav-item" id="years-forms-113" style="display: none;">
+                <li><i class="bi-heart-fill my-5 " style="font-size:1.5rem;"></i> 敬期期待</li>
+              </ul>
+            </div>
+            <br>
+            <a href="https://drive.google.com/drive/folders/1NCjrYE38LO6vsHAfsZU4LBsNQX4lzefZ?usp=share_link"
+              class="btn border-0">
+              <h4 style="font-weight: normal;"><i class="bi-database my-5 " style="font-size:2rem;"></i> 資料庫</h4>
+            </a>
+          </div>
+          <div class="col-11 bg-primary order-2 shadow " id="bs-menu-navbar-md" style=" height:50px;">
+            <button class="btn border-0" id="bs-menu-icon-md" style="font-size:1.7rem;"><i class="bi-list"></i></button>
+            <img src="pics/mimi_rabbit_3d (v1).webp" class="profile-md mx-3 float-end  shadow " data-bs-toggle="tooltip"
+              data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="我的 學習歷程 網站 後台 管理員 - 
+            Michelle Chang">
+            <!-- 墊的東西 -->
+            <div class="opacity-0">
+              <p>
+                科技有限公司地址電視劇資料庫，合同之類的確報告業主點這裡儀器原來文學適當一聲並不，收費尷尬強化結合逐步魅力當前房子相關圖片擁有人群父親證書，房產辦公室他們的五年本週那就前後之處專門，一顆社會主義保健，保育石虎情人現代安裝留下停止刷新照顧，開發者大會，用戶。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 墊的東西 -->
+    <div class="row" >
+      <div class="col-1 bg-secondary order-2 opacity-0" style="display: inline; height: 100vh ;">
+        <i class="bi-heart-fill" style="font-size:50px;"></i>
+      </div>
+      <div class="col-2 bg-primary opacity-0" id="bs-empty-content-md" style="display: none;  height: 100vh;">
+        <i class="bi-heart-fill" style="font-size:50px;"></i>
+      </div>
+      <div class="col-11 order-2" id="bs-empty-navbar-md" style="display:inline; height:50px; ">
+        <button class="btn border-0 opacity-0" id="bs-menu-icon-md" style="font-size:1.7rem;"><i
+            class="bi-list"></i></button>
+        <!-- 內容 -->
+        <main class="my-3 mx-3 ">
+          <div class="row order-2">
+            <div class="forms-amount col-4 text-center shadow-lg rounded-5" style="display: flex; align-items:center;">
+              <div class="container-fluid  forms-amount-bg bg-white rounded-5"
+                style="height: 20rem; display: flex; align-items:center;">
+                <div class="ratio" style="--bs-aspect-ratio: 30%;">
+                  <h1 class="amount" style="font-family: 'Noto Sans TC', sans-serif; font-size: 2rem;">
+                    提交表單的次數
+
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div class="col-5 text-center  " id="kinds_of_q">
+              <h1 style="font-family: 'Noto Sans TC', sans-serif; font-size: 2.3rem;">問題 類型</h1>
+              <!-- database -->
+            </div>
+            <div class="col-3 text-center" id="kinds_of_i">
+              <h1 class="" style="font-family: 'Noto Sans TC', sans-serif; font-size: 2.3rem;">填卷者 身分</h1>
+              <!-- database -->
+            </div>
+          </div>
+          <div class="col-12 my-1 text-center">
+            <table id="line-example-6" class="charts-css line multiple hide-data show-labels show-5-secondary-axes">
+              <caption>近五天的提交次數</caption>
+              <h3 style="font-family: 'Noto Sans TC', sans-serif;">近五天的提交次數</h3>
+              <thead>
+                <tr id="5days_date">
+                  <th scope="col">近五天的提交次數</th>
+                </tr>
+              </thead>
+              <tbody id="5days">
+
+                
+              </tbody>
+            </table>
+          </div>
+          <div class="col-12 mt-5 text-center">
+            <table id="column-example-6" style="font-size: .3rem; line-height: .9rem;"
+              class="charts-css column show-labels py-5 show-10-secondary-axes data-spacing-5 datasets-spacing-5">
+              <h1 style="font-family: 'Noto Sans TC', sans-serif;">哪個頁面出問題？</h1>
+              <caption>哪個頁面出問題？</caption>
+              <thead>
+                <tr>
+                  <th scope="col">哪個頁面出問題？</th>
+                  <th scope="col">哪個頁面出問題？</th>
+                </tr>
+              </thead>
+              <tbody id="pages">
+
+              </tbody>
+            </table>
+          </div>
+
+      </div>
+    </div>
+    </main>
+  </div>
+  </div>
+  </div>
+
+
+  <!-- JQuery Library  -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/sidemenu.js"></script>
+
+  <script src="js/fontawoesomeicons.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <!-- aos -->
+  <script src="js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- 複製網頁文字時，加上網站的作者與網址 -->
+  <script src="js/copy.js"></script>
+
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  </script>
+
+  <!-- JQuery Library  -->
+  <script src="js/jquery.min.js"></script>
+
+  <script src="js/feedback_111_backstage.js"></script>
+  <script src="js/report_menu_backstage.js"></script>
+<script>
+
+</script>
+</body>
+
+</html>
