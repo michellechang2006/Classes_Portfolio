@@ -8,45 +8,66 @@ fetch(uri)
 
     // 刪除第一個陣列
     data.shift();
-
+ // RWD Md
     Array.prototype.forEach.call(data, d => {
 
-      // 課程簡介
-      let aboutclass = `${d[0]}`;
+      var converter = new showdown.Converter(),
+      text = `${d[0]}`,
+      html = converter.makeHtml(text);
+      document.getElementById('aboutclass-md').innerHTML = html;
+            var converter = new showdown.Converter(),
 
-      document.querySelector('#aboutclass').insertAdjacentHTML('beforeend', aboutclass);
+      text = `${d[3]}`,
+      html = converter.makeHtml(text);
+      document.getElementById('rating-md').innerHTML = html;
 
-      // 質性評語
+      text = `${d[4]}`,
+      html = converter.makeHtml(text);
+      document.getElementById('class-content-md').innerHTML = html;
 
-      let rating = `${d[1]}`;
+      text = `${d[6]}`,
+      html = converter.makeHtml(text);
+      document.getElementById('thoughts-md').innerHTML = html;
 
-      document.querySelector('#rating').insertAdjacentHTML('beforeend', rating);
+      text = `${d[8]}`,
+      html = converter.makeHtml(text);
+      document.getElementById('review-md').innerHTML = html;
 
-      // 課程內容
+    })
 
-      let classcontent = `${d[2]}`;
+    // RWD SM
+    Array.prototype.forEach.call(data, d => {
 
-      document.querySelector('#classcontent').insertAdjacentHTML('beforeend', classcontent);
+      var converter = new showdown.Converter(),
+      text = `${d[1]}`,
+      html = converter.makeHtml(text);
+      document.getElementById('aboutclass-sm').innerHTML = html;
 
-      // 我的心得&收穫
+      var converter = new showdown.Converter(),
+      text = `${d[2]}`,
+      html = converter.makeHtml(text);
+      document.getElementById('rating-sm').innerHTML = html;
 
-      let thoughts = `${d[3]}`;
+      text = `${d[5]}`,
+      html = converter.makeHtml(text);
+      document.getElementById('class-content-sm').innerHTML = html;
 
-      document.querySelector('#thoughts').insertAdjacentHTML('beforeend', thoughts);
+      text = `${d[7]}`,
+      html = converter.makeHtml(text);
+      document.getElementById('thoughts-sm').innerHTML = html;
 
-      // 我的反思&回顧
+      text = `${d[9]}`,
+      html = converter.makeHtml(text);
+      document.getElementById('review-sm').innerHTML = html;
 
-      let review = `${d[4]}`;
+    })
 
-      document.querySelector('#review').insertAdjacentHTML('beforeend', review);
-
-
-
+        Array.prototype.forEach.call(data, d => {
 
       // 本頁大綱-md
 
-      let class_menu_items_md = `<a class="list-group-item m-3 h5 border-0 list-group-item-action" href="#rating">${d[6]}</a>
-        <a class="list-group-item m-3 h5 border-0 list-group-item-action" href="#classcontent">${d[7]}</a>`
+      let class_menu_items_md = `<a class="list-group-item m-3 h5 border-0 list-group-item-action" href="#thoughts-title">${d[11]}</a>
+        <a class="list-group-item m-3 h5 border-0 list-group-item-action" href=""#review-title">${d[12]}</a>`
 
       document.querySelector('#class-menu-items-md').insertAdjacentHTML('beforeend', class_menu_items_md);
 
@@ -54,11 +75,80 @@ fetch(uri)
       // 本頁大綱-lg
 
       let class_menu_items_lg = `
-      <a class="nav-link list-group-item m-xl-3 h5 border-0 list-group-item-action" href="#thoughts">${d[6]}</a>
-        <a class="nav-link list-group-item m-xl-3 h5 border-0 list-group-item-action" href="#review">${d[7]}</a>
+      <a class="nav-link list-group-item m-xl-3 h5 border-0 list-group-item-action" href="#thoughts-title">${d[11]}</a>
+        <a class="nav-link list-group-item m-xl-3 h5 border-0 list-group-item-action" href="#review-title">${d[12]}</a>
         `
       document.querySelector('#class-menu-items-lg').insertAdjacentHTML('beforeend', class_menu_items_lg);
 
     })
     console.clear()
   })
+
+
+
+
+
+//   const uri = 'https://sheets.googleapis.com/v4/spreadsheets/1E7gWckeGt2znBdnp8mXFG2cPMvk9qrbJJIpyla0VW6o/values/blender_basic?alt=json&key=AIzaSyChSjLDxCjYXAGKruUaNl4ErzdHsc1wBAI';
+
+// fetch(uri)
+//   .then(res => res.json())
+//   .then(res => {
+//     const data = res.values;
+//     console.log(data);
+
+//     // 刪除第一個陣列
+//     data.shift();
+
+//     Array.prototype.forEach.call(data, d => {
+
+//       // 課程簡介
+//       let aboutclass = `${d[0]}`;
+
+//       document.querySelector('#aboutclass').insertAdjacentHTML('beforeend', aboutclass);
+
+//       // 質性評語
+
+//       let rating = `${d[1]}`;
+
+//       document.querySelector('#rating').insertAdjacentHTML('beforeend', rating);
+
+//       // 課程內容
+
+//       let classcontent = `${d[2]}`;
+
+//       document.querySelector('#classcontent').insertAdjacentHTML('beforeend', classcontent);
+
+//       // 我的心得&收穫
+
+//       let thoughts = `${d[3]}`;
+
+//       document.querySelector('#thoughts').insertAdjacentHTML('beforeend', thoughts);
+
+//       // 我的反思&回顧
+
+//       let review = `${d[4]}`;
+
+//       document.querySelector('#review').insertAdjacentHTML('beforeend', review);
+
+
+
+
+//       // 本頁大綱-md
+
+//       let class_menu_items_md = `<a class="list-group-item m-3 h5 border-0 list-group-item-action" href="#rating">${d[6]}</a>
+//         <a class="list-group-item m-3 h5 border-0 list-group-item-action" href="#classcontent">${d[7]}</a>`
+
+//       document.querySelector('#class-menu-items-md').insertAdjacentHTML('beforeend', class_menu_items_md);
+
+
+//       // 本頁大綱-lg
+
+//       let class_menu_items_lg = `
+//       <a class="nav-link list-group-item m-xl-3 h5 border-0 list-group-item-action" href="#thoughts">${d[6]}</a>
+//         <a class="nav-link list-group-item m-xl-3 h5 border-0 list-group-item-action" href="#review">${d[7]}</a>
+//         `
+//       document.querySelector('#class-menu-items-lg').insertAdjacentHTML('beforeend', class_menu_items_lg);
+
+//     })
+//     console.clear()
+//   })

@@ -20,12 +20,39 @@ font-size: 40px;
     width:300px;
 } */
 
-.title-text-cards-home{
-    font-size: 80px;
+@media screen and (min-width:1200px) {
+    .title-text-cards-home{
+    font-size: 70px;
     font-family: 'Noto Serif TC', serif;
 }
+.sub-title-text-cards-home {
+    font-size: 50px;
+    font-family: 'Noto Serif TC', serif;
+}
+}
 
+
+@media screen and (max-width:1200px) {
+    .title-text-cards-home{
+    font-size: 50px;
+    font-family: 'Noto Serif TC', serif;
+
+}
+.sub-title-text-cards-home {
+    font-size: 35px;
+    font-family: 'Noto Serif TC', serif;
+}
 .card-title{
     font-family: 'Noto Serif TC', serif;
     font-weight:550;
+    font-size: 2em;
+}
+
+.card-text{
+    font-size: 1em;
+}
+
+.cards-links{
+    font-size: 1rem;
+}
 }

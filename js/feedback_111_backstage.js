@@ -29,10 +29,10 @@ fetch('https://sheets.googleapis.com/v4/spreadsheets/1O8xQzxHnxnuLQiQ5BAghBKoxEA
           case "pages_text":
             pages_textCount++;
             break;
-          case "pages_link":
+          case "pages_id":
             pages_linkCount++;
             break;
-          case "pages_button":
+          case "pages_design":
             pages_buttonCount++;
             break;
           case "pages_problems":
@@ -50,42 +50,55 @@ fetch('https://sheets.googleapis.com/v4/spreadsheets/1O8xQzxHnxnuLQiQ5BAghBKoxEA
     });
 
     // 總數
-    const totalCount = pages_imageCount + pages_textCount + pages_linkCount + pages_buttonCount + noCount;
+    const totalCount = pages_imageCount + pages_textCount + pages_linkCount + pages_buttonCount + noCount + pages_problemsCount;
     // 計算百分比
     const pages_image = pages_imageCount / totalCount / 0.01
     const pages_text = pages_textCount / totalCount / 0.01
     const pages_link = pages_linkCount / totalCount / 0.01
+    const pages_btn = pages_buttonCount / totalCount / 0.01
+    const pages_problems =  pages_problemsCount / totalCount / 0.01
+    const no =  noCount / totalCount / 0.01
    
 
 
     // 嵌入html
-    const image = `<div class="progress shadow-sm my-4" role="progressbar" aria-label="Basic example" aria-valuenow=" ${pages_image}"
+    const image = `<div class="progress shadow-sm my-3" role="progressbar" aria-label="Basic example" aria-valuenow=" ${pages_image}"
     aria-valuemin="0" aria-valuemax="100">
     <div class="progress-bar overflow-visible text-danger" style="width:${pages_image}%">圖片精美</div>
     `;
     document.querySelector('#kinds_of_q').insertAdjacentHTML('beforeend', image);
 
-    const text = `<div class="progress shadow-sm my-4" role="progressbar" aria-label="Basic example" aria-valuenow=" ${pages_text}"
+    const text = `<div class="progress shadow-sm my-3" role="progressbar" aria-label="Basic example" aria-valuenow=" ${pages_text}"
     aria-valuemin="0" aria-valuemax="100">
-    <div class="progress-bar overflow-visible text-danger" style="width:${pages_text}%">文字消失</div>
+    <div class="progress-bar overflow-visible text-danger" style="width:${pages_text}%">文字內容豐富</div>
     `;
     document.querySelector('#kinds_of_q').insertAdjacentHTML('beforeend', text);
-    const link = `<div class="progress shadow-sm my-4" role="progressbar" aria-label="Basic example" aria-valuenow=" ${lostImage}"
+
+    const link = `<div class="progress shadow-sm my-3" role="progressbar" aria-label="Basic example" aria-valuenow=" ${pages_link}"
     aria-valuemin="0" aria-valuemax="100">
-    <div class="progress-bar overflow-visible text-danger" style="width:${lostLink}%">連結失效</div>
+    <div class="progress-bar overflow-visible text-danger" style="width:${pages_link}%">網站互動元素有趣</div>
     `;
     document.querySelector('#kinds_of_q').insertAdjacentHTML('beforeend', link);
-    const button = `<div class="progress shadow-sm my-4" role="progressbar" aria-label="Basic example" aria-valuenow=" ${lostImage}"
+
+    const button = `<div class="progress shadow-sm my-3" role="progressbar" aria-label="Basic example" aria-valuenow=" ${pages_btn}"
     aria-valuemin="0" aria-valuemax="100">
-    <div class="progress-bar overflow-visible text-danger" style="width:${lostButton}%">按鈕失效</div>
+    <div class="progress-bar overflow-visible text-danger" style="width:${pages_btn}%">網站版面設計精美</div>
     `;
     document.querySelector('#kinds_of_q').insertAdjacentHTML('beforeend', button);
-    const others = `<div class="progress shadow-sm my-4" role="progressbar" aria-label="Basic example" aria-valuenow=" ${lostImage}"
+
+    const others = `<div class="progress shadow-sm my-3" role="progressbar" aria-label="Basic example" aria-valuenow=" ${pages_problems}"
     aria-valuemin="0" aria-valuemax="100">
-    <div class="progress-bar overflow-visible text-danger" style="width:${otherProblems}%">其他</div>
+    <div class="progress-bar overflow-visible text-danger" style="width:${pages_problems}%">其他</div>
     `;
 
     document.querySelector('#kinds_of_q').insertAdjacentHTML('beforeend', others);
+
+    const none = `<div class="progress shadow-sm my-3" role="progressbar" aria-label="Basic example" aria-valuenow=" ${no}"
+    aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar overflow-visible text-danger" style="width:${no}%">無</div>
+    `;
+
+    document.querySelector('#kinds_of_q').insertAdjacentHTML('beforeend', none);
   })
   .catch(error => console.error(error));
 
@@ -95,19 +108,130 @@ fetch('https://sheets.googleapis.com/v4/spreadsheets/1O8xQzxHnxnuLQiQ5BAghBKoxEA
 
 //   提交次數
 // 從URL獲取JSON數據
-fetch('https://sheets.googleapis.com/v4/spreadsheets/1qOWN8Nt6HKlRI2tWFsxStUZzmLCSn79plpQQVqJHknI/values/sheet1?alt=json&key=AIzaSyBP0dzE_IKIF6AxVpWngj7E8R0pHontVmY')
+let numRows;
+
+fetch('https://sheets.googleapis.com/v4/spreadsheets/1O8xQzxHnxnuLQiQ5BAghBKoxEAasPNtYKhu1oZ3NA1g/values/sheet1?alt=json&key=AIzaSyD7UcpEu_UkHBEgehwF_Vwm9xa6he_A1YQ')
   .then(response => response.json())
   .then(data => {
     // 獲取值的數組
     const values = data.values;
     // 計算行數，減去第一行
-    const numRows = values.length - 1;
+    numRows = values.length - 1;
     console.log(`這個JSON檔案有 ${numRows} 列`);
+
     const jsonData = ` <br>
       <i>${numRows}次</i>`;
     // 將數據設置為標題元素的內容
     document.querySelector('.amount').insertAdjacentHTML('beforeend', jsonData);
 
+    // 在這裡進行第二個fetch並使用numRows
+    //   網站各方面評價 ⭐
+   
+  const uri = 'https://sheets.googleapis.com/v4/spreadsheets/1O8xQzxHnxnuLQiQ5BAghBKoxEAasPNtYKhu1oZ3NA1g/values/sheet1?alt=json&key=AIzaSyD7UcpEu_UkHBEgehwF_Vwm9xa6he_A1YQ';
+      
+  fetch(uri)
+    .then(res => res.json())
+    .then(res => {
+      const data = res.values;
+      console.log(data);
+  
+      // 刪除第一個陣列
+      data.shift();
+      
+  
+      Array.prototype.forEach.call(data.slice(0,1), d => {
+        // 計算 web_image_design 欄位的加總
+        let web_image_designSum = 0;
+        for (let i = 0; i < data.length; i++) {
+          web_image_designSum += parseInt(data[i][5]);
+        }
+        console.log(web_image_designSum);
+      
+        const web_image_design = web_image_designSum /(numRows*5);
+      
+        console.log(web_image_design)
+      
+        let image = `<tr class="pb-4">
+                      <th scope="row" style="font-size:.5rem;"> 圖片/插圖設計 </th>
+                      <td class="shadow rounded-end-5" style="--size:${web_image_design}; --color:#E7725C;"></td>
+                    </tr>`;
+              
+        document.querySelector('#racing-bs').insertAdjacentHTML('beforeend', image);
+
+        // 計算 web_content 欄位的加總
+        let web_contentSum = 0;
+        for (let i = 0; i < data.length; i++) {
+          web_contentSum += parseInt(data[i][6]);
+        }
+        console.log(web_contentSum);
+      
+        const web_content = web_contentSum /(numRows*5);
+      
+        console.log(web_content)
+      
+        let content = `<tr class="pb-4">
+                      <th scope="row" style="font-size:.5rem;"> 文字內容 </th>
+                      <td class="shadow rounded-end-5" style="--size:${web_content}; --color:#F6B388;"></td>
+                    </tr>`;
+              
+        document.querySelector('#racing-bs').insertAdjacentHTML('beforeend', content);
+
+        // 計算 web_interactive_desgin 欄位的加總
+        let web_interactive_desginSum = 0;
+        for (let i = 0; i < data.length; i++) {
+          web_interactive_desginSum += parseInt(data[i][7]);
+        }
+        console.log( web_interactive_desginSum);
+      
+        const web_interactive_desgin = web_interactive_desginSum /(numRows*5);
+      
+        console.log(web_interactive_desgin)
+      
+        let interactive_desgin = `<tr class="pb-4">
+                      <th scope="row" style="font-size:.5rem;"> 互動元素設計 </th>
+                      <td class="shadow rounded-end-5" style="--size:${web_interactive_desgin}; --color:#E7725C;"></td>
+                    </tr>`;
+              
+        document.querySelector('#racing-bs').insertAdjacentHTML('beforeend', interactive_desgin);
+
+        // 計算 web_ui_desgin 欄位的加總
+        let web_ui_desginSum = 0;
+        for (let i = 0; i < data.length; i++) {
+          web_ui_desginSum += parseInt(data[i][8]);
+        }
+        console.log(web_ui_desginSum);
+      
+        const web_ui_desgin = web_ui_desginSum /(numRows*5);
+      
+        console.log(web_ui_desgin)
+      
+        let ui_desgin = `<tr class="pb-4">
+                      <th scope="row" style="font-size:.5rem;"> 版面設計精美 </th>
+                      <td class="shadow rounded-end-5" style="--size:${web_ui_desgin}; --color:#F6B388;"></td>
+                    </tr>`;
+              
+        document.querySelector('#racing-bs').insertAdjacentHTML('beforeend', ui_desgin);
+
+        // 計算 web_ux_desgin 欄位的加總
+        let web_ux_desginSum = 0;
+        for (let i = 0; i < data.length; i++) {
+          web_ux_desginSum += parseInt(data[i][9]);
+        }
+        console.log(web_ux_desginSum);
+      
+        const web_ux_desgin = web_ui_desginSum /(numRows*5);
+      
+        console.log(web_ux_desgin)
+      
+        let ux_desgin = `<tr class="pb-4">
+                      <th scope="row" style="font-size:.5rem;"> 使用者體驗 </th>
+                      <td class="shadow rounded-end-5" style="--size:${web_ux_desgin}; --color:#E7725C;"></td>
+                    </tr>`;
+              
+        document.querySelector('#racing-bs').insertAdjacentHTML('beforeend', ux_desgin);
+      })
+      
+    })
   })
   .catch(error => console.error(error));
 
@@ -117,8 +241,9 @@ fetch('https://sheets.googleapis.com/v4/spreadsheets/1qOWN8Nt6HKlRI2tWFsxStUZzmL
 
 
 
-// 身分
-fetch('https://sheets.googleapis.com/v4/spreadsheets/1qOWN8Nt6HKlRI2tWFsxStUZzmLCSn79plpQQVqJHknI/values/sheet1?alt=json&key=AIzaSyBP0dzE_IKIF6AxVpWngj7E8R0pHontVmY')
+
+// 填卷者 身分
+fetch('https://sheets.googleapis.com/v4/spreadsheets/1O8xQzxHnxnuLQiQ5BAghBKoxEAasPNtYKhu1oZ3NA1g/values/sheet1?alt=json&key=AIzaSyD7UcpEu_UkHBEgehwF_Vwm9xa6he_A1YQ')
   .then(response => response.json())
   .then(data => {
     const rows = data.values;
@@ -179,7 +304,7 @@ fetch('https://sheets.googleapis.com/v4/spreadsheets/1qOWN8Nt6HKlRI2tWFsxStUZzmL
 
 
 //   近五天的表單提交次數
-fetch('https://sheets.googleapis.com/v4/spreadsheets/1qOWN8Nt6HKlRI2tWFsxStUZzmLCSn79plpQQVqJHknI/values/sheet1?alt=json&key=AIzaSyBP0dzE_IKIF6AxVpWngj7E8R0pHontVmY')
+fetch('https://sheets.googleapis.com/v4/spreadsheets/1O8xQzxHnxnuLQiQ5BAghBKoxEAasPNtYKhu1oZ3NA1g/values/sheet1?alt=json&key=AIzaSyD7UcpEu_UkHBEgehwF_Vwm9xa6he_A1YQ')
 .then(response => response.json())
 .then(data => {
   // 取得表格資料
@@ -254,17 +379,14 @@ document.getElementById('5days').insertAdjacentHTML('beforeend', percentageByDat
 
 
 
-// 哪一頁的問題
-fetch('https://sheets.googleapis.com/v4/spreadsheets/1qOWN8Nt6HKlRI2tWFsxStUZzmLCSn79plpQQVqJHknI/values/sheet1?alt=json&key=AIzaSyBP0dzE_IKIF6AxVpWngj7E8R0pHontVmY')
+// 哪個頁面最有印象？
+fetch('https://sheets.googleapis.com/v4/spreadsheets/1O8xQzxHnxnuLQiQ5BAghBKoxEAasPNtYKhu1oZ3NA1g/values/sheet1?alt=json&key=AIzaSyD7UcpEu_UkHBEgehwF_Vwm9xa6he_A1YQ')
   .then(response => response.json())
   .then(data => {
     const rows = data.values;
-    let home = 0;
     let year_111 = 0;
     let thoughts = 0;
-    let math = 0;
     let feedback = 0;
-    let report = 0;
 
     //111 學年度 課程 項目
 
@@ -291,9 +413,6 @@ fetch('https://sheets.googleapis.com/v4/spreadsheets/1qOWN8Nt6HKlRI2tWFsxStUZzmL
 
       problems.forEach(problem => {
         switch (problem) {
-          case "首頁":
-            home++;
-            break;
 
           case "111 學年度":
             year_111++;
@@ -303,17 +422,11 @@ fetch('https://sheets.googleapis.com/v4/spreadsheets/1qOWN8Nt6HKlRI2tWFsxStUZzmL
             thoughts++;
             break;
 
-          case "圖像式 學數學":
-            math++;
-            break;
 
           case "問卷 回饋":
             feedback++;
             break;
 
-          case "回報 問卷":
-            report++;
-            break;
 
           //111 學年度 課程 項目
 
@@ -349,7 +462,7 @@ fetch('https://sheets.googleapis.com/v4/spreadsheets/1qOWN8Nt6HKlRI2tWFsxStUZzmL
             video++;
             break;
 
-          case "文字造型 設計基礎課 (111 學年度)":
+          case "文字造型 設計基礎課":
             text++;
             break;
 
@@ -384,13 +497,10 @@ fetch('https://sheets.googleapis.com/v4/spreadsheets/1qOWN8Nt6HKlRI2tWFsxStUZzmL
     //  console.log(activity)
  
 // 計算
-    const totalCount = home + year_111 + thoughts + math + feedback + report + threeD + english + read + math_basic + animation + web + gc + video + text + activity;
-    const Home_count = home / totalCount
+    const totalCount = year_111 + thoughts  + feedback  + threeD + english + read + math_basic + animation + web + gc + video + text + activity;
     const Year_111_count = year_111 / totalCount
     const Thoughts_count = thoughts / totalCount
-    const Math_count = math / totalCount
     const Feedback_count = feedback / totalCount
-    const Report_count = report / totalCount
     const ThreeD_count = threeD / totalCount
     const English_count = english / totalCount
     const Read_count = read / totalCount
@@ -408,48 +518,30 @@ console.log(totalCount)
     
 
 
-    const Home = ` <tr>
-    <th scope="row my-5" style="font-family: 'Noto Sans TC', sans-serif;">首頁</th>
-    <td class="shadow rounded-top-5" style="--color:#F6B388; --size:${Home_count};"><span class="data"> 20 </span></td>
 
-  </tr>`;
-
-  pages.insertAdjacentHTML('beforeend', Home);
-
-    const Year_111 = ` <tr>
+    const Year_111 = ` <tr class="pb-1">
     <th scope="row my-5" style="font-family: 'Noto Sans TC', sans-serif;">111學年度</th>
     <td class="shadow rounded-top-5" style="--color:#E7725C; --size:${Year_111_count};"></td>
   </tr>`;
 
   pages.insertAdjacentHTML('beforeend',Year_111);
 
-    const Thoughts = ` <tr>
+    const Thoughts = ` <tr class="pb-1">
     <th scope="row my-5" style="font-family: 'Noto Sans TC', sans-serif;">心得&回顧</th>
     <td class="shadow rounded-top-5" style="--color:#F6B388; --size:${Thoughts_count};"></td>
   </tr>`;
 
   pages.insertAdjacentHTML('beforeend',Thoughts);
 
-    const Math = ` <tr>
-    <th scope="row my-1" style="font-family: 'Noto Sans TC', sans-serif;">圖像式學數學</th>
-    <td class="shadow rounded-top-5" style="--color:#E7725C; --size:${Math_count};"></td>
-  </tr>`;
 
-  pages.insertAdjacentHTML('beforeend',Math);
 
-    const Feedback = ` <tr>
+    const Feedback = ` <tr class="pb-1">
     <th scope="row my-1" style="font-family: 'Noto Sans TC', sans-serif;">回饋問卷</th>
-    <td class="shadow rounded-top-5" style="--color:#F6B388; --size:${Feedback_count};"></td>
+    <td class="shadow rounded-top-5" style="--color:#E7725C; --size:${Feedback_count};"></td>
   </tr>`;
 
   pages.insertAdjacentHTML('beforeend',Feedback);
 
-    const Report = ` <tr class="pb-1">
-    <th scope="row my-1" style="font-family: 'Noto Sans TC', sans-serif;">回報問卷</th>
-    <td class="shadow rounded-top-5" style="--color:#E7725C; --size:${Report_count};"></td>
-  </tr>`;
-
-  pages.insertAdjacentHTML('beforeend',Report);
 
     const ThreeD = ` <tr class="pb-1">
     <th scope="row my-1" style="font-family: 'Noto Sans TC', sans-serif;" >3D軟體基礎課</th>
@@ -525,3 +617,40 @@ console.log(totalCount)
     
   })
   .catch(error => console.error(error));
+
+
+  
+  //   網站各方面評價 ⭐
+
+  // const uri = 'https://sheets.googleapis.com/v4/spreadsheets/1O8xQzxHnxnuLQiQ5BAghBKoxEAasPNtYKhu1oZ3NA1g/values/sheet1?alt=json&key=AIzaSyD7UcpEu_UkHBEgehwF_Vwm9xa6he_A1YQ';
+      
+  //     fetch(uri)
+  //       .then(res => res.json())
+  //       .then(res => {
+  //         const data = res.values;
+  //         console.log(data);
+      
+  //         // 刪除第一個陣列
+  //         data.shift();
+          
+      
+  //         Array.prototype.forEach.call(data, d => {
+  //  // 計算 web_image_design 欄位的加總
+  //  let web_image_designSum = 0;
+  //  for (let i = 0; i < data.length; i++) {
+  //   web_image_designSum += parseInt(data[i][5]);
+  //  }
+  //  console.log(web_image_designSum);
+
+  //  const web_image_design = web_image_designSum /(numRows*5);
+
+  //  console.log(web_image_design)
+   
+  //           let racing = `<tr class="pb-4">
+  //           <th scope="row"> 2016 </th>
+  //           <td class="shadow rounded-end-5" style="--size:0.2; --color:#E7725C;"></td>
+  //         </tr>`;
+            
+  //           document.querySelector('.js-append-card').insertAdjacentHTML('beforeend', racing);
+  //         })
+  //       })

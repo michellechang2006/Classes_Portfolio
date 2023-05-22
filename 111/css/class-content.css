@@ -1,11 +1,15 @@
-
-.class-content-p {
+@media screen and (min-width:1400px) {
+    
+  .class-content-p {
     font-family: 'Noto Sans TC', sans-serif;
     line-height: 45px;
     font-size: 25px;
   }
 
-  @media screen and (max-width: 1200px) {
+  }
+
+
+  @media screen and (max-width:1400px) {
     
   .class-content-p {
     font-family: 'Noto Sans TC', sans-serif;
@@ -15,34 +19,53 @@
 
   }
 
+ 
 
-  .blender_web_md {
-    width: 10px;
-  }
-
-  .img_scr_text {
-    font-size: 15px;
-  }
-  .img-sm{
-    width: 98%;
-  }
-  .img-md{
-    width: 99%;
-  }
-
+  /* using showdonw.js */
   @media screen and (max-width:768px) {
-    .img-md {
+    .class-content-md,.rating-md, .class-content-md,.thoughts-md,.review-md {
     display: none;
     }
-    .img-sm {
+    .class-content-sm,.rating-sm,.class-content-sm,.thoughts-sm,.review-sm {
     display: block;
     }
+
   }
   @media screen and (min-width:768px) {
-    .img-sm {
+    .class-content-sm,.rating-sm,.class-content-sm,.thoughts-sm,.review-sm {
     display: none;
     }
-    .img-md {
+
+    .class-content-md,.rating-md,.class-content-md,.thoughts-md,.review-md {
     display: block;;
     }
   }
+
+
+
+  .class-content-p img{
+  margin-top: 3rem !important;
+  width: 70%;
+  box-shadow: 0 0.5rem 1rem rgba(33, 37, 41,.15);
+  border-radius:.5rem ;
+}
+
+.class-content-p a{
+color:#E7725C;
+}
+
+
+.img-note{
+  font-size:.8rem;
+}
+
+
+.img-note a{
+  font-size:.8rem;
+  color: #505050;
+}
+
+
+.class-content-p u{
+  color: #9B210F;
+}

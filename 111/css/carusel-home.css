@@ -42,8 +42,17 @@ font-size: 40px;
     font-size: 35px;
     font-family: 'Noto Serif TC', serif;
 }
-}
 .card-title{
     font-family: 'Noto Serif TC', serif;
     font-weight:550;
+    font-size: 2em;
+}
+
+.card-text{
+    font-size: 1em;
+}
+
+.cards-links{
+    font-size: 1rem;
+}
 }

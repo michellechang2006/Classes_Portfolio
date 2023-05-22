@@ -6,19 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="資料分析｜｜ 回報 表單 ｜｜｜｜網站 問題回報 ｜｜ M-Learning | | 我的 學習歷程 活到老，學到老。自學，是一趟充滿未知、驚喜的旅程。開始造訪網站，和我一起踏上這趟充滿未知、驚喜的旅程吧！">
+    content="資料分析｜｜ 111 回饋 表單 ｜｜網站 問題回報 ｜｜ M-Learning | | 我的 學習歷程 活到老，學到老。自學，是一趟充滿未知、驚喜的旅程。開始造訪網站，和我一起踏上這趟充滿未知、驚喜的旅程吧！">
   <meta name="author" content="Michelle Chang">
   <!-- social media thumbnail -->
   <meta property="og:image" content="https://mlearning.url.tw/pics/social_media_thumbnail.webp">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="627">
-  <meta property="og:title" content="資料分析｜｜回報 表單 ｜｜網站 問題回報 ｜｜ M-Learning | | 我的 學習歷程">
+  <meta property="og:title" content="資料分析｜｜111 回饋 表單｜｜網站 問題回報 ｜｜ M-Learning | | 我的 學習歷程">
   <meta property="og:description"
-    content="資料分析｜｜回報 表單｜｜網站 問題回報 ｜｜ M-Learning | | 我的 學習歷程 活到老，學到老。自學，是一趟充滿未知、驚喜的旅程。開始造訪網站，和我一起踏上這趟充滿未知、驚喜的旅程吧！">
+    content="資料分析｜｜111 回饋 表單｜｜網站 問題回報 ｜｜ M-Learning | | 我的 學習歷程 活到老，學到老。自學，是一趟充滿未知、驚喜的旅程。開始造訪網站，和我一起踏上這趟充滿未知、驚喜的旅程吧！">
   <meta property="og:type" content='website' />
   <meta property="og:url" content='https://mlearning.url.tw' />
-  <meta name=”twitter:title” content=”感謝有你🙏｜｜網站問題回報｜｜M-Learning||我的學習歷程”>
+  <meta name=”twitter:title” content=”資料分析｜｜111回饋表單｜｜網站問題回報｜｜M-Learning||我的學習歷程”>
   <link rel=”canonical” href="https://mlearning.url.tw">
 
   <!-- apple touch icon -->
@@ -28,7 +28,7 @@
   <!-- favicon -->
   <link href="img/favicon_smile.ico" rel="shortcut icon" />
 
-  <title>資料分析｜｜回報 表單 ｜｜ 網站 後台 ｜｜ M-Learning | | 我的 學習歷程</title>
+  <title>資料分析｜｜111 回饋 表單 ｜｜ 網站 後台 ｜｜ M-Learning | | 我的 學習歷程</title>
 
 
 
@@ -128,34 +128,52 @@
       margin: 0 auto;
     }
 
-    
+
 
     #column-example-6 {
       height: calc(100vh - 80px);
       margin: 0 auto;
     }
+
     #column-example-6 td .data {
-  transition-duration: 0.6s;
-  transform: scale(0);
-}
-#column-example-6 td:hover .data {
-  transform: scale(1);
-}
+      transition-duration: 0.6s;
+      transform: scale(0);
+    }
+
+    #column-example-6 td:hover .data {
+      transform: scale(1);
+    }
 
 
 
     #column-example-6 td {
-  animation: jumping-bars 3s linear infinite;
-  animation-delay: 0;
-}
-#column-example-6 tr:nth-of-type(even) td {
-  animation-delay: 300ms;
-}
-@keyframes jumping-bars {
-  0% { transform: translateY(   0px ); }
-  2% { transform: translateY( -10px ); }
-  4% { transform: translateY(   0px ); }
-}
+      animation: jumping-bars 3s linear infinite;
+      animation-delay: 0;
+    }
+
+    #column-example-6 tr:nth-of-type(even) td {
+      animation-delay: 300ms;
+    }
+
+    @keyframes jumping-bars {
+      0% {
+        transform: translateY(0px);
+      }
+
+      2% {
+        transform: translateY(-10px);
+      }
+
+      4% {
+        transform: translateY(0px);
+      }
+    }
+
+    #bar-example-6 {
+      height: 70vh;
+      /* max-width: 300px; */
+      margin: 0 auto;
+    }
   </style>
 </head>
 
@@ -257,34 +275,33 @@
             <div>
               <img src="pics/Mimi_Rabbit_smile.png" class="profile-md my-3 shadow  ">
             </div>
-          <div>
-            <a type="button" href="" class="btn" href="">
-              <i class="bi-house-door my-5 " style="font-size:2.5rem;" data-bs-toggle="tooltip"
-                data-bs-placement="right" data-bs-title="首頁"></i>
-            </a>
+            <div>
+              <a type="button" href="" class="btn" href="">
+                <i class="bi-house-door my-5 " style="font-size:2.5rem;" data-bs-toggle="tooltip"
+                  data-bs-placement="right" data-bs-title="首頁"></i>
+              </a>
+            </div>
+            <div>
+              <a type="button" href="" class="btn" href="">
+                <i class="bi-flag my-5 " style="font-size:2.5rem;" data-bs-toggle="tooltip" data-bs-placement="right"
+                  data-bs-title="回報 系統"></i>
+              </a>
+            </div>
+            <div>
+              <a type="button" href="" class="btn" href="">
+                <i class="bi-clipboard my-5 " style="font-size:2.5rem;" data-bs-toggle="tooltip"
+                  data-bs-placement="right" data-bs-title="問卷 回饋"></i>
+              </a>
+            </div>
+            <div>
+              <a type="button"
+                href="https://drive.google.com/drive/folders/1NCjrYE38LO6vsHAfsZU4LBsNQX4lzefZ?usp=share_link"
+                class="btn" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="資料庫"><i
+                  class="bi-database my-5 " style="font-size:2.5rem;"></i>
+              </a>
+            </div>
           </div>
-           <div>
-            <a type="button" href="" class="btn" href="">
-              <i class="bi-flag my-5 " style="font-size:2.5rem;" data-bs-toggle="tooltip" data-bs-placement="right"
-                data-bs-title="回報 系統"></i>
-            </a>
-           </div>
-           <div>
-            <a type="button" href="" class="btn" href="">
-              <i class="bi-clipboard my-5 " style="font-size:2.5rem;" data-bs-toggle="tooltip" data-bs-placement="right"
-                data-bs-title="問卷 回饋"></i>
-            </a>
-           </div>
-           <div>
-            <a type="button"
-            href="https://drive.google.com/drive/folders/1NCjrYE38LO6vsHAfsZU4LBsNQX4lzefZ?usp=share_link" class="btn"
-            data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="資料庫"><i class="bi-database my-5 "
-              style="font-size:2.5rem;"></i>
-          </a>
-           </div>
-          </div>
-          <div class="col-2 bg-primary text-center" id="bs-menu-content-md"
-            style="display: none; height: 100vh;">
+          <div class="col-2 bg-primary text-center" id="bs-menu-content-md" style="display: none; height: 100vh;">
             <img src="logo/Logo-content(v.2).svg" class="logo-top my-3 mx-3" alt="logo">
             <a href="#" class="btn border-0">
               <h4 style="font-weight: normal;"><i class="bi-house-door my-5 " style="font-size:2rem;"></i> 首頁</h4>
@@ -363,7 +380,7 @@
       </div>
     </div>
     <!-- 墊的東西 -->
-    <div class="row" >
+    <div class="row">
       <div class="col-1 bg-secondary order-2 opacity-0" style="display: inline; height: 100vh ;">
         <i class="bi-heart-fill" style="font-size:50px;"></i>
       </div>
@@ -374,9 +391,10 @@
         <button class="btn border-0 opacity-0" id="bs-menu-icon-md" style="font-size:1.7rem;"><i
             class="bi-list"></i></button>
         <!-- 內容 -->
-        <main class="my-3 mx-3 ">
+        <main class="mx-3 my-3">
           <div class="row order-2">
-            <div class="forms-amount col-4 text-center shadow-lg rounded-5" style="display: flex; align-items:center;">
+            <div class="forms-amount col-4 text-center shadow-lg py-3 rounded-5 m-0"
+              style="display: flex; align-items:center;">
               <div class="container-fluid  forms-amount-bg bg-white rounded-5"
                 style="height: 20rem; display: flex; align-items:center;">
                 <div class="ratio" style="--bs-aspect-ratio: 30%;">
@@ -388,7 +406,7 @@
               </div>
             </div>
             <div class="col-5 text-center  " id="kinds_of_q">
-              <h1 style="font-family: 'Noto Sans TC', sans-serif; font-size: 2.3rem;">問題 類型</h1>
+              <h6 style="font-family: 'Noto Sans TC', sans-serif; font-size: 2.3rem;">最有印象的原因</h6>
               <!-- database -->
             </div>
             <div class="col-3 text-center" id="kinds_of_i">
@@ -397,7 +415,7 @@
             </div>
           </div>
           <div class="col-12 my-1 text-center">
-            <table id="line-example-6" class="charts-css line multiple hide-data show-labels show-5-secondary-axes">
+            <table id="line-example-6" class="charts-css line multiple hide-data show-labels show-3-secondary-axes">
               <caption>近五天的提交次數</caption>
               <h3 style="font-family: 'Noto Sans TC', sans-serif;">近五天的提交次數</h3>
               <thead>
@@ -407,19 +425,19 @@
               </thead>
               <tbody id="5days">
 
-                
+
               </tbody>
             </table>
           </div>
-          <div class="col-12 mt-5 text-center">
+          <div class="col-12 my-5 text-center">
             <table id="column-example-6" style="font-size: .3rem; line-height: .9rem;"
               class="charts-css column show-labels py-5 show-10-secondary-axes data-spacing-5 datasets-spacing-5">
-              <h1 style="font-family: 'Noto Sans TC', sans-serif;">哪個頁面出問題？</h1>
-              <caption>哪個頁面出問題？</caption>
+              <h1 style="font-family: 'Noto Sans TC', sans-serif;">哪個頁面最有印象？</h1>
+              <caption>哪個頁面最有印象？</caption>
               <thead>
                 <tr>
-                  <th scope="col">哪個頁面出問題？</th>
-                  <th scope="col">哪個頁面出問題？</th>
+                  <th scope="col">哪個頁面最有印象？</th>
+                  <th scope="col">哪個頁面最有印象？</th>
                 </tr>
               </thead>
               <tbody id="pages">
@@ -427,15 +445,49 @@
               </tbody>
             </table>
           </div>
+          <div class="col-12 mb-5 pb-5 px-3 text-center">
+            <table id="bar-example-6" class="charts-css bar show-labels show-5-secondary-axes">
+              <h1 style="font-family: 'Noto Sans TC', sans-serif;" class="my-5">網站各方面評價 ⭐</h1>
+              <caption>網站各方面評價 ⭐</caption>
+              <thead>
+                <tr>
+                  <th scope="col">網站各方面評價 ⭐</th>
+                  <th scope="col">網站各方面評價 ⭐</th>
+                </tr>
+              </thead>
+              <tbody id="racing-bs">
+                <!-- <tr class="pb-4">
+                  <th scope="row"> 2016 </th>
+                  <td class="shadow rounded-end-5" style="--size:0.2; --color:#E7725C;"></td>
+                </tr>
+                <tr class="pb-4">
+                  <th scope="row"> 2017 </th>
+                  <td class="shadow rounded-end-5 " style="--size:0.4; --color:#F6B388;"></td>
+                </tr> -->
+                
+              </tbody>
+            </table>
+            <div class="table-racing row col-11 float-end " style="margin-right: .1%;">
+              <p class="col-6 text-start">⭐</p>
+              <p class="col-6 text-end">⭐⭐⭐⭐⭐</p>
+            </div>
+          </div>
 
       </div>
     </div>
     </main>
   </div>
   </div>
-  </div>
+  </div> 
 
+ <!-- <script>
+  const myModal = document.getElementById('myModal')
+  const myInput = document.getElementById('myInput')
 
+  myModal.addEventListener('shown.bs.modal', () => {
+    myInput.focus()
+  })
+ </script> -->
   <!-- JQuery Library  -->
   <script src="js/jquery.min.js"></script>
   <script src="js/sidemenu.js"></script>
@@ -462,9 +514,9 @@
 
   <script src="js/feedback_111_backstage.js"></script>
   <script src="js/report_menu_backstage.js"></script>
-<script>
+  <script>
 
-</script>
+  </script>
 </body>
 
 </html>
