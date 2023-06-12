@@ -23,32 +23,41 @@
 
   /* using showdonw.js */
   @media screen and (max-width:768px) {
-    .class-content-md,.rating-md, .class-content-md,.thoughts-md,.review-md {
+    .class-content-md,.rating-md, .class-content-md,.thoughts-md,.review-md, .motivation-md {
     display: none;
     }
-    .class-content-sm,.rating-sm,.class-content-sm,.thoughts-sm,.review-sm {
+    .class-content-sm,.rating-sm,.class-content-sm,.thoughts-sm,.review-sm, .motivation-sm {
     display: block;
+    }
+
+    .class-content-p img{
+      margin-top: 3rem !important;
+      width: 100%;
+      box-shadow: 0 0.5rem 1rem rgba(33, 37, 41,.15);
+      border-radius:.5rem ;
     }
 
   }
   @media screen and (min-width:768px) {
-    .class-content-sm,.rating-sm,.class-content-sm,.thoughts-sm,.review-sm {
+    .class-content-sm,.rating-sm,.class-content-sm,.thoughts-sm,.review-sm,.motivation-sm {
     display: none;
     }
 
-    .class-content-md,.rating-md,.class-content-md,.thoughts-md,.review-md {
+    .class-content-md,.rating-md,.class-content-md,.thoughts-md,.review-md,.motivation-md {
     display: block;;
+    }
+
+    .class-content-p img{
+      margin-top: 3rem !important;
+      width: 60%;
+      box-shadow: 0 0.5rem 1rem rgba(33, 37, 41,.15);
+      border-radius:.5rem ;
     }
   }
 
 
 
-  .class-content-p img{
-  margin-top: 3rem !important;
-  width: 70%;
-  box-shadow: 0 0.5rem 1rem rgba(33, 37, 41,.15);
-  border-radius:.5rem ;
-}
+
 
 .class-content-p a{
 color:#E7725C;

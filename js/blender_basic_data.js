@@ -33,20 +33,25 @@ fetch(uri)
       html = converter.makeHtml(text);
       document.getElementById('review-md').innerHTML = html;
 
+      // 動機
+
+      text = `${d[14]}`,
+      html = converter.makeHtml(text);
+      document.getElementById('motivation-md').innerHTML = html;
     })
 
     // RWD SM
     Array.prototype.forEach.call(data, d => {
 
       var converter = new showdown.Converter(),
-      text = `${d[1]}`,
-      html = converter.makeHtml(text);
-      document.getElementById('aboutclass-sm').innerHTML = html;
+      // text = `${d[0]}`,
+      // html = converter.makeHtml(text);
+      // document.getElementById('aboutclass-md').innerHTML = html;
+      //       var converter = new showdown.Converter(),
 
-      var converter = new showdown.Converter(),
-      text = `${d[2]}`,
-      html = converter.makeHtml(text);
-      document.getElementById('rating-sm').innerHTML = html;
+      // text = `${d[3]}`,
+      // html = converter.makeHtml(text);
+      // document.getElementById('rating-md').innerHTML = html;
 
       text = `${d[5]}`,
       html = converter.makeHtml(text);
@@ -60,27 +65,42 @@ fetch(uri)
       html = converter.makeHtml(text);
       document.getElementById('review-sm').innerHTML = html;
 
-    })
-
-        Array.prototype.forEach.call(data, d => {
-
-      // 本頁大綱-md
-
-      let class_menu_items_md = `<a class="list-group-item m-3 h5 border-0 list-group-item-action" href="#thoughts-title">${d[11]}</a>
-        <a class="list-group-item m-3 h5 border-0 list-group-item-action" href=""#review-title">${d[12]}</a>`
-
-      document.querySelector('#class-menu-items-md').insertAdjacentHTML('beforeend', class_menu_items_md);
-
-
-      // 本頁大綱-lg
-
-      let class_menu_items_lg = `
-      <a class="nav-link list-group-item m-xl-3 h5 border-0 list-group-item-action" href="#thoughts-title">${d[13]}</a>
-        <a class="nav-link list-group-item m-xl-3 h5 border-0 list-group-item-action" href="#review-title">${d[14]}</a>
-        `
-      document.querySelector('#class-menu-items-lg').insertAdjacentHTML('afterend', class_menu_items_lg);
+            // 動機
+      
+            text = `${d[13]}`,
+            html = converter.makeHtml(text);
+            document.getElementById('motivation-sm').innerHTML = html;
 
     })
+
+    // 本頁大鋼 md
+    Array.prototype.forEach.call(data, d => {
+
+    let thought =  `<a class="list-group-item m-3 h5 border-0 list-group-item-action" href="#thoughts-title">${d[11]}</a>`;
+
+    document.querySelector('#class-menu-items-md').insertAdjacentHTML('beforeend', thought);
+
+   
+    let review =  `<a class="list-group-item m-3 h5 border-0 list-group-item-action" href="#review-title">${d[12]}</a>`;
+
+    document.querySelector('#class-menu-items-md').insertAdjacentHTML('beforeend', review);
+
+    })
+
+    // 本頁大鋼 lg
+    Array.prototype.forEach.call(data, d => {
+
+    let thought =  `<a class="nav-link list-group-item m-xl-3 h5 border-0 list-group-item-action"" href="#thoughts-title">${d[11]}</a>`;
+
+    document.querySelector('#class-menu-items-lg').insertAdjacentHTML('beforeend', thought);
+
+   
+    let review =  `<a class="nav-link list-group-item m-xl-3 h5 border-0 list-group-item-action"" href="#review-title">${d[12]}</a>`;
+
+    document.querySelector('#class-menu-items-lg').insertAdjacentHTML('beforeend', review);
+
+    })
+
     console.clear()
   })
 
