@@ -12,14 +12,14 @@ fetch(uri)
     Array.prototype.forEach.call(data, d => {
 
       var converter = new showdown.Converter(),
-      text = `${d[0]}`,
-      html = converter.makeHtml(text);
-      document.getElementById('aboutclass-md').innerHTML = html;
-            var converter = new showdown.Converter(),
+      // text = `${d[0]}`,
+      // html = converter.makeHtml(text);
+      // document.getElementById('aboutclass-md').innerHTML = html;
+      //       var converter = new showdown.Converter(),
 
-      text = `${d[3]}`,
-      html = converter.makeHtml(text);
-      document.getElementById('rating-md').innerHTML = html;
+      // text = `${d[3]}`,
+      // html = converter.makeHtml(text);
+      // document.getElementById('rating-md').innerHTML = html;
 
       text = `${d[4]}`,
       html = converter.makeHtml(text);
@@ -75,10 +75,10 @@ fetch(uri)
       // 本頁大綱-lg
 
       let class_menu_items_lg = `
-      <a class="nav-link list-group-item m-xl-3 h5 border-0 list-group-item-action" href="#thoughts-title">${d[11]}</a>
-        <a class="nav-link list-group-item m-xl-3 h5 border-0 list-group-item-action" href="#review-title">${d[12]}</a>
+      <a class="nav-link list-group-item m-xl-3 h5 border-0 list-group-item-action" href="#thoughts-title">${d[13]}</a>
+        <a class="nav-link list-group-item m-xl-3 h5 border-0 list-group-item-action" href="#review-title">${d[14]}</a>
         `
-      document.querySelector('#class-menu-items-lg').insertAdjacentHTML('beforeend', class_menu_items_lg);
+      document.querySelector('#class-menu-items-lg').insertAdjacentHTML('afterend', class_menu_items_lg);
 
     })
     console.clear()
