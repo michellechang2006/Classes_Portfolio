@@ -1,12 +1,547 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-tw">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="體驗學習課  ｜｜ M-Learning | | 我的 學習歷程 活到老，學到老。自學，是一趟充滿未知、驚喜的旅程。開始造訪網站，和我一起踏上這趟充滿未知、驚喜的旅程吧！">
+  <meta name="author" content="Michelle Chang">
+  <!-- social media thumbnail -->
+  <meta property="og:image" content="https://mlearning.url.tw/111/pics/social_media_thumbnail.webp">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="627">
+  <meta property="og:title" content="體驗學習課｜｜ M-Learning | | 我的 學習歷程">
+  <meta property="og:description"
+    content="體驗學習課  ｜｜ M-Learning | | 我的 學習歷程 活到老，學到老。自學，是一趟充滿未知、驚喜的旅程。開始造訪網站，和我一起踏上這趟充滿未知、驚喜的旅程吧！">
+  <meta property="og:type" content='website' />
+  <meta property="og:url" content='https://mlearning.url.tw' />
+  <meta name=”twitter:title” content=”體驗學習課｜｜M-Learning｜｜我的學習歷程”>
+  <link rel=”canonical” href="https://mlearning.url.tw">
+
+  <!-- apple touch icon -->
+  <link rel="apple-touch-icon" href="111/pics/web_cover_bg_square.webp">
+
+  <!-- favicon -->
+  <link href="img/favicon.ico" rel="shortcut icon" />
+
+  <title>體驗學習課 ｜｜ M-Learning | | 我的 學習歷程</title>
+
+
+  <link rel="stylesheet" href="111/css/css reset.css">
+  <link rel="stylesheet" href="111/css/RWD.css">
+
+  <link rel="stylesheet" href="bootstrap-icons-1.10.3/bootstrap-icons.css">
+  <link rel="stylesheet" href="111/css/bootstrap.css">
+
+
+  <link rel="stylesheet" href="111/css/sidemenu.css">
+  <link rel="stylesheet" href="111/css/topmenu(2.20).css">
+  <link rel="stylesheet" href="111/css/home_hero.css">
+  <link rel="stylesheet" href="111/css/home_hero_lg.css">
+  <link rel="stylesheet" href="111/css/footer.css">
+  <link rel="stylesheet" href="111/css/carusel-home.css">
+  <link rel="stylesheet" href="111/css/breadcrumb.css">
+  <link rel="stylesheet" href="111/css/class_menu.css">
+  <link rel="stylesheet" href="111/css/class-content.css">
+
+  <link rel="stylesheet" href="111/css/animate.min.css" />
+  <link rel="stylesheet" href="111/css/aos.css" />
+  <link rel="stylesheet" href="111/css/owl.carousel.css">
+  </link>
+  <link rel="stylesheet" href="111/css/owl.theme.default.css">
+  </link>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+    body {
+      font-family: 'Noto Sans TC', sans-serif;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    .text-orange {
+      color: #DA7E3C;
+    }
+
+    .nav-ul {
+      overflow: scroll;
+    }
+
+    .bi-hover:hover {
+      text-decoration: underline;
+      ;
+    }
+
+    @media screen and (max-width:1200px) {
+      .breadcrumb-item {
+        font-size: 20px;
+      }
+    }
+
+    .test {
+      color: red;
+    }
+  </style>
 </head>
+
 <body>
+  <!-- side menu -->
+  <div class="sidemenu ">
+    <header tabindex="0" class="logo-content-sm shadow">
+      <a href="https://mlearning.url.tw">
+        <img class="logo-sm-topmenu logo-sidemenu-md" src="logo/Mimi_Rabbit_AE. .svg" alt="logo">
+      </a>
+      <a href="https://mlearning.url.tw" class="logo-text-sm">M-Learning</a>
+    </header>
+    <div id="nav-container">
+      <div class="bg"></div>
+      <div class="button" tabindex="0">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </div>
+      <div class="shadow" id="nav-content" tabindex="0">
+        <ul class="nav-ul">
+          <li class="nav-li">
+            <a href="https://mlearning.url.tw" class="nav-text"> <i class="bi bi-house-fill"></i> 回首頁</a>
+          </li>
+          <li class="nav-li">
+            <a href="https://mlearning.url.tw" class="nav-text"> <i class="bi  bi-mortarboard-fill"></i> 111學年度</a>
+          </li>
+          <li>
+            <button class="dropdown-btn-years all-classes-sm"> <i class="bi bi-book-fill"></i> 所有課程<i
+                class="bi bi-caret-down-fill"></i>
+            </button>
+          </li>
+          <div class="dropdown-container-years all-classes-sm-content">
+            <ul class="dropdown-ul" id="sidemenu_items">
+              <!-- Google database -->
+            </ul>
+          </div>
+          <li>
+            <button class="dropdown-btn-years projects"> <i class="bi bi-kanban-fill"></i> Projects<i
+                class="bi bi-caret-down-fill"></i>
+            </button>
+          </li>
+          <div class="dropdown-container-years projects-content">
+            <ul class="dropdown-ul">
+              <li class="nav-li"><a href="#0" class="nav-dropdown-text"> <i class="bi bi-heart"></i> 敬請期待</a></li>
+            </ul>
+          </div>
+          <li class="nav-li">
+            <a href="#" class="nav-text"><i class="bi bi-emoji-smile-fill"></i> 心得&回顧</a>
+          </li>
+          <li class="nav-li">
+            <a href="#" class="nav-text"><i class="bi bi-chat-left-heart-fill"></i> 問卷回饋</a>
+          </li>
+          <li class="nav-li mb-5">
+            <a href="report.html" class="nav-text"><i class="bi bi-flag-fill"></i> 問題 回報</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- top menu -->
+  <div class="topmenu shadow">
+    <nav class="navbar navbar-expand-md bg-primary w-100">
+      <div class="container-fluid w-100">
+        <a class="navbar-brand" href="https://mlearning.url.tw">
+          <img src="logo/Mimi_Rabbit_AE. .svg" width="30" height="35" class="top-logo-topmenu-lg">
+          <img src="logo/Mimi_Rabbit_smile .svg" width="30" height="35" class="top-logo-topmenu-lg-hover">
+        </a>
+        <a class="navbar-brand navbar-brand-text" href="https://mlearning.url.tw">M-Learning</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="https://mlearning.url.tw"><span class="nav-text-md">
+                  <i class="bi-topmenu  bi-house-fill"></i> 回首頁</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="111.html"><span class="nav-text-md"> <i
+                    class="bi-topmenu  bi-mortarboard-fill"></i> 111學年度</span></a>
+            </li>
+            <li class="nav-item dropdown  all-classes-md">
+              <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <span class="nav-text-md"><i class="bi-topmenu bi-book-fill"></i> 所有課程</span>
+              </a>
+              <ul class="dropdown-menu all-classes-md-content bg-primary shadow" id="topmenu_items">
+                <!-- Google database -->
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"><span class="nav-text-md">
+                  <i class="bi-topmenu  bi-emoji-smile-fill"></i> 心得&回顧</span></a>
+            </li>
+            <li class="nav-item dropdown  projects">
+              <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <span class="nav-text-md"><i class="bi-topmenu bi-kanban-fill"></i> Projects</span>
+              </a>
+              <ul class="dropdown-menu projects-content-md bg-primary shadow">
+                <li><a class="dropdown-item bg-primary  text-center " href="#"><span class="dropdown-content-md"> <i
+                        class="bi-topmenu bi-heart"></i> 敬請期待</span></a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="https://mlearning.url.tw"><span class="nav-text-md">
+                  <i class="bi-topmenu  bi-chat-left-heart-fill"></i> 問卷回饋</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  active" href="report.html"> <span class="nav-text-md"><i
+                    class="bi-topmenu  bi-flag-fill"></i>
+                  問題 回報</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <main>
+    <!-- topmenu bug -->
+    <div class="fixedbug"></div>
+    <!-- Hero-xlg -->
+    <div class="home-hero">
+      <div class="container-fluid  p-0 container-home-hero">
+        <img src="111/pics/web_cover_bg.webp" class="home-hero-cover" alt="">
+        <div class="container-fluid p-0 m-0 home-hero-content text-center row align-items-center">
+          <div class="home-hero-text" id="list-example">
+            <h1 class="home-hero-text-title-en mt-xxl-5 mt-xl-3">
+              M-Leaning
+            </h1>
+            <div class="container-typing">
+              <h3 class="home-hero-text-title-cn mt-xxl-5 mt-xl-3">
+                體驗學習課
+              </h3>
+            </div>
+            <h6 class="home-hero-text-slogan mt-3">這一學年，是新的開始...</h6>
+            <h6 class="home-hero-text-slogan mt-3">高中階段，自學的第一年，慢慢摸索著...</h6>
+            <a href="#portfolio" class="home-hero-button-go mt-xxl-5 mt-xl-1"
+              aria-label="go to main me section button"><i
+                class="home-hero-button-go-i bi-caret-down-fill mx-0"></i></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hero-lg -->
+    <div class="home-hero-lg">
+      <div class="contianer-fluid p-0  container-home-hero-lg">
+        <img src="111/pics/web_cover_bg_mobile.webp" class="home-hero-cover-lg" alt="">
+        <div class="contianer-fluid home-hero-content-lg p-0 row align-items-start">
+          <div class="home-hero-text-lg mx-5 mt-5 " id="list-example">
+            <h1 class="home-hero-text-title-en-lg ">
+              M-Leaning
+            </h1>
+            <div class="container-typing-lg mt-3">
+              <h1 class="home-hero-text-title-cn-lg">
+                體驗學習課
+                </h3>
+            </div>
+            <h1 class="home-hero-text-slogan-lg mt-5 mt-xl-3">這一學年，是新的開始...</h3>
+              <h1 class="home-hero-text-slogan-lg mt-3 ">高中階段，自學的第一年，慢慢摸索著...</h3>
+                <p class="home-hero-text-p-lg mt-5 col-6">歡迎！開始和我一回顧這一學年吧！
+                </p>
+                <a href="#portfolio" aria-label="go to main me section button"
+                  class="home-hero-button-go mt-5 row text-start "><i
+                    class="home-hero-button-go-i-lg bi-caret-down-fill mx-auto">
+                  </i>
+                </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- breadcrumb -->
+    <div class="container container-fluid mt-3 mx-3">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active"><a href="https://mlearning.url.tw" class="breadcrumb-link">首頁</a></li>
+          <li class="breadcrumb-item "><a href="111.html" class="breadcrumb-link">111學年度</a></li>
+          <li class="breadcrumb-item "><a href="explore_111.html" class="breadcrumb-link">體驗學習課</a></li>
+        </ol>
+      </nav>
+    </div>
+
+    <div class="container-fluid row  col-12 mx-1 ">
+
+      <div class="class-menu-md ">
+        <div class="text-center d-grid">
+          <button class="btn btn-class-menu-md btn-outline-secondary">
+            <h2 class=" my-3 ">本頁 大綱 <i class="bi-chevron-expand"></i></h2>
+          </button>
+        </div>
+        <div class="class-menu-items-md my-3 bg-secondary-subtle rounded-3">
+          <div class=" p-3 " id="class-menu-items-md">
+            <a class="list-group-item m-3 h5 border-0 list-group-item-action" href="#classcontent-title">課程內容</a>
+            <!-- 資料庫載入 -->
+          </div>
+        </div>
+      </div>
+      <div class="class-menu-lg order-1 col-md-3">
+        <div id="list-class-menu" class="list-group ">
+          <div class="border-bottom border-2 ">
+            <h2 class="text-center">本頁 大綱</h2>
+            <h4 class="text-center">On this page</h4>
+          </div>
+          <div class="border-start border-primary my-3 border-3 rounded-0" id="class-menu-items-lg">
+            <a class="nav-link list-group-item m-xl-3 h5 border-0 list-group-item-action" href="#classcontent-title">課程內容</a>
+            <!-- 資料庫載入 -->
+          </div>
+        </div>
+      </div>
+      <div class="class-content  cards-classes container col-lg-9 col-sm-12 mt-" id="portfolio" data-bs-spy="scroll"
+        data-bs-target="#gotosection" data-bs-smooth-scroll="true" tabindex="0" data-bs-spy="scroll"
+        data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+
+
+        <!-- carusel-Portfolio -->
+        <!-- owl carousel library-->
+        <!-- <script src="111/js/jquery.min.js"></script>
+        <script src="111/js/owl.carousel.min.js"></script>
+
+        <div class="cards-home-md my-5">
+          <div class="owl-carousel owl-theme " style="overflow-x:hidden;" data-aos="fade-in">
+            <div class="item-md mx-2">
+              <div class="card bg-primary border-0 px-2 shadow">
+                <div class="card-body ">
+                  <img src="111/pics/web_cover_bg_square.webp" class="card-img-top shadow" alt="..."
+                    class="card-img-top shadow" alt="..." data-aos="zoom-in" data-aos-delay="500">
+                  <div class="cards-content-home" data-aos="fade-in" data-aos-delay="1000">
+                    <h1 class="card-title text-center mt-3">網站封面設計</h1>
+                    <p class="card-text mt-3">網站封面設計：透過3D建模，來呈現「學習空間」，以可愛、療癒風格及「isometric room」視角來設計。</p>
+                    <p class="cards-links text-gray text-center m-2">...點我看更多</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item-md mx-2 ">
+              <div class="card bg-primary border-0 p-2 shadow">
+                <div class="card-body">
+                  <img src="111/pics/interior_work(lighting).png" class="card-img-top shadow" alt="..." data-aos="zoom-in"
+                    data-aos-delay="500">
+                  <div class="cards-contents-home" data-aos="fade-in" data-aos-delay="1000">
+                    <h1 class="card-title text-center mt-3">寫實風 臥室</h1>
+                    <p class="card-text mt-3"> 以「簡約白配深藍+雅典黑」，來建模「寫實風」的臥室。 </p>
+                    <a href="https://www.artstation.com/artwork/nE9qwr" target="_blank" class="text-decoration-none">
+                      <p class="cards-links text-gray text-center m-2">...點我看更多</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item-md mx-2">
+              <div class="card bg-primary border-0 p-2 shadow">
+                <div class="card-body ">
+                  <img src="111/pics/blender_video_mockup.png" class="card-img-top shadow cards-img " alt="..."
+                    class="card-img-top shadow" alt="..." data-aos="zoom-in" data-aos-delay="500">
+                  <div class="cards-content-home" data-aos="fade-in" data-aos-delay="1000">
+                    <h1 class="card-title text-center mt-3">學習歷程紀錄</h1>
+                    <p class="card-text text-center mt-3">2022年5月，我用了Blender，開啟了我的3D之旅...，本影片為我這5個月的學習歷程。
+                    </p>
+                    <a href="https://youtu.be/HjRmyJ6Q-4Q" target="_blank" class="text-decoration-none">
+                      <p class="cards-links text-gray text-center m-2">...點我看更多</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
     
+          </div>
+        </div> -->
+        <!-- owl carousel.js -->
+        <script src="111/js/owl_carousel.js"></script>
+
+        <!-- class-content -->
+        <!-- <div class="main-class my-5 mx-2">
+          <h1 class="text-center" id="aboutclass-title">課程簡介</h1>
+          <div class="class-content-p my-5" id="about-class">
+             <div class="class-content-sm" id="aboutclass-sm"></div>
+             <div class="class-content-md" id="aboutclass-md"></div>
+          </div>
+        </div>
+
+        <div class="main-class my-5 mx-2">
+          <h1 class="text-center" id="rating-title">質性評語</h1>
+          <div class="class-content-p my-5" id="rating">
+            <div class="rating-sm" id="rating-sm"></div>
+            <div class="rating-md" id="rating-md"></div>
+          </div>
+        </div> -->
+
+        <div class="main-class my-5 mx-2">
+          <h1 class="text-center" id="classcontent-title">課程內容</h1>
+          <div class="class-content-p my-5" id="class-content">
+            <div class="class-content-sm" id="class-content-sm"></div>
+            <div class="class-content-md" id="class-content-md"></div>
+          </div>
+        </div>
+
+        <div class="main-class my-5 mx-2">
+          <h1 class="text-center" id="thoughts-title">我的心得&收穫</h1>
+          <div class="class-content-p my-5" id="thoughts">
+            <div class="thoughts-sm" id="thoughts-sm"></div>
+            <div class="thoughts-md" id="thoughts-md"></div>
+          </div>
+        </div>
+
+        <div class="main-class my-5 mx-2">
+          <h1 class="text-center" id="review-title">對策- 我的反思&回顧</h1>
+          <div class="class-content-p my-5" id="review">
+            <div class="review-sm" id="review-sm"></div>
+            <div class="review-md" id="review-md"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <table>
+      <td></td>
+    </table>
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <div class="main-footer-md">
+      <footer>
+        <div class="container-fluid">
+          <div class="row ">
+            <div class="col footer-content row align-items-center p-2">
+              <h1 class="logo-title_social-icons text-center">
+                <a href="https://mlearning.url.tw" class="logo-group"><img src="logo/Logo-content.svg" class="logo"
+                    alt="logo"><img src="logo/Logo-content(v.2).svg" class="logo-top" alt="logo"></a>
+                <div class="social-icons text-center">
+                  <a href="https://www.facebook.com/michellechang2006" target="_blank" aria-label="facebook icon"> <i
+                      class="bi-md bi-facebook mx-1 "></i></a>
+                  <a href="https://github.com/michellechang2006" target="_blank" aria-label="github icon"> <i
+                      class="bi-md bi-github mx-1 "></i></a>
+                  <a href="https://www.behance.net/michellechang2006" target="_blank" aria-label="behance icon"> <i
+                      class="bi-md bi-behance mx-1 "></i></a>
+                  <a href="https://mlearning.url.tw" target="_blank" aria-label="website icon"> <i
+                      class="bi-md bi-globe mx-1 "></i></a>
+                  <a href="mailto:mimischooler@gmail.com" target="_blank" aria-label="e-mail icon"> <i
+                      class="bi-md bi-envelope-fill mx-1 "></i></a>
+                  <a href="https://www.artstation.com/michellechang2006" target="_blank" class="p-0 m-0"
+                    aria-label="artstation icon"> <i
+                      class="fa-md fa-brands fa-artstation fa-my-2xs mx-1 py-0  "></i></a>
+                  <a href="https://www.youtube.com/@M-Learning2023" target="_blank" aria-label="youtube icon"> <i
+                      class="bi-md bi-youtube mx-1 "></i></a>
+                </div>
+              </h1>
+            </div>
+            <div class="col footer-content row align-items-center p-2">
+              <div class="info_contact">
+                <h1 class="info-title">聲明</h6><br>
+                  <p class="info-content">
+                    「我的 學習歷程 網站」為主要紀錄我高中三年的學習歷程，包含了課程簡介、課程內容、學習心得、成果、反思...等等。本網站也是「網站實作」的成果作品。
+                  </p>
+                  <div class="contact-info">
+                    <h1 class="contact-info-title">
+                      Contact Info
+                      </h6>
+                      <br>
+                      <a href="mailto:mimischooler@gmail.com" class="contact-info-email">mimischooler@gmail.com</a>
+                  </div>
+              </div>
+
+            </div>
+            <div class="col footer-content row align-items-center p-2">
+              <div class="about">
+                <h1 class="about-title">About me</h1>
+                <p class="about-content about-content-title mt-1">大家好，我是張歆瑀 。<br>
+                  在國三遇見了「自學」。並展開了我的「自學」之旅到了現在...。</p>
+                <p class="about-content mt-1">一位喜歡在不同領域探索的「自主學習者」。<br> 本網站記錄了我的學習軌跡。以實作專案來促成「用以致學」的學習方式。
+                </p>
+              </div>
+            </div>
+            <div class="footer-line text-center">
+            </div>
+            <div class="footer-bottom text-center copyright-content p-md-2 p-lg-2 p-xl-2">
+              &#x00A9; 2023 Michelle Chang 版權所有 All rights reserved. Privacy Policy
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div class="main-footer-sm">
+      <footer>
+        <div class="container-fluid">
+          <div class="row ">
+            <div class="footer-content align-items-center p-2">
+              <h1 class="logo-title_social-icons text-center">
+                <a href="https://mlearning.url.tw"><img src="logo/Logo-content.svg" class="logo-sm" alt="logo"></a>
+                <div class="social-icons text-center">
+                  <a href="https://www.facebook.com/michellechang2006" target="_blank" class="icon"
+                    aria-label="facebook icon"> <i class="bi bi-sm bi-facebook mx-1"></i></a>
+                  <a href="https://github.com/michellechang2006" target="_blank" class="icon" aria-label="github icon">
+                    <i class="bi bi-sm bi-github mx-1"></i></a>
+                  <a href="https://www.behance.net/michellechang2006" target="_blank" class="icon"
+                    aria-label="behance icon"> <i class="bi bi-sm bi-behance mx-1"></i></a>
+                  <a href="https://mlearning.url.tw" target="_blank" class="icon" aria-label="website icon"> <i
+                      class="bi bi-sm bi-globe mx-1"></i></a>
+                  <a href="mailto:mimischooler@gmail.com" target="_blank" class="icon" aria-label="e-mail icon"> <i
+                      class="bi bi-sm bi-envelope-fill mx-1"></i></a>
+                  <a href="https://www.artstation.com/michellechang2006" target="_blank" class="icon"
+                    aria-label="artstation icon"> <i class="fa-brands fa-artstation fa-my-sm mx-1"></i></a>
+                  <a href="https://www.youtube.com/@M-Learning2023" target="_blank" class="icon"
+                    aria-label="youtube icon"> <i class="bi bi-sm bi-youtube mx-1"></i></a>
+                </div>
+            </div>
+            <div class="footer-line text-center">
+            </div>
+            <div class="footer-bottom text-center copyright-content-sm p-2">
+              &#x00A9; 2023 Michelle Chang 版權所有 All rights reserved. Privacy Policy
+            </div>
+          </div>
+      </footer>
+    </div>
+  </main>
+
+
+  <!-- JQuery Library  -->
+  <script src="111/js/jquery.min.js"></script>
+  <!-- sidememu -->
+  <script src="111/js/sidemenu-111_page.js"></script>
+  <!-- topmenu -->
+  <script src="111/js/topmenu-111_page.js"></script>
+
+
+  <script src="111/js/fontawoesomeicons.js"></script>
+  <script src="111/js/bootstrap.bundle.min.js"></script>
+  <script src="111/js/bootstrap.bundle.min.js"></script>
+  <script src="111/js/popper.min.js"></script>
+  <!-- aos -->
+  <script src="111/js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+
+  <!-- 複製網頁文字時，加上網站的作者與網址 -->
+  <!-- <script src="js/copy.js"></script> -->
+  <script src="111/js/class-menu-md.js"></script>
+
+  <script src="111/js/111_meun_items.js"></script>
+
+  <script src="js/explore-111_data.js"></script>
+  <script src="js/showdown.min.js"></script>
+
 </body>
+
 </html>
