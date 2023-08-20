@@ -43,7 +43,9 @@ satisfy all
 ## URL重寫規則
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.html [NC,QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^\.]+)$ $1/index.html [NC,QSA,L]
+
 
 
 
